@@ -26,7 +26,7 @@ namespace NWH.VehiclePhysics2.Powertrain
         ///     also slower to spin down. Too high values will result in (apparent) sluggish response while too low values will
         ///     result in vehicle being easy to stall and possible powertrain instability / glitches.
         /// </summary>
-        [Range(0.0002f, 2f)]
+        [Range(0.0002f, 6f)] // <= Gabbar    : Old => [Range(0.0002f, 2f)]
         [Tooltip(
             "Angular inertia of the component. Higher inertia value will result in a powertrain that is slower to spin up, but\r\nalso slower to spin down. Too high values will result in (apparent) sluggish response while too low values will\r\nresult in vehicle being easy to stall.")]
         public float inertia = 0.05f;

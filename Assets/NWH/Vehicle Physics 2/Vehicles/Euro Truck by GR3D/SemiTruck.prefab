@@ -5182,7 +5182,7 @@ MonoBehaviour:
       slipTorque: 22000
     engine:
       name: Engine
-      inertia: 1.482
+      inertia: 4
       inputTorque: 0
       outputTorque: 0
       inputAngularVelocity: 0
@@ -5242,7 +5242,7 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
       revLimiterCutoffDuration: 0
-      revLimiterRPM: 2600
+      revLimiterRPM: 2630
       stallingEnabled: 1
       startDuration: 1.2
     transmission:
@@ -5673,7 +5673,7 @@ MonoBehaviour:
     frontalCd: 0.515
     maxDownforceSpeed: 80
     sideCd: 1.206
-    simulateDownforce: 0
+    simulateDownforce: 1
     simulateDrag: 1
     lateralDragForce: 0
     longitudinalDragForce: 0
