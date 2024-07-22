@@ -116,7 +116,7 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
             }
         }
 
-
+        
         public virtual void OnTriggerStay(Collider other)
         {
             if (other == null || other.gameObject.layer != attachmentLayer) return;
@@ -231,6 +231,7 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
 
         public void AttachTrailer(TrailerModuleWrapper trailerWrapper)
         {
+            
             attachedTrailerModule = trailerWrapper.module;
             if (attachedTrailerModule == null)
             {
@@ -270,6 +271,8 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
             attached = true;
             attachedTrailerModule.OnAttach(this);
             onTrailerAttach.Invoke();
+
+
         }
 
 

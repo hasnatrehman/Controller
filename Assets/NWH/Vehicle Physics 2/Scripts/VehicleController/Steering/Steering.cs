@@ -130,7 +130,7 @@ namespace NWH.VehiclePhysics2
         }
 
 
-        public virtual void CalculateSteerAngles()
+        public virtual void CalculateSteerAngles() // Gabbar Tyre Rotation
         {
             float horizontalInput = vehicleController.input.Steering;
             float smoothing = speedSensitiveSmoothingCurve.Evaluate(vehicleController.Speed / 50f);
@@ -138,13 +138,15 @@ namespace NWH.VehiclePhysics2
             {
                 return;
             }
-
+            
             if (useRawInput)
             {
                 angle = horizontalInput * maximumSteerAngle;
             }
             else
             {
+              
+                    
                 float absHorizontalInput = horizontalInput < 0 ? -horizontalInput : horizontalInput;
                 float horizontalInputSign = horizontalInput < 0 ? -1 : 1;
                 float maxAngle = speedSensitiveSteeringCurve.Evaluate(vehicleController.Speed / 50f) * maximumSteerAngle;
@@ -160,6 +162,7 @@ namespace NWH.VehiclePhysics2
                 // Apply Ackermann angle
                 if (wheelGroup.Wheels.Count == 2 && vehicleController.wheelbase > 0.001f && wheelGroup.addAckerman)
                 {
+                   
                     float axleAngleRad = axleSteerAngle * Mathf.Deg2Rad;
                     float sinAxleAngle = Mathf.Sin(axleAngleRad);
                     float cosAxleAngle = Mathf.Cos(axleAngleRad);
@@ -185,6 +188,7 @@ namespace NWH.VehiclePhysics2
                 {
                     foreach (WheelComponent wheel in wheelGroup.Wheels)
                     {
+                        
                         wheel.wheelUAPI.SteerAngle = axleSteerAngle;
                     }
                 }

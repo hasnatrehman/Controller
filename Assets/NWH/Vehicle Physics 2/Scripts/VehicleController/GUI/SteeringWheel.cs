@@ -46,20 +46,23 @@ namespace NWH.VehiclePhysics2.VehicleGUI
         {
             // If the wheel is released, reset the rotation
             // to initial (zero) rotation by wheelReleasedSpeed degrees per second
-            if (!_wheelBeingHeld && !Mathf.Approximately(0f, _wheelAngle))
+            if (!_wheelBeingHeld && !Mathf.Approximately(0f, _wheelAngle))   // for UI 
             {
                 float deltaAngle = returnToCenterSpeed * Time.deltaTime;
                 if (Mathf.Abs(deltaAngle) > Mathf.Abs(_wheelAngle))
                 {
                     _wheelAngle = 0f;
+                  
                 }
                 else if (_wheelAngle > 0f)
                 {
                     _wheelAngle -= deltaAngle;
+                  
                 }
                 else
                 {
                     _wheelAngle += deltaAngle;
+                
                 }
             }
 
