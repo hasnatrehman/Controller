@@ -129,66 +129,151 @@ namespace NWH.VehiclePhysics2
             VisualUpdate();
         }
 
+      
+        ////public virtual void CalculateSteerAngles() // Gabbar Tyre Rotation
+        ////{
+        ////    float horizontalInput = vehicleController.input.Steering;
+        ////    float smoothing = speedSensitiveSmoothingCurve.Evaluate(vehicleController.Speed / 50f);
+        ////    if (!useRawInput && !returnToCenter && horizontalInput > -0.04f && horizontalInput < 0.04f)
+        ////    {
+        ////        return;
+        ////    }
+
+        ////    if (useRawInput)
+        ////    {
+        ////        angle = horizontalInput * maximumSteerAngle;
+        ////    }
+        ////    else
+        ////    {
+
+
+        ////        float absHorizontalInput = horizontalInput < 0 ? -horizontalInput : horizontalInput;
+        ////        float horizontalInputSign = horizontalInput < 0 ? -1 : 1;
+        ////        float maxAngle = speedSensitiveSteeringCurve.Evaluate(vehicleController.Speed / 50f) * maximumSteerAngle;
+        ////        float inputAngle = maxAngle * linearity.Evaluate(absHorizontalInput) * horizontalInputSign;
+        ////        _targetAngle = Mathf.SmoothDamp(_targetAngle, inputAngle, ref _steerVelocity, smoothing);
+
+
+        ////        angle = Mathf.MoveTowards(angle, _targetAngle, degreesPerSecondLimit  * vehicleController.fixedDeltaTime);
+
+        ////    }
+
+        ////    foreach (WheelGroup wheelGroup in vehicleController.powertrain.wheelGroups)
+        ////    {
+        ////        float axleSteerAngle = (angle + externallyAddedAngle) * wheelGroup.steerCoefficient;
+
+        ////        // Apply Ackermann angle
+        ////        if (wheelGroup.Wheels.Count == 2 && vehicleController.wheelbase > 0.001f && wheelGroup.addAckerman)
+        ////        {
+
+        ////            float axleAngleRad = axleSteerAngle * Mathf.Deg2Rad;
+        ////            float sinAxleAngle = Mathf.Sin(axleAngleRad);
+        ////            float cosAxleAngle = Mathf.Cos(axleAngleRad);
+
+        ////            float angleInnerRad = Mathf.Atan(4f * wheelGroup.trackWidth * sinAxleAngle /
+        ////                                        (2f * vehicleController.wheelbase * cosAxleAngle - wheelGroup.trackWidth * sinAxleAngle));
+
+        ////            float angleOuterRad = Mathf.Atan(4f * wheelGroup.trackWidth * sinAxleAngle /
+        ////                                        (2f * vehicleController.wheelbase * cosAxleAngle + wheelGroup.trackWidth * sinAxleAngle));
+
+        ////            if (axleSteerAngle < 0)
+        ////            {
+        ////                wheelGroup.RightWheel.wheelUAPI.SteerAngle = angleInnerRad * Mathf.Rad2Deg;
+        ////                wheelGroup.LeftWheel.wheelUAPI.SteerAngle = angleOuterRad * Mathf.Rad2Deg;
+        ////                Debug.Log("=> L");
+        ////               
+
+
+        ////            }
+        ////            else if(axleSteerAngle > 0) 
+        ////            {
+        ////                wheelGroup.LeftWheel.wheelUAPI.SteerAngle = angleOuterRad * Mathf.Rad2Deg;
+        ////                wheelGroup.RightWheel.wheelUAPI.SteerAngle = angleInnerRad * Mathf.Rad2Deg;
+        ////                Debug.Log("=> R");
+        ////               
+
+        ////            }
+        ////           
+        ////        }
+        ////        else
+        ////        {
+        ////            foreach (WheelComponent wheel in wheelGroup.Wheels)
+        ////            {
+
+        ////                wheel.wheelUAPI.SteerAngle = axleSteerAngle;
+        ////            }
+        ////        }
+        ////    }
+        ////}
+        
 
         public virtual void CalculateSteerAngles() // Gabbar Tyre Rotation
         {
             float horizontalInput = vehicleController.input.Steering;
             float smoothing = speedSensitiveSmoothingCurve.Evaluate(vehicleController.Speed / 50f);
+
+            // Early return if input is in a very small range and return to center is not enabled
             if (!useRawInput && !returnToCenter && horizontalInput > -0.04f && horizontalInput < 0.04f)
             {
                 return;
             }
-            
+
+            // Calculate the target angle based on input and vehicle speed
             if (useRawInput)
             {
                 angle = horizontalInput * maximumSteerAngle;
             }
             else
             {
-              
-                    
-                float absHorizontalInput = horizontalInput < 0 ? -horizontalInput : horizontalInput;
-                float horizontalInputSign = horizontalInput < 0 ? -1 : 1;
+                float absHorizontalInput = Mathf.Abs(horizontalInput);
+                float horizontalInputSign = Mathf.Sign(horizontalInput);
                 float maxAngle = speedSensitiveSteeringCurve.Evaluate(vehicleController.Speed / 50f) * maximumSteerAngle;
                 float inputAngle = maxAngle * linearity.Evaluate(absHorizontalInput) * horizontalInputSign;
                 _targetAngle = Mathf.SmoothDamp(_targetAngle, inputAngle, ref _steerVelocity, smoothing);
-                angle = Mathf.MoveTowards(angle, _targetAngle, degreesPerSecondLimit * vehicleController.fixedDeltaTime);
+
+                // Adjust speed if specific conditions are met
+                float speedFactor = ((angle < 0 && horizontalInput > 0) || (angle > 0 && horizontalInput < 0) || horizontalInput ==0) ? 3f : 1f;
+                angle = Mathf.MoveTowards(angle, _targetAngle, degreesPerSecondLimit * vehicleController.fixedDeltaTime * speedFactor);
             }
 
+            // Apply the calculated steering angle to each wheel group
             foreach (WheelGroup wheelGroup in vehicleController.powertrain.wheelGroups)
             {
                 float axleSteerAngle = (angle + externallyAddedAngle) * wheelGroup.steerCoefficient;
 
-                // Apply Ackermann angle
+                // Apply Ackermann angle for better turning radius
                 if (wheelGroup.Wheels.Count == 2 && vehicleController.wheelbase > 0.001f && wheelGroup.addAckerman)
                 {
-                   
                     float axleAngleRad = axleSteerAngle * Mathf.Deg2Rad;
                     float sinAxleAngle = Mathf.Sin(axleAngleRad);
                     float cosAxleAngle = Mathf.Cos(axleAngleRad);
 
                     float angleInnerRad = Mathf.Atan(4f * wheelGroup.trackWidth * sinAxleAngle /
-                                                (2f * vehicleController.wheelbase * cosAxleAngle - wheelGroup.trackWidth * sinAxleAngle));
+                                                    (2f * vehicleController.wheelbase * cosAxleAngle - wheelGroup.trackWidth * sinAxleAngle));
 
                     float angleOuterRad = Mathf.Atan(4f * wheelGroup.trackWidth * sinAxleAngle /
-                                                (2f * vehicleController.wheelbase * cosAxleAngle + wheelGroup.trackWidth * sinAxleAngle));
+                                                    (2f * vehicleController.wheelbase * cosAxleAngle + wheelGroup.trackWidth * sinAxleAngle));
 
                     if (axleSteerAngle < 0)
                     {
                         wheelGroup.RightWheel.wheelUAPI.SteerAngle = angleInnerRad * Mathf.Rad2Deg;
                         wheelGroup.LeftWheel.wheelUAPI.SteerAngle = angleOuterRad * Mathf.Rad2Deg;
+                        Debug.Log("=> L");
+                       
                     }
-                    else
+                    else if (axleSteerAngle > 0)
                     {
                         wheelGroup.LeftWheel.wheelUAPI.SteerAngle = angleOuterRad * Mathf.Rad2Deg;
                         wheelGroup.RightWheel.wheelUAPI.SteerAngle = angleInnerRad * Mathf.Rad2Deg;
+                        Debug.Log("=> R");
+                      
                     }
+                  
                 }
                 else
                 {
                     foreach (WheelComponent wheel in wheelGroup.Wheels)
                     {
-                        
                         wheel.wheelUAPI.SteerAngle = axleSteerAngle;
                     }
                 }
