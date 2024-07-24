@@ -1,4 +1,5 @@
 ﻿using NWH.Common.Input;
+using System.Diagnostics;
 
 namespace NWH.VehiclePhysics2.Input
 {
@@ -94,12 +95,14 @@ namespace NWH.VehiclePhysics2.Input
 
         public virtual int ShiftInto()
         {
+           
             return -999;
         }
 
 
         public virtual bool ShiftUp()
         {
+            
             return false;
         }
 
