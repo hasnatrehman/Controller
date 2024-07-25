@@ -91,6 +91,11 @@ namespace NWH.VehiclePhysics2.Input
         {
             return false;
         }
+        
+        public virtual bool ShiftNutral()
+        {
+            return false;
+        }
 
 
         public virtual int ShiftInto()

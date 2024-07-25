@@ -143,6 +143,11 @@ namespace NWH.VehiclePhysics2.Input
         {
             return InputUtils.TryGetButtonDown("ShiftDown", KeyCode.F);
         }
+        
+        public override bool ShiftNutral()
+        {
+            return InputUtils.TryGetButtonDown("ShiftNutral", KeyCode.Q);
+        }
 
 
         /// <summary>

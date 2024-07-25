@@ -101,6 +101,15 @@ namespace NWH.VehiclePhysics2.Input
                     ""interactions"": """",
                     ""initialStateCheck"": false
                 },
+  {
+                    ""name"": ""ShiftNutral"",
+                    ""type"": ""Button"",
+                    ""id"": ""180cb808-2f04-48c7-9551-a2859fff6752"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
                 {
                     ""name"": ""LeftBlinker"",
                     ""type"": ""Button"",
@@ -846,6 +855,9 @@ namespace NWH.VehiclePhysics2.Input
             m_VehicleControls_EngineStartStop = m_VehicleControls.FindAction("EngineStartStop", throwIfNotFound: true);
             m_VehicleControls_ShiftUp = m_VehicleControls.FindAction("ShiftUp", throwIfNotFound: true);
             m_VehicleControls_ShiftDown = m_VehicleControls.FindAction("ShiftDown", throwIfNotFound: true);
+
+            m_VehicleControls_ShiftNutral = m_VehicleControls.FindAction("ShiftNutral", throwIfNotFound: true);
+
             m_VehicleControls_LeftBlinker = m_VehicleControls.FindAction("LeftBlinker", throwIfNotFound: true);
             m_VehicleControls_RightBlinker = m_VehicleControls.FindAction("RightBlinker", throwIfNotFound: true);
             m_VehicleControls_LowBeamLights = m_VehicleControls.FindAction("LowBeamLights", throwIfNotFound: true);
@@ -936,6 +948,7 @@ namespace NWH.VehiclePhysics2.Input
         private readonly InputAction m_VehicleControls_EngineStartStop;
         private readonly InputAction m_VehicleControls_ShiftUp;
         private readonly InputAction m_VehicleControls_ShiftDown;
+        private readonly InputAction m_VehicleControls_ShiftNutral;
         private readonly InputAction m_VehicleControls_LeftBlinker;
         private readonly InputAction m_VehicleControls_RightBlinker;
         private readonly InputAction m_VehicleControls_LowBeamLights;
@@ -969,6 +982,7 @@ namespace NWH.VehiclePhysics2.Input
             public InputAction @EngineStartStop => m_Wrapper.m_VehicleControls_EngineStartStop;
             public InputAction @ShiftUp => m_Wrapper.m_VehicleControls_ShiftUp;
             public InputAction @ShiftDown => m_Wrapper.m_VehicleControls_ShiftDown;
+            public InputAction @ShiftNutral => m_Wrapper.m_VehicleControls_ShiftNutral;
             public InputAction @LeftBlinker => m_Wrapper.m_VehicleControls_LeftBlinker;
             public InputAction @RightBlinker => m_Wrapper.m_VehicleControls_RightBlinker;
             public InputAction @LowBeamLights => m_Wrapper.m_VehicleControls_LowBeamLights;
@@ -1023,6 +1037,11 @@ namespace NWH.VehiclePhysics2.Input
                 @ShiftDown.started += instance.OnShiftDown;
                 @ShiftDown.performed += instance.OnShiftDown;
                 @ShiftDown.canceled += instance.OnShiftDown;
+
+                @ShiftNutral.started += instance.OnShiftNutral;
+                @ShiftNutral.performed += instance.OnShiftNutral;
+                @ShiftNutral.canceled += instance.OnShiftNutral;
+
                 @LeftBlinker.started += instance.OnLeftBlinker;
                 @LeftBlinker.performed += instance.OnLeftBlinker;
                 @LeftBlinker.canceled += instance.OnLeftBlinker;
@@ -1114,6 +1133,11 @@ namespace NWH.VehiclePhysics2.Input
                 @ShiftDown.started -= instance.OnShiftDown;
                 @ShiftDown.performed -= instance.OnShiftDown;
                 @ShiftDown.canceled -= instance.OnShiftDown;
+
+                @ShiftNutral.started -= instance.OnShiftNutral;
+                @ShiftNutral.performed -= instance.OnShiftNutral;
+                @ShiftNutral.canceled -= instance.OnShiftNutral;
+
                 @LeftBlinker.started -= instance.OnLeftBlinker;
                 @LeftBlinker.performed -= instance.OnLeftBlinker;
                 @LeftBlinker.canceled -= instance.OnLeftBlinker;
@@ -1204,6 +1228,7 @@ namespace NWH.VehiclePhysics2.Input
             void OnEngineStartStop(InputAction.CallbackContext context);
             void OnShiftUp(InputAction.CallbackContext context);
             void OnShiftDown(InputAction.CallbackContext context);
+            void OnShiftNutral(InputAction.CallbackContext context);
             void OnLeftBlinker(InputAction.CallbackContext context);
             void OnRightBlinker(InputAction.CallbackContext context);
             void OnLowBeamLights(InputAction.CallbackContext context);

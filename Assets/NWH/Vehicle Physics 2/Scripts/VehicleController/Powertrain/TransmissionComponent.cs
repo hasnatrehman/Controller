@@ -902,6 +902,10 @@ namespace NWH.VehiclePhysics2.Powertrain
                     {
                         ShiftInto(1);
                     }
+                    else if (vc.input.ShiftNutral && (vc.input.ShiftInto == 1 || vc.input.ShiftInto == -1))
+                    {
+                        ShiftInto(0);
+                    }
                     else if (vc.input.ShiftDown || vc.input.ShiftInto == -1)
                     {
                         ShiftInto(-1);
@@ -935,6 +939,11 @@ namespace NWH.VehiclePhysics2.Powertrain
                 {
                     if (vc.input.ShiftUp || vc.input.ShiftInto == 0)
                     {
+                        ShiftInto(1); // ShiftInto(0)
+                    }
+                    else if (vc.input.ShiftNutral)
+                    {
+                        vc.input.ShiftInto = 0;
                         ShiftInto(0);
                     }
                     else if (vc.input.ShiftInto == 1)
@@ -967,7 +976,7 @@ namespace NWH.VehiclePhysics2.Powertrain
             // In forward
             else
             {
-                if (vehicleSpeed > 0.4f && !vc.input.ShiftDown) // Gabbar Added "&& !vc.input.ShiftDown" for shifting the truck to nutral at any speed
+                if (vehicleSpeed > 0.4f && !vc.input.ShiftNutral) // Gabbar Added "&& !vc.input.ShiftNutral" for shifting the truck to nutral at any speed
                 {
                     // Upshift
                     if (currentGear < forwardGearCount && _referenceShiftRPM > TargetUpshiftRPM)
@@ -1057,15 +1066,19 @@ namespace NWH.VehiclePhysics2.Powertrain
                 {
                     if (automaticTransmissionDNRShiftType != AutomaticTransmissionDNRShiftType.RequireShiftInput)
                     {
-                        //// if (throttleInput < INPUT_DEADZONE)      Gabbar comment this for shifting the truck to nutral at any speed
-                        //// {
-                        ShiftInto(0);
+                        if (throttleInput < INPUT_DEADZONE)
+                        {
+                            ShiftInto(0);
 
-                        ////  }
+                        }
                     }
-                    else
+                        else
                     {
-                        if (vc.input.ShiftDown || vc.input.ShiftInto == 0)
+                        if (vc.input.ShiftDown  || vc.input.ShiftInto == 0)
+                        {
+                            ShiftInto(-1);
+                        }
+                        else if (vc.input.ShiftNutral)
                         {
                             ShiftInto(0);
                         }
