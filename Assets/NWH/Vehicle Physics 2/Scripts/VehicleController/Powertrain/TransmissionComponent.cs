@@ -896,7 +896,7 @@ namespace NWH.VehiclePhysics2.Powertrain
                         ShiftInto(-1);
                     }
                 }
-                else if (automaticTransmissionDNRShiftType == AutomaticTransmissionDNRShiftType.RequireShiftInput)
+                else if (automaticTransmissionDNRShiftType == AutomaticTransmissionDNRShiftType.RequireShiftInput) //Gabbar D N R
                 {
                     if (vc.input.ShiftUp || vc.input.ShiftInto == 1)
                     {
@@ -967,7 +967,7 @@ namespace NWH.VehiclePhysics2.Powertrain
             // In forward
             else
             {
-                if (vehicleSpeed > 0.4f)
+                if (vehicleSpeed > 0.4f && !vc.input.ShiftDown) // Gabbar Added "&& !vc.input.ShiftDown" for shifting the truck to nutral at any speed
                 {
                     // Upshift
                     if (currentGear < forwardGearCount && _referenceShiftRPM > TargetUpshiftRPM)
@@ -1051,15 +1051,17 @@ namespace NWH.VehiclePhysics2.Powertrain
                         }
                     }
                 }
+                
                 // Shift into neutral
                 else
                 {
                     if (automaticTransmissionDNRShiftType != AutomaticTransmissionDNRShiftType.RequireShiftInput)
                     {
-                        if (throttleInput < INPUT_DEADZONE)
-                        {
-                            ShiftInto(0);
-                        }
+                        //// if (throttleInput < INPUT_DEADZONE)      Gabbar comment this for shifting the truck to nutral at any speed
+                        //// {
+                        ShiftInto(0);
+
+                        ////  }
                     }
                     else
                     {
