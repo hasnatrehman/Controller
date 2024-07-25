@@ -97,7 +97,7 @@ public class CustomUIHandler : MonoBehaviour
 
             toggleButtonR.isOn = true;
             GetComponent<MobileVehicleInputProvider>().steeringWheel.
-            GetComponent<SteeringWheel>().returnToCenterSpeed = 350;
+            GetComponent<SteeringWheel>().returnToCenterSpeed = 400;
 
             controller.steering.returnToCenter = true;
 
