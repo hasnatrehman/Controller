@@ -18,7 +18,7 @@ public class CustomUIHandler : MonoBehaviour
     public List<Camera> PlayerCameras;
     private void Start()
     {
-        Controller(true);
+        Controller(false);
         Camera(true);
         Rotation(true);
     }
