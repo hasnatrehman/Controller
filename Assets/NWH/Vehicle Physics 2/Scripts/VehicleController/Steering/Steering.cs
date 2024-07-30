@@ -235,7 +235,7 @@ namespace NWH.VehiclePhysics2
 
                 
                 // Adjust speed if specific conditions are met
-                float speedFactor = ((angle < 0 && horizontalInput > 0) || (angle > 0 && horizontalInput < 0) || horizontalInput ==0) ? 2f : 1f;
+                float speedFactor = ((angle < 0 && horizontalInput > 0) || (angle > 0 && horizontalInput < 0) || horizontalInput ==0) ? 3f : 1f;
                 angle = Mathf.MoveTowards(angle, _targetAngle, degreesPerSecondLimit * vehicleController.fixedDeltaTime * speedFactor);
             }
 
