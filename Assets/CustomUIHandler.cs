@@ -65,7 +65,7 @@ public class CustomUIHandler : MonoBehaviour
             inputProvider.steeringWheel.gameObject.SetActive(false);
             inputProvider.steerLeftButton.gameObject.SetActive(true);
             inputProvider.steerRightButton.gameObject.SetActive(true);
-            controller.steering.degreesPerSecondLimit = 11f;
+            controller.steering.degreesPerSecondLimit = 15f;
         
         }
     }
