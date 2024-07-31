@@ -5,7 +5,7 @@ using UnityEngine.PlayerLoop;
 [Serializable]
 public class CameraMouseOrbit : CameraMode
 {
-	public float distance = 10f;
+	public float distance = 0;
 
 	[Space(5f)]
 	public float minVerticalAngle = -20f;
@@ -60,7 +60,7 @@ public class CameraMouseOrbit : CameraMode
 
 	public bool isTrailerAttached = true;
 
-	public float _distance;
+	public float _distance=0;
 
 	public Transform trailer;
 
@@ -216,7 +216,7 @@ public class CameraMouseOrbit : CameraMode
 
                     singleTimeCaller = true;
                     _distance = 0f;
-                    distance = 17;
+                    distance = 7;
                     //RefreshMainCamera?.Invoke(false);
 
 
