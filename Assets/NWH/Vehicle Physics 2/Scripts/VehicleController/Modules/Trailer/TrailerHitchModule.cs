@@ -261,8 +261,12 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
             _configurableJoint.xMotion = ConfigurableJointMotion.Locked;
             _configurableJoint.yMotion = ConfigurableJointMotion.Locked;
             _configurableJoint.zMotion = ConfigurableJointMotion.Locked;
+            _configurableJoint.angularYMotion = ConfigurableJointMotion.Limited;
             _configurableJoint.angularZMotion =
                 useHingeJoint ? ConfigurableJointMotion.Locked : ConfigurableJointMotion.Free;
+
+           
+
             _configurableJoint.enableCollision = true;
             _configurableJoint.breakForce = breakForce;
 
@@ -270,6 +274,13 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
             vehicleController.input.TrailerAttachDetach = false;
             attached = true;
             attachedTrailerModule.OnAttach(this);
+
+            SoftJointLimit angularGabbar = _configurableJoint.angularYLimit;
+
+            //_configurableJoint.angularYLimit.limit = 0;           // Gabbar Trailer Angle
+            angularGabbar.limit = 80; 
+            _configurableJoint.angularYLimit = angularGabbar;
+
             onTrailerAttach.Invoke();
 
 

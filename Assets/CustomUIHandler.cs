@@ -1,8 +1,10 @@
 using NWH.VehiclePhysics2;
 using NWH.VehiclePhysics2.Input;
+using NWH.VehiclePhysics2.Powertrain;
 using NWH.VehiclePhysics2.VehicleGUI;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using static NWH.VehiclePhysics2.Input.MobileVehicleInputProvider;
@@ -12,6 +14,7 @@ public class CustomUIHandler : MonoBehaviour
     public Toggle toggleButtonC;
     public Toggle toggleButtonCo;
     public Toggle toggleButtonR;
+    public Toggle toggleButtonDiff;
     public MobileVehicleInputProvider inputProvider;
   
     public VehicleController controller;
@@ -21,6 +24,7 @@ public class CustomUIHandler : MonoBehaviour
         Controller(false);
         Camera(true);
         Rotation(true);
+        diff(true);
     }
     public void ControllerSwitcher()
     {
@@ -32,6 +36,24 @@ public class CustomUIHandler : MonoBehaviour
     {
         Camera(toggleButtonC.isOn);
      
+    }
+
+    public void Differential()
+    {
+        diff(toggleButtonDiff.isOn);
+    }
+    void diff(bool b)
+    {
+        if (b)
+        {
+            controller.powertrain.differentials[0].DifferentialType = DifferentialComponent.Type.LimitedSlip;
+           
+        }
+        else
+        {
+            controller.powertrain.differentials[0].DifferentialType = DifferentialComponent.Type.Locked;
+
+        }
     }
 
     public void RotationChanger()

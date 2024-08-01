@@ -73,8 +73,23 @@ public class VehicleCameraController : MonoBehaviour
         
     }
 
-	
+	bool trailerTrigger = false;
+	public void TrailerAttach()
+	{
+		if (trailerTrigger)
+		{
 
+            mouseOrbit.isTrailerAttached = false;
+			trailerTrigger = false;
+		}
+		else
+		{
+            mouseOrbit.isTrailerAttached = true;
+			trailerTrigger = true;
+
+        }
+    }
+	
 	public void CameraAssigner(bool b)
 	{
        

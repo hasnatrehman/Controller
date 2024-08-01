@@ -58,7 +58,8 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
 
         public void OnTriggerStay(Collider other)
         {
-            module.OnTriggerStay(other);
+            if(other.tag == "H")
+               module.OnTriggerStay(other);
         }
 
 
