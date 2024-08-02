@@ -47,11 +47,13 @@ public class CustomUIHandler : MonoBehaviour
         if (b)
         {
             controller.powertrain.differentials[0].DifferentialType = DifferentialComponent.Type.LimitedSlip;
+            toggleButtonDiff.GetComponent<Image>().color = Color.white;
            
         }
         else
         {
             controller.powertrain.differentials[0].DifferentialType = DifferentialComponent.Type.Locked;
+            toggleButtonDiff.GetComponent<Image>().color = Color.red;
 
         }
     }
@@ -87,7 +89,7 @@ public class CustomUIHandler : MonoBehaviour
             inputProvider.steeringWheel.gameObject.SetActive(false);
             inputProvider.steerLeftButton.gameObject.SetActive(true);
             inputProvider.steerRightButton.gameObject.SetActive(true);
-            controller.steering.degreesPerSecondLimit = 15f;
+            controller.steering.degreesPerSecondLimit = 10f;
         
         }
     }

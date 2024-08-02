@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using static UnityEngine.ParticleSystem;
 
 namespace NWH.VehiclePhysics2.Modules.Trailer
 {
@@ -55,11 +56,26 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
             module.OnTriggerEnter(other);
         }
 
-
+        float angleTolerance = 1.0f;
+        Vector3 truckAngles;
+        Vector3 trailerAngles;
         public void OnTriggerStay(Collider other)
         {
-            if(other.tag == "H")
-               module.OnTriggerStay(other);
+            //   if(other.tag == "H")
+            //  Debug.LogError("=> " + other.gameObject.name);
+           truckAngles = gameObject.transform.eulerAngles;
+           trailerAngles = other.gameObject.transform.parent.transform.eulerAngles;
+
+            float angleDifferenceY = Mathf.Abs(Mathf.DeltaAngle(truckAngles.y, trailerAngles.y));
+
+            if (angleDifferenceY <= angleTolerance)
+            {
+                module.OnTriggerStay(other);
+                
+            }
+
+
+
         }
 
 

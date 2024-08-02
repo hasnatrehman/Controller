@@ -39,6 +39,7 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
             "If the vehicle is a trailer, this is the object placed at the point at which it will connect to the towing vehicle." +
             " If the vehicle is towing, this is the object placed at point at which trailer will be coneected.")]
         public Transform attachmentPoint;
+        
 
         /// <summary>
         /// The layer of the SphereCollider used to detect if the trailer module is in range.
@@ -261,9 +262,10 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
             _configurableJoint.xMotion = ConfigurableJointMotion.Locked;
             _configurableJoint.yMotion = ConfigurableJointMotion.Locked;
             _configurableJoint.zMotion = ConfigurableJointMotion.Locked;
-            _configurableJoint.angularYMotion = ConfigurableJointMotion.Limited;
+            _configurableJoint.angularYMotion = ConfigurableJointMotion.Limited;  // Gabbar Turning of trailer
+            
             _configurableJoint.angularZMotion =
-                useHingeJoint ? ConfigurableJointMotion.Locked : ConfigurableJointMotion.Free;
+                useHingeJoint ? ConfigurableJointMotion.Locked : ConfigurableJointMotion.Locked; // Free
 
            
 

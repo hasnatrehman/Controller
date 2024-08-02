@@ -235,8 +235,8 @@ namespace NWH.VehiclePhysics2
 
                 
                 // Adjust speed if specific conditions are met
-                float speedFactor = ((angle < 0 && horizontalInput > 0) || (angle > 0 && horizontalInput < 0) || horizontalInput ==0) ? 3f : 1f;
-                angle = Mathf.MoveTowards(angle, _targetAngle, degreesPerSecondLimit * vehicleController.fixedDeltaTime * speedFactor);
+                float speedFactor = ((angle < 0 && horizontalInput > 0) || (angle > 0 && horizontalInput < 0) || horizontalInput ==0) ? 2.5f : 1f;
+                angle = Mathf.MoveTowards(angle, _targetAngle, degreesPerSecondLimit * speedFactor * vehicleController.fixedDeltaTime);
             }
 
             // Apply the calculated steering angle to each wheel group
