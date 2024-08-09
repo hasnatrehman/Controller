@@ -251,8 +251,11 @@ namespace NWH.VehiclePhysics2.Input
 
         public bool TrailerAttachDetach
         {
+           
             get { return states.trailerAttachDetach; }
-            set { states.trailerAttachDetach = value; }
+            set {
+                
+                states.trailerAttachDetach = value; }
         }
 
         public bool CruiseControl

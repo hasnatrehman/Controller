@@ -6,6 +6,7 @@ using Object = UnityEngine.Object;
 using System.Collections;
 using System.Linq;
 using UnityEngine.Serialization;
+using UnityEngine.PlayerLoop;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -62,7 +63,7 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
         ///     Breaking force of the generated joint.
         /// </summary>
         [Tooltip("    Breaking force of the generated joint.")]
-        public float breakForce = Mathf.Infinity;
+        public float breakForce =  Mathf.Infinity;
 
         /// <summary>
         ///     Can the trailer be detached once it is attached?
@@ -113,16 +114,19 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
             _triggerCollider = other;
             if (!_hasHadFirstFixedUpdate && attachOnEnable)
             {
+               
                 vehicleController.input.states.trailerAttachDetach = true;
             }
         }
 
-        
+       
+
         public virtual void OnTriggerStay(Collider other)
         {
             if (other == null || other.gameObject.layer != attachmentLayer) return;
 
             trailerInRange = true;
+        
             _triggerCollider = other;
         }
 
@@ -175,7 +179,8 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
             // Detach trailer if the joint broke
             if (attached && _configurableJoint == null)
             {
-                DetachTrailer(vehicleController);
+                Debug.LogError("=> HeHe");
+               DetachTrailer(vehicleController);
             }
 
             if (trailerInRange)
@@ -230,9 +235,10 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
         }
 
 
-        public void AttachTrailer(TrailerModuleWrapper trailerWrapper)
+        public void AttachTrailer(TrailerModuleWrapper trailerWrapper) // hereeeeee
         {
-            
+
+
             attachedTrailerModule = trailerWrapper.module;
             if (attachedTrailerModule == null)
             {
@@ -241,6 +247,9 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
             }
 
             VehicleController trailerVC = trailerWrapper.GetComponentInParent<VehicleController>();
+
+            vehicleController.gameObject.transform.eulerAngles = trailerVC.gameObject.transform.eulerAngles;
+           ///// Debug.LogError("159632475");
             Debug.Assert(trailerVC != null, "Trailer wrapper is null");
             trailerVC.enabled = true;
 
@@ -270,7 +279,7 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
            
 
             _configurableJoint.enableCollision = true;
-            _configurableJoint.breakForce = breakForce;
+            _configurableJoint.breakForce = 12000000000000000000; // Gabbar joint break strength
 
             // Reset input flag
             vehicleController.input.TrailerAttachDetach = false;

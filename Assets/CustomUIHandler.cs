@@ -42,6 +42,8 @@ public class CustomUIHandler : MonoBehaviour
     {
         diff(toggleButtonDiff.isOn);
     }
+
+    
     void diff(bool b)
     {
         if (b)
@@ -89,7 +91,7 @@ public class CustomUIHandler : MonoBehaviour
             inputProvider.steeringWheel.gameObject.SetActive(false);
             inputProvider.steerLeftButton.gameObject.SetActive(true);
             inputProvider.steerRightButton.gameObject.SetActive(true);
-            controller.steering.degreesPerSecondLimit = 10f;
+            controller.steering.degreesPerSecondLimit = 13f;
         
         }
     }
@@ -113,6 +115,8 @@ public class CustomUIHandler : MonoBehaviour
             PlayerCameras[0].gameObject.SetActive(true);
         }
     }
+
+    
 
     public void Rotation(bool b)
     {

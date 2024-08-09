@@ -57,22 +57,26 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
         }
 
         float angleTolerance = 1.0f;
+      
         Vector3 truckAngles;
         Vector3 trailerAngles;
         public void OnTriggerStay(Collider other)
         {
             //   if(other.tag == "H")
             //  Debug.LogError("=> " + other.gameObject.name);
-           truckAngles = gameObject.transform.eulerAngles;
-           trailerAngles = other.gameObject.transform.parent.transform.eulerAngles;
 
-            float angleDifferenceY = Mathf.Abs(Mathf.DeltaAngle(truckAngles.y, trailerAngles.y));
+            // Gabbar Chassis and trailer angle
+           ////truckAngles = gameObject.transform.eulerAngles;
+           ////trailerAngles = other.gameObject.transform.parent.transform.eulerAngles;
 
-            if (angleDifferenceY <= angleTolerance)
-            {
+           //// float angleDifferenceY = Mathf.Abs(Mathf.
+           ////       DeltaAngle(truckAngles.y, trailerAngles.y));
+
+           //// if (angleDifferenceY <= angleTolerance)
+           //// {
                 module.OnTriggerStay(other);
                 
-            }
+           //// }
 
 
 

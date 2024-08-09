@@ -212,6 +212,7 @@ namespace NWH.VehiclePhysics2.Input
 
         public override bool TrailerAttachDetach()
         {
+            
             return trailerAttachDetachButton != null && trailerAttachDetachButton.hasBeenClicked;
         }
 
