@@ -261,14 +261,14 @@ namespace NWH.VehiclePhysics2
                     {
                         wheelGroup.RightWheel.wheelUAPI.SteerAngle = angleInnerRad * Mathf.Rad2Deg;
                         wheelGroup.LeftWheel.wheelUAPI.SteerAngle = angleOuterRad * Mathf.Rad2Deg;
-                        Debug.Log("=> L");
+                      
                        
                     }
                     else if (axleSteerAngle > 0)
                     {
                         wheelGroup.LeftWheel.wheelUAPI.SteerAngle = angleOuterRad * Mathf.Rad2Deg;
                         wheelGroup.RightWheel.wheelUAPI.SteerAngle = angleInnerRad * Mathf.Rad2Deg;
-                        Debug.Log("=> R");
+                     
                       
                     }
                   
