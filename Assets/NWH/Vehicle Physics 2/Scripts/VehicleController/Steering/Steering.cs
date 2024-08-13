@@ -230,12 +230,12 @@ namespace NWH.VehiclePhysics2
                 float maxAngle = speedSensitiveSteeringCurve.Evaluate(vehicleController.Speed / 50f) * maximumSteerAngle;
                 float inputAngle = maxAngle * linearity.Evaluate(absHorizontalInput) * horizontalInputSign;
                 _targetAngle = Mathf.SmoothDamp(_targetAngle, inputAngle, ref _steerVelocity, smoothing);
-                
 
 
-                
-                // Adjust speed if specific conditions are met
-                float speedFactor = ((angle < 0 && horizontalInput > 0) || (angle > 0 && horizontalInput < 0) || horizontalInput ==0) ? 2.5f : 1f;
+
+
+                // Adjust speed if specific conditions are met  // Gabbar Tyre Rotation Here
+                float speedFactor = ((angle < 0 && horizontalInput > 0) || (angle > 0 && horizontalInput < 0) /*|| horizontalInput ==0*/) ? 2.5f : 1f;
                 angle = Mathf.MoveTowards(angle, _targetAngle, degreesPerSecondLimit * speedFactor * vehicleController.fixedDeltaTime);
             }
 
