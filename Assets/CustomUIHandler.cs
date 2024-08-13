@@ -6,6 +6,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using static NWH.VehiclePhysics2.Input.MobileVehicleInputProvider;
 
@@ -21,11 +22,31 @@ public class CustomUIHandler : MonoBehaviour
     public List<Camera> PlayerCameras;
     private void Start()
     {
+        //// Load the first scene additively
+        //SceneManager.LoadScene("NVP2 Mobile Demo", LoadSceneMode.Additive);
+
+        // Load the second scene additively
+        SceneManager.LoadScene("Wanda Env Sorted 1", LoadSceneMode.Additive);
         Controller(false);
         Camera(true);
         Rotation(true);
         diff(true);
     }
+
+    //private void FixedUpdate()
+    //{
+    //    if(controller.Speed > 60)
+    //    {
+    //       controller.steering.degreesPerSecondLimit = 10f;
+    //    }
+    //    else if (controller.Speed >= 80)
+    //    {
+    //       controller.steering.degreesPerSecondLimit = 5f;
+    //    }
+
+
+    //}
+
     public void ControllerSwitcher()
     {
         
