@@ -215,7 +215,34 @@ namespace NWH.VehiclePhysics2
             // Early return if input is in a very small range and return to center is not enabled
             if (!useRawInput && !returnToCenter && horizontalInput > -0.04f && horizontalInput < 0.04f)
             {
-                return;
+
+                if(vehicleController.Speed > 1.5f)
+                {
+                    //float absHorizontalInput = Mathf.Abs(horizontalInput);
+                    //float horizontalInputSign = Mathf.Sign(horizontalInput);
+                    //float maxAngle = speedSensitiveSteeringCurve.Evaluate(vehicleController.Speed / 50f) * maximumSteerAngle;
+                    //float inputAngle = maxAngle * linearity.Evaluate(absHorizontalInput) * horizontalInputSign;
+                    //_targetAngle = Mathf.SmoothDamp(_targetAngle, inputAngle, ref _steerVelocity, smoothing);
+
+
+
+
+                    //// Adjust speed if specific conditions are met  // Gabbar Tyre Rotation Here
+                    //float speedFactor = ((angle < 0 && horizontalInput > 0) || (angle > 0 && horizontalInput < 0) /*|| horizontalInput ==0*/) ? 3f : 1f;
+                    //angle = Mathf.MoveTowards(angle, _targetAngle, degreesPerSecondLimit * speedFactor * vehicleController.fixedDeltaTime);
+
+                }
+                else
+                {
+                   return;
+
+                }
+               
+                
+                
+
+                
+                
             }
 
             // Calculate the target angle based on input and vehicle speed
@@ -233,9 +260,9 @@ namespace NWH.VehiclePhysics2
 
 
 
-
+       
                 // Adjust speed if specific conditions are met  // Gabbar Tyre Rotation Here
-                float speedFactor = ((angle < 0 && horizontalInput > 0) || (angle > 0 && horizontalInput < 0) /*|| horizontalInput ==0*/) ? 2.5f : 1f;
+                float speedFactor = ((angle < 0 && horizontalInput > 0) || (angle > 0 && horizontalInput < 0) /*|| horizontalInput ==0*/) ? 3f : 1f;
                 angle = Mathf.MoveTowards(angle, _targetAngle, degreesPerSecondLimit * speedFactor * vehicleController.fixedDeltaTime);
             }
 

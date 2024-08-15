@@ -244,6 +244,8 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
             Debug.Assert(trailerVC != null, "Trailer wrapper is null");
             trailerVC.enabled = true;
 
+            vehicleController.gameObject.transform.eulerAngles = trailerVC.gameObject.transform.eulerAngles; // Gabbar Trailer Attach
+
             // Position trailer
             trailerVC.vehicleTransform.position = trailerVC.transform.position -
                                                   (attachedTrailerModule.attachmentPoint.transform.position -
