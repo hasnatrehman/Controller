@@ -32,20 +32,26 @@ public class CustomUIHandler : MonoBehaviour
         Rotation(false);
         diff(true);
     }
+    float _speed;
+    private void FixedUpdate()
+    {
+        _speed = controller.Speed *3.6f;
+        if (_speed > 50 && _speed < 80)
+        {
+            controller.steering.degreesPerSecondLimit = 5f;
+            Debug.LogError("60");
+        }
+        else if (_speed >= 80)
+        {
+            controller.steering.degreesPerSecondLimit = 2f;
+        }
+        else
+        {
+            controller.steering.degreesPerSecondLimit = 10f;
+        }
 
-    //private void FixedUpdate()
-    //{
-    //    if(controller.Speed > 60)
-    //    {
-    //       controller.steering.degreesPerSecondLimit = 10f;
-    //    }
-    //    else if (controller.Speed >= 80)
-    //    {
-    //       controller.steering.degreesPerSecondLimit = 5f;
-    //    }
 
-
-    //}
+    }
 
     public void ControllerSwitcher()
     {
