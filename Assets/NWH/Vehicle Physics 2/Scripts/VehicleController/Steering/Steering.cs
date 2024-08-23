@@ -55,7 +55,8 @@ namespace NWH.VehiclePhysics2
         [Tooltip("    Should wheels return to neutral position when there is no input?")]
         [ShowInSettings("Return to Center")]
         public bool returnToCenter = true;
-
+        
+        float ScaleFactorCustom = 1f; // Gabbar
         /// <summary>
         ///     Curve that shows how the steering angle behaves at certain speed.
         ///     X axis represents velocity in range 0 to 100m/s (normalized to 0,1).
@@ -260,7 +261,15 @@ namespace NWH.VehiclePhysics2
 
 
 
-       
+                //ScaleFactorCustom = degreesPerSecondLimit / degreesPerSecondLimit;
+
+
+                //float clampedSpeed = Mathf.Clamp((float)(vehicleController.Speed *3.6), 10f, 100f);
+
+                // Calculate the decreasing value of hasnat based on the speed
+              //float  hasnat = Mathf.Lerp(1f, 0.1f, (clampedSpeed - 10) / (100 - 10));
+
+                //Debug.LogError(hasnat);
                 // Adjust speed if specific conditions are met  // Gabbar Tyre Rotation Here
                 float speedFactor = ((angle < 0 && horizontalInput > 0) || (angle > 0 && horizontalInput < 0) /*|| horizontalInput ==0*/) ? 3f : 1f;
                 angle = Mathf.MoveTowards(angle, _targetAngle, degreesPerSecondLimit * speedFactor * vehicleController.fixedDeltaTime);

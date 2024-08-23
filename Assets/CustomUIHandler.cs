@@ -20,6 +20,9 @@ public class CustomUIHandler : MonoBehaviour
   
     public VehicleController controller;
     public List<Camera> PlayerCameras;
+  
+    
+   
     private void Start()
     {
         //// Load the first scene additively
@@ -33,19 +36,35 @@ public class CustomUIHandler : MonoBehaviour
         diff(true);
     }
 
-    //private void FixedUpdate()
-    //{
-    //    if(controller.Speed > 60)
-    //    {
-    //       controller.steering.degreesPerSecondLimit = 10f;
-    //    }
-    //    else if (controller.Speed >= 80)
-    //    {
-    //       controller.steering.degreesPerSecondLimit = 5f;
-    //    }
+    private void FixedUpdate()
+    {
+
+        //if (controller.Speed * 3.6 > 20 && controller.Speed * 3.6 < 40)
+        //{
+        //    controller.steering.degreesPerSecondLimit = 9f;
+
+        //}
+        //else if (controller.Speed * 3.6 > 40 && controller.Speed * 3.6 < 60)
+        //{
+        //    controller.steering.degreesPerSecondLimit = 7f;
+
+        //}
+        //else if (controller.Speed * 3.6 > 60 && controller.Speed * 3.6 < 80)
+        //{
+        //    controller.steering.degreesPerSecondLimit = 5f;
+        //}
+        //else if (controller.Speed * 3.6 >= 80)
+        //{
+        //    controller.steering.degreesPerSecondLimit = 2f;
+        //}
+        //else
+        //{
+        //    controller.steering.degreesPerSecondLimit = 10f;
+
+        //}
 
 
-    //}
+    }
 
     public void ControllerSwitcher()
     {

@@ -16,7 +16,7 @@ MonoBehaviour:
   particleColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   maxParticleEmissionRateOverDistance: 0.5
   particleSize: 2
-  emitParticles: 0
+  emitParticles: 1
   emitChunks: 0
   maxChunkEmissionRateOverDistance: 1
   chunkLifeDistance: 3
@@ -25,6 +25,7 @@ MonoBehaviour:
   maxParticleLifetime: 0
   particleLifeDistance: 10
   frictionPreset: {fileID: 11400000, guid: 5b6da3049208ba944aa9af9616e71eb9, type: 2}
+  rollingResistanceMaxMultiplier: 50
   name: Rock
   skidSoundClip: {fileID: 0}
   playSkidSounds: 0
