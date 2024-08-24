@@ -276,7 +276,7 @@ namespace NWH.Common.Cameras
 
             _lookAtPosition = target.position +
                               target.TransformDirection(targetPositionOffset + _pan);
-            _newLookDir = Quaternion.AngleAxis(_rot.x, rightVector) * forwardVector;
+           // _newLookDir = Quaternion.AngleAxis(_rot.x, rightVector) * forwardVector;
             _newLookDir = Quaternion.AngleAxis(_rot.y, upVector) * _newLookDir;
 
             _lookDir = _isFirstFrame ?
