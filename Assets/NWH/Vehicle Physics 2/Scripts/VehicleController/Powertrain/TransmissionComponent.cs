@@ -987,7 +987,7 @@ namespace NWH.VehiclePhysics2.Powertrain
                 {
                     
                     // Upshift
-                    if (currentGear < forwardGearCount /*&& _referenceShiftRPM > TargetUpshiftRPM*/)
+                    if (currentGear < forwardGearCount /*&& _referenceShiftRPM > TargetUpshiftRPM*/)    // Gabbar
                     {
                         if (!isSequential && allowUpshiftGearSkipping)
                         {
