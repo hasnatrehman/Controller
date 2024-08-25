@@ -216,7 +216,7 @@ public class CameraMouseOrbit : CameraMode
 
                     singleTimeCaller = true;
                     _distance = 0f;
-                    distance = 7;
+                    distance = 9;   // Default Distance Gabbar
                     //RefreshMainCamera?.Invoke(false);
 
 
