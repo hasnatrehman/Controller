@@ -2,6 +2,7 @@ using NWH.VehiclePhysics2;
 using NWH.VehiclePhysics2.Input;
 using NWH.VehiclePhysics2.Powertrain;
 using NWH.VehiclePhysics2.VehicleGUI;
+using NWH.WheelController3D;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -20,11 +21,14 @@ public class CustomUIHandler : MonoBehaviour
   
     public VehicleController controller;
     public List<Camera> PlayerCameras;
-  
+    public List<WheelController> Wheels;
     
    
     private void Start()
     {
+
+
+        
         //// Load the first scene additively
         //SceneManager.LoadScene("NVP2 Mobile Demo", LoadSceneMode.Additive);
 
@@ -35,6 +39,38 @@ public class CustomUIHandler : MonoBehaviour
         Rotation(false);
         diff(true);
     }
+    bool B, L;
+    public void LeanAdjuster(bool T)    // Gabbar Juggar
+    {
+        if (T)
+        {
+            L = false;
+            if (!B)
+            {
+                foreach (var item in Wheels)
+                {
+                    item.forceApplicationPointDistance = -0.7f;
+                }
+                B = true;
+            }
+        }
+        else
+        {
+            B = false;
+            if (!L)
+            {
+                foreach (var item in Wheels)
+                {
+                    item.forceApplicationPointDistance = 0.7f;
+                }
+                L = true;
+            }
+        }
+        
+    }
+    
+        
+
 
     private void FixedUpdate()
     {
