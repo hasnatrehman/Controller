@@ -983,11 +983,11 @@ namespace NWH.VehiclePhysics2.Powertrain
 
             else
             {
-                if (vehicleSpeed > 0.4f && !vc.input.ShiftNutral && !vc.input.ShiftDown) // Gabbar Added "&& !vc.input.ShiftNutral" for shifting the truck to nutral at any speed   and  && !vc.input.ShiftDown
+                if (vehicleSpeed > 0.4f && !vc.input.ShiftNutral /*&& !vc.input.ShiftDown*/) // Gabbar Added "&& !vc.input.ShiftNutral" for shifting the truck to nutral at any speed   and  && !vc.input.ShiftDown
                 {
                     
                     // Upshift
-                    if (currentGear < forwardGearCount /*&& _referenceShiftRPM > TargetUpshiftRPM*/)    // Gabbar
+                    if (currentGear < forwardGearCount && _referenceShiftRPM > TargetUpshiftRPM)    // Gabbar
                     {
                         if (!isSequential && allowUpshiftGearSkipping)
                         {

@@ -5,9 +5,14 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/NWH/Vehicle Physics 2/__Scenes/NVP2 Mobile Demo/NVP2 Mobile Demo.unity
+  - enabled: 0
+    path: Assets/NWH/Vehicle Physics 2/__Scenes/NVP2 Mobile Demo/NVP2 Mobile Demo
+      Soft.unity
     guid: f78c10fb5826d3146b8464aea6734f59
+  - enabled: 1
+    path: Assets/NWH/Vehicle Physics 2/__Scenes/NVP2 Mobile Demo/NVP2 Mobile Demo
+      Strong.unity
+    guid: 4dbd08f62475bc8489306dbb70085a7b
   - enabled: 1
     path: Assets/Scenes/Wanda Env Sorted 1.unity
     guid: c46a7f20c2c74464fbd4b9251d8644be

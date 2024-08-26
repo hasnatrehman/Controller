@@ -14,7 +14,7 @@ public class DelayedButton : MonoBehaviour
     private void Update()
     {
 
-        if((controller?.Speed * 3.6) > 25)
+        if((controller?.Speed * 3.6) > 15)
         {
             Button.enabled = false;
             if (Button.hasBeenClicked)
@@ -57,12 +57,14 @@ public class DelayedButton : MonoBehaviour
 
     public void OnPointerUp()
     {
-        if (IsFunctional)
-        {
-            Button.isPressed = false;
+        if (coroutine != null)
             StopCoroutine(coroutine);
-        }
-           
+        //if (IsFunctional)
+        //{
+            Button.isPressed = false;
+            Button.hasBeenClicked = false;
+        //  }
+
 
     }
 
@@ -71,13 +73,13 @@ public class DelayedButton : MonoBehaviour
     IEnumerator EnableButtonAfterDelay()
     {
         // Wait for the specified delay
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.2f);
 
         // Enable the button interaction
 
 
         Debug.LogError("=>OnPointerDow => Update");
-         Button.hasBeenClicked = true;
+        Button.hasBeenClicked = true;
     }
 
 
