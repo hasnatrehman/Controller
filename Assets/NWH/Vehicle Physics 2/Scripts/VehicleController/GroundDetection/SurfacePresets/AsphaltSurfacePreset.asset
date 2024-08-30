@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particleType: 1
   particleColor: {r: 0.41420433, g: 0.44248644, b: 0.49056602, a: 1}
-  maxParticleEmissionRateOverDistance: 0.978
-  particleSize: 1
-  emitParticles: 1
+  maxParticleEmissionRateOverDistance: 0.298
+  particleSize: 0.5
+  emitParticles: 0
   emitChunks: 0
   maxChunkEmissionRateOverDistance: 1
   chunkLifeDistance: 3
   maxChunkLifetime: 0.5
   particleMaxAlpha: 0.349
-  maxParticleLifetime: 5
-  particleLifeDistance: 8
+  maxParticleLifetime: 3
+  particleLifeDistance: 4
   frictionPreset: {fileID: 11400000, guid: 935347efafd41d4408543d5ce8339437, type: 2}
   rollingResistanceMaxMultiplier: 50
   name: Asphalt
