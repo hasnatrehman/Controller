@@ -15,7 +15,7 @@ MonoBehaviour:
   particleType: 0
   particleColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   maxParticleEmissionRateOverDistance: 0.5
-  particleSize: 2
+  particleSize: 1
   emitParticles: 1
   emitChunks: 0
   maxChunkEmissionRateOverDistance: 1
@@ -23,9 +23,9 @@ MonoBehaviour:
   maxChunkLifetime: 0.5
   particleMaxAlpha: 0.7
   maxParticleLifetime: 0
-  particleLifeDistance: 10
+  particleLifeDistance: 3
   frictionPreset: {fileID: 11400000, guid: 5b6da3049208ba944aa9af9616e71eb9, type: 2}
-  rollingResistanceMaxMultiplier: 4
+  rollingResistanceMaxMultiplier: 25
   name: Rock
   skidSoundClip: {fileID: 0}
   playSkidSounds: 0
@@ -37,6 +37,6 @@ MonoBehaviour:
   surfaceSoundClip: {fileID: 0}
   surfaceSoundPitch: 1
   surfaceSoundVolume: 0
-  drawSkidmarks: 1
+  drawSkidmarks: 0
   skidmarkMaterial: {fileID: 2100000, guid: 0a47dd039b84a104aae3d86a9befdf3f, type: 2}
   skidmarkBaseIntensity: 0

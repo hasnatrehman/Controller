@@ -1,3 +1,4 @@
+using NWH.VehiclePhysics2.Input;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -12,6 +13,7 @@ namespace NWH.VehiclePhysics2.VehicleGUI
     /// </summary>
     public partial class SteeringWheel : MonoBehaviour
     {
+        public static SteeringWheel instance;
         /// <summary>
         ///     Maximum angle that the steering wheel can be turned to towards either side in degrees.
         /// </summary>
@@ -29,10 +31,14 @@ namespace NWH.VehiclePhysics2.VehicleGUI
         private Vector2 _centerPoint;
         private RectTransform _rectT;
         private float _wheelAngle;
-        private bool _wheelBeingHeld;
+        public bool _wheelBeingHeld;
         private float _wheelPrevAngle;
+        public MobileVehicleInputProvider MobileVehicleInputProvider;
 
-
+        private void Awake()
+        {
+            instance = this;
+        }
         private void Start()
         {
             _rectT = steeringWheelGraphic.rectTransform;
@@ -49,6 +55,9 @@ namespace NWH.VehiclePhysics2.VehicleGUI
             if (!_wheelBeingHeld && !Mathf.Approximately(0f, _wheelAngle))   // for UI 
             {
                 float deltaAngle = returnToCenterSpeed * Time.deltaTime;
+
+             
+                    
                 if (Mathf.Abs(deltaAngle) > Mathf.Abs(_wheelAngle))
                 {
                     _wheelAngle = 0f;
@@ -115,7 +124,6 @@ namespace NWH.VehiclePhysics2.VehicleGUI
             _wheelAngle = Mathf.Clamp(_wheelAngle, -maximumSteeringAngle, maximumSteeringAngle);
             _wheelPrevAngle = wheelNewAngle;
 
-            Debug.LogError("_Released_DragEvent");
         }
 
 
@@ -136,7 +144,6 @@ namespace NWH.VehiclePhysics2.VehicleGUI
             _wheelBeingHeld = true;
             _wheelPrevAngle = Vector2.Angle(Vector2.up, pointerPos - _centerPoint);
 
-            Debug.LogError("_Rotating_");
         }
 
 
@@ -147,7 +154,6 @@ namespace NWH.VehiclePhysics2.VehicleGUI
             DragEvent(eventData);
 
             _wheelBeingHeld = false;
-            Debug.LogError("_Released_");
         }
 
 

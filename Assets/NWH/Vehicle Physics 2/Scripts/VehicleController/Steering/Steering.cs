@@ -3,6 +3,9 @@ using NWH.VehiclePhysics2.Powertrain;
 using NWH.VehiclePhysics2.Powertrain.Wheel;
 using UnityEngine;
 using NWH.Common.Vehicles;
+using NWH.VehiclePhysics2.VehicleGUI;
+using static NWH.VehiclePhysics2.Input.MobileVehicleInputProvider;
+using UnityEngine.EventSystems;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -80,6 +83,7 @@ namespace NWH.VehiclePhysics2
         /// </summary>
         [Tooltip("    Steering wheel transform that will be rotated when steering. Optional.")]
         public Transform steeringWheel;
+
 
         /// <summary>
         ///     Steer angle will be multiplied by this value to get steering wheel angle. Ignored if steering wheel is null.
@@ -210,18 +214,17 @@ namespace NWH.VehiclePhysics2
         
         public virtual void CalculateSteerAngles() // Gabbar Tyre Rotation
         {
-            Debug.LogError("_CalculateSteerAngles_0");
+          
             float horizontalInput = vehicleController.input.Steering;
             float smoothing = speedSensitiveSmoothingCurve.Evaluate(vehicleController.Speed / 50f);
-
             // Early return if input is in a very small range and return to center is not enabled
-            if (!useRawInput && !returnToCenter && horizontalInput > -0.04f && horizontalInput < 0.04f)
+            if (!useRawInput && !returnToCenter && horizontalInput > -0.04f && horizontalInput < 0.04f && SteeringWheel.instance?.MobileVehicleInputProvider.steeringInputType != HorizontalAxisType.SteeringWheel)
             {
 
-                    Debug.LogError("_CalculateSteerAngles_1");
+              
                 if(vehicleController.Speed > 1.5f)
                 {
-                    Debug.LogError("_CalculateSteerAngles_2");
+                   
                     //float absHorizontalInput = Mathf.Abs(horizontalInput);
                     //float horizontalInputSign = Mathf.Sign(horizontalInput);
                     //float maxAngle = speedSensitiveSteeringCurve.Evaluate(vehicleController.Speed / 50f) * maximumSteerAngle;
@@ -238,15 +241,45 @@ namespace NWH.VehiclePhysics2
                 }
                 else
                 {
-                    Debug.LogError("_CalculateSteerAngles_3");
+                 
                    return;
 
                 }
                
-                
-                
+              
 
+                // horizontal input 0 krain gay in case of steering to wo ho jayai ga
+
+
+            }
+            else if (!useRawInput && SteeringWheel.instance?.MobileVehicleInputProvider.steeringInputType == HorizontalAxisType.SteeringWheel)
+            {
+              
+                if (!SteeringWheel.instance._wheelBeingHeld)
+                {
+              
+                    if (vehicleController.Speed > 1.5f)
+                    {
+              
+
+
+                        //horizontalInput = 0;
+
+                        vehicleController.steering.returnToCenter = true;
+                        
+                        SteeringWheel.instance.returnToCenterSpeed = 200;
+                    }
+                    else
+                    {
                 
+                   
+                        vehicleController.steering.returnToCenter = false;
+                        SteeringWheel.instance.returnToCenterSpeed = 0;
+                        return;
+
+                    }
+                }
+               
                 
             }
 
@@ -264,7 +297,6 @@ namespace NWH.VehiclePhysics2
                 _targetAngle = Mathf.SmoothDamp(_targetAngle, inputAngle, ref _steerVelocity, smoothing);
 
 
-
                 //ScaleFactorCustom = degreesPerSecondLimit / degreesPerSecondLimit;
 
 
@@ -273,8 +305,11 @@ namespace NWH.VehiclePhysics2
                 // Calculate the decreasing value of hasnat based on the speed
               //float  hasnat = Mathf.Lerp(1f, 0.1f, (clampedSpeed - 10) / (100 - 10));
 
-                //Debug.LogError(hasnat);
                 // Adjust speed if specific conditions are met  // Gabbar Tyre Rotation Here
+                
+
+
+
                 float speedFactor = ((angle < 0 && horizontalInput > 0) || (angle > 0 && horizontalInput < 0) /*|| horizontalInput ==0*/) ? 3f : 1f;
                 angle = Mathf.MoveTowards(angle, _targetAngle, degreesPerSecondLimit * speedFactor * vehicleController.fixedDeltaTime);
             }
