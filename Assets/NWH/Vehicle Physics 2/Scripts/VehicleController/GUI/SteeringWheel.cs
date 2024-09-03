@@ -52,17 +52,17 @@ namespace NWH.VehiclePhysics2.VehicleGUI
                 if (Mathf.Abs(deltaAngle) > Mathf.Abs(_wheelAngle))
                 {
                     _wheelAngle = 0f;
-                  
+
                 }
                 else if (_wheelAngle > 0f)
                 {
                     _wheelAngle -= deltaAngle;
-                  
+
                 }
                 else
                 {
                     _wheelAngle += deltaAngle;
-                
+
                 }
             }
 
@@ -114,6 +114,8 @@ namespace NWH.VehiclePhysics2.VehicleGUI
             // Make sure wheel angle never exceeds maximumSteeringAngle
             _wheelAngle = Mathf.Clamp(_wheelAngle, -maximumSteeringAngle, maximumSteeringAngle);
             _wheelPrevAngle = wheelNewAngle;
+
+            Debug.LogError("_Released_DragEvent");
         }
 
 
@@ -133,6 +135,8 @@ namespace NWH.VehiclePhysics2.VehicleGUI
 
             _wheelBeingHeld = true;
             _wheelPrevAngle = Vector2.Angle(Vector2.up, pointerPos - _centerPoint);
+
+            Debug.LogError("_Rotating_");
         }
 
 
@@ -143,6 +147,7 @@ namespace NWH.VehiclePhysics2.VehicleGUI
             DragEvent(eventData);
 
             _wheelBeingHeld = false;
+            Debug.LogError("_Released_");
         }
 
 

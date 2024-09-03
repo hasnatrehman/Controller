@@ -210,6 +210,7 @@ namespace NWH.VehiclePhysics2
         
         public virtual void CalculateSteerAngles() // Gabbar Tyre Rotation
         {
+            Debug.LogError("_CalculateSteerAngles_0");
             float horizontalInput = vehicleController.input.Steering;
             float smoothing = speedSensitiveSmoothingCurve.Evaluate(vehicleController.Speed / 50f);
 
@@ -217,8 +218,10 @@ namespace NWH.VehiclePhysics2
             if (!useRawInput && !returnToCenter && horizontalInput > -0.04f && horizontalInput < 0.04f)
             {
 
+                    Debug.LogError("_CalculateSteerAngles_1");
                 if(vehicleController.Speed > 1.5f)
                 {
+                    Debug.LogError("_CalculateSteerAngles_2");
                     //float absHorizontalInput = Mathf.Abs(horizontalInput);
                     //float horizontalInputSign = Mathf.Sign(horizontalInput);
                     //float maxAngle = speedSensitiveSteeringCurve.Evaluate(vehicleController.Speed / 50f) * maximumSteerAngle;
@@ -235,6 +238,7 @@ namespace NWH.VehiclePhysics2
                 }
                 else
                 {
+                    Debug.LogError("_CalculateSteerAngles_3");
                    return;
 
                 }
