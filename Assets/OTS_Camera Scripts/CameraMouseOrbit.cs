@@ -82,7 +82,7 @@ public class CameraMouseOrbit : CameraMode
 			m_orbitDistance = distance;
 		}
 		m_orbitX = 0f;
-		m_orbitY = 13.5f; // Gabbar
+		m_orbitY = 11.39f; // Gabbar
 		x = m_orbitX;
 		y = m_orbitY;
 		wantedYawRotationAngle = UnityEngine.Object.FindObjectOfType<BoxCollider>().transform.eulerAngles.y;

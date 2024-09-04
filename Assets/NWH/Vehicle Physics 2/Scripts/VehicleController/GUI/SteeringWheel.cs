@@ -27,10 +27,11 @@ namespace NWH.VehiclePhysics2.VehicleGUI
         public float returnToCenterSpeed = 400f;
 
         public Graphic steeringWheelGraphic;
-
+        public VehicleController VehicleController;
         private Vector2 _centerPoint;
         private RectTransform _rectT;
         private float _wheelAngle;
+        [HideInInspector]
         public bool _wheelBeingHeld;
         private float _wheelPrevAngle;
         public MobileVehicleInputProvider MobileVehicleInputProvider;
@@ -38,6 +39,17 @@ namespace NWH.VehiclePhysics2.VehicleGUI
         private void Awake()
         {
             instance = this;
+        }
+        private void OnEnable()
+        {
+            // Get the actual vehicle steering angle
+            float actualSteeringAngle = VehicleController.steering.angle;
+
+            // Map the actual steering angle to the [-1, 1] range
+            float normalizedSteeringAngle = Mathf.Clamp(actualSteeringAngle / VehicleController.steering.maximumSteerAngle, -1f, 1f);
+
+            // Apply this normalized value to the steering wheel angle, scaled by maximumSteeringAngle
+            _wheelAngle = normalizedSteeringAngle * maximumSteeringAngle;
         }
         private void Start()
         {
@@ -56,8 +68,8 @@ namespace NWH.VehiclePhysics2.VehicleGUI
             {
                 float deltaAngle = returnToCenterSpeed * Time.deltaTime;
 
-             
-                    
+
+
                 if (Mathf.Abs(deltaAngle) > Mathf.Abs(_wheelAngle))
                 {
                     _wheelAngle = 0f;
@@ -77,6 +89,8 @@ namespace NWH.VehiclePhysics2.VehicleGUI
 
             // Rotate the wheel image
             _rectT.localEulerAngles = Vector3.back * _wheelAngle;
+
+            //_wheelAngle = 0;
         }
 
 
@@ -200,3 +214,4 @@ namespace NWH.VehiclePhysics2.VehicleGUI
         }
     }
 }
+

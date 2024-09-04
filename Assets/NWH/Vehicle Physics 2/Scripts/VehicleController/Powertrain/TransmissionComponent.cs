@@ -1010,7 +1010,7 @@ namespace NWH.VehiclePhysics2.Powertrain
                             if (g != currentGear)
                             {
                                 ShiftInto(g);
-                                Debug.LogError("A");
+                                //Debug.LogError("A");
                             }
                         }
                         else
@@ -1044,7 +1044,7 @@ namespace NWH.VehiclePhysics2.Powertrain
                                 if (g != currentGear)
                                 {
                                     ShiftInto(g);
-                                Debug.LogError("C");
+                                //Debug.LogError("C");
                                 }
                             }
                             else if (vehicleSpeed < dnrSpeedThreshold && throttleInput < INPUT_DEADZONE
