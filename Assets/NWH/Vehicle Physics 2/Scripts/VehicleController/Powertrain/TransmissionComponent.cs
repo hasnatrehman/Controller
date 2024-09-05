@@ -983,7 +983,7 @@ namespace NWH.VehiclePhysics2.Powertrain
 
             else
             {
-                if (vehicleSpeed > 0.4f && !vc.input.ShiftNutral /*&& !vc.input.ShiftDown*/) // Gabbar Added "&& !vc.input.ShiftNutral" for shifting the truck to nutral at any speed   and  && !vc.input.ShiftDown
+                if (vehicleSpeed > 0.4f && !vc.input.ShiftNutral && !vc.input.ShiftDown) // Gabbar Added "&& !vc.input.ShiftNutral" for shifting the truck to nutral at any speed   and  && !vc.input.ShiftDown
                 {
                     
                     // Upshift
@@ -1010,13 +1010,13 @@ namespace NWH.VehiclePhysics2.Powertrain
                             if (g != currentGear)
                             {
                                 ShiftInto(g);
-                                //Debug.LogError("A");
+                                
                             }
                         }
                         else
                         {
                             ShiftInto(currentGear + 1);
-                            
+                           
                         }
                     }
                     // Downshift
