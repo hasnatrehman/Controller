@@ -272,7 +272,7 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
            
 
             _configurableJoint.enableCollision = true;
-            _configurableJoint.breakForce = 12000000; /* breakForce;*/ // Gabbar
+            _configurableJoint.breakForce = 22000000; /* breakForce;*/ // Gabbar
 
             // Reset input flag
             vehicleController.input.TrailerAttachDetach = false;
