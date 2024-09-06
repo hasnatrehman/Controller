@@ -20,7 +20,7 @@ public class DelayedButton : MonoBehaviour
             if (Button.hasBeenClicked)
             {
                 Button.isPressed = true;
-                Debug.LogError("=>OnPointerDow => ISPressed");
+                //Debug.LogError("=>OnPointerDow => ISPressed");
                 Button.hasBeenClicked = false;
 
             }
@@ -45,7 +45,7 @@ public class DelayedButton : MonoBehaviour
             if (coroutine != null)
                 StopCoroutine(coroutine);
             //base.OnPointerDown(eventData);
-            Debug.LogError("=>OnPointerDow<=");
+            //Debug.LogError("=>OnPointerDow<=");
             coroutine = StartCoroutine(EnableButtonAfterDelay());
         }
            
@@ -78,7 +78,7 @@ public class DelayedButton : MonoBehaviour
         // Enable the button interaction
 
 
-        Debug.LogError("=>OnPointerDow => Update");
+        //Debug.LogError("=>OnPointerDow => Update");
         Button.hasBeenClicked = true;
     }
 
