@@ -22,8 +22,13 @@ public class CustomUIHandler : MonoBehaviour
     public VehicleController controller;
     public List<Camera> PlayerCameras;
     public List<WheelController> Wheels;
-    
-   
+    public List <Button> InteractibleButtons;
+    public static CustomUIHandler instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
     private void Start()
     {
 
@@ -39,6 +44,15 @@ public class CustomUIHandler : MonoBehaviour
         Rotation(false);
         diff(true);
     }
+
+    public void RevertColor()
+    {
+        foreach (var item in InteractibleButtons)
+        {
+            item.image.color = Color.white;
+        }
+    }
+
     bool B, L;
     public void LeanAdjuster(bool T)    // Gabbar Juggar
     {
