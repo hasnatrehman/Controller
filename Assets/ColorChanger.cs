@@ -12,17 +12,14 @@ public class ColorChanger : MonoBehaviour, IPointerClickHandler
     bool _isClickingAgain;
     public bool NeedToRevert;
 
-    private void Start()
-    {
-        
-    }
+   
     public void OnPointerClick(PointerEventData eventData)
     {
 
         if (NeedToRevert)
             CustomUIHandler.instance.RevertColor();
         
-            if(GetComponent<Button>() != null)
+            if(GetComponent<Button>()!= null && GetComponent<Button>().interactable == true)
             {
                 if(GetComponent<Button>().image.color == Color.green)
                 {
@@ -33,7 +30,7 @@ public class ColorChanger : MonoBehaviour, IPointerClickHandler
                   GetComponent<Button>().image.color = Color.green;
                 }
             }
-            else
+            else if(GetComponent<Toggle>() != null && GetComponent<Toggle>().interactable == true)
             {
 
                 if (GetComponent<Toggle>().image.color == Color.green)

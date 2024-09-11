@@ -45,6 +45,14 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
             module.vehicleController = _vehicleController;
         }
 
+        MobileVehicleInputProvider ButtonCanvas;
+
+        private void Start()
+        {
+            ButtonCanvas = FindObjectOfType<MobileVehicleInputProvider>();
+
+        }
+
 
         public override VehicleComponent GetModule()
         {
@@ -55,7 +63,19 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
         public void OnTriggerEnter(Collider other)
         {
             module.OnTriggerEnter(other);
-            
+
+            if (other.gameObject.tag == "Trailer")
+                ButtonCanvas.trailerAttachDetachButton.gameObject.SetActive(true);
+               //ButtonCanvas.trailerAttachDetachButton.interactable = true;
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            //  if (other.gameObject.layer == 3)
+            if (other.gameObject.tag == "Trailer")
+                ButtonCanvas.trailerAttachDetachButton.gameObject.SetActive(false);
+                //ButtonCanvas.trailerAttachDetachButton.interactable = false;
+
         }
 
         float angleTolerance = 1.0f;

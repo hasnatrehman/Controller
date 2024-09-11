@@ -78,12 +78,13 @@ public class VehicleCameraController : MonoBehaviour
 	{
 		if (trailerTrigger)
 		{
-
+			//Debug.LogError("CamInstall");
             mouseOrbit.isTrailerAttached = false;
 			trailerTrigger = false;
 		}
 		else
 		{
+			//Debug.LogError("!CamInstall");
             mouseOrbit.isTrailerAttached = true;
 			trailerTrigger = true;
 
