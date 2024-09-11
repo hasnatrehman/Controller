@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particleType: 0
   particleColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  maxParticleEmissionRateOverDistance: 0.5
-  particleSize: 1
+  maxParticleEmissionRateOverDistance: 0.3
+  particleSize: 0.5
   emitParticles: 1
   emitChunks: 0
   maxChunkEmissionRateOverDistance: 1
@@ -23,7 +23,7 @@ MonoBehaviour:
   maxChunkLifetime: 0.5
   particleMaxAlpha: 0.7
   maxParticleLifetime: 0
-  particleLifeDistance: 3
+  particleLifeDistance: 2
   frictionPreset: {fileID: 11400000, guid: 5b6da3049208ba944aa9af9616e71eb9, type: 2}
   rollingResistanceMaxMultiplier: 10
   name: Rock

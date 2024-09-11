@@ -15,15 +15,15 @@ MonoBehaviour:
   particleType: 1
   particleColor: {r: 0.19215688, g: 0.24313727, b: 0.023529414, a: 1}
   maxParticleEmissionRateOverDistance: 0.5
-  particleSize: 1
+  particleSize: 0.5
   emitParticles: 1
   emitChunks: 0
   maxChunkEmissionRateOverDistance: 1
   chunkLifeDistance: 3
   maxChunkLifetime: 0.5
   particleMaxAlpha: 0.65
-  maxParticleLifetime: 0.8
-  particleLifeDistance: 1.5
+  maxParticleLifetime: 0.5
+  particleLifeDistance: 1
   frictionPreset: {fileID: 11400000, guid: f550961d8fc79d84abd7ca194acc766d, type: 2}
   rollingResistanceMaxMultiplier: 1
   name: Grass

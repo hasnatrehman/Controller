@@ -6,6 +6,7 @@ using Object = UnityEngine.Object;
 using System.Collections;
 using System.Linq;
 using UnityEngine.Serialization;
+using NWH.VehiclePhysics2.Input;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -114,6 +115,7 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
             if (!_hasHadFirstFixedUpdate && attachOnEnable)
             {
                 vehicleController.input.states.trailerAttachDetach = true;
+               // ButtonCanvas.trailerAttachDetachButton.interactable = true; // gabbar
             }
         }
 
@@ -123,6 +125,9 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
             if (other == null || other.gameObject.layer != attachmentLayer) return;
 
             trailerInRange = true;
+
+            
+
             _triggerCollider = other;
         }
 
@@ -229,7 +234,7 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
             return noTrailerPowerCoefficient;
         }
 
-
+       // public MobileVehicleInputProvider ButtonCanvas = new MobileVehicleInputProvider();
         public void AttachTrailer(TrailerModuleWrapper trailerWrapper)
         {
             
@@ -245,7 +250,7 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
             trailerVC.enabled = true;
 
             vehicleController.gameObject.transform.eulerAngles = trailerVC.gameObject.transform.eulerAngles; // Gabbar Trailer Attach
-
+            vehicleController.powertrain.engine.maxPower = 280;  // Gabbar Truck power after trailer attached
             // Position trailer
             trailerVC.vehicleTransform.position = trailerVC.transform.position -
                                                   (attachedTrailerModule.attachmentPoint.transform.position -
@@ -299,7 +304,8 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
             }
 
             attached = false;
-
+            vehicleController.powertrain.engine.maxPower = 240; 
+           // ButtonCanvas.trailerAttachDetachButton.interactable = false; // gabbar trailer Attach detach button
             if (_configurableJoint != null)
             {
                 Object.Destroy(_configurableJoint);

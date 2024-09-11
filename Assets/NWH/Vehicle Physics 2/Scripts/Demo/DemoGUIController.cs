@@ -158,6 +158,7 @@ namespace NWH.VehiclePhysics2.Demo
             if (_trailerHitchModule is { trailerInRange: true, attached: false })
             {
                 promptText.text += "Press T / X (Xbox) / Square (PS) to attach the trailer.\r\n";
+
                 
                 // Gabbar
             }

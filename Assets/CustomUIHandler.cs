@@ -39,9 +39,9 @@ public class CustomUIHandler : MonoBehaviour
 
         // Load the second scene additively
         SceneManager.LoadScene("Wanda Env Sorted 1", LoadSceneMode.Additive);
-        Controller(false);
+        Controller(true);
         Camera(true);
-        Rotation(false);
+        Rotation(true);
         diff(true);
     }
 
@@ -136,15 +136,15 @@ public class CustomUIHandler : MonoBehaviour
     {
         if (b)
         {
-            controller.powertrain.differentials[0].DifferentialType = DifferentialComponent.Type.LimitedSlip;
+            //controller.powertrain.differentials[0].DifferentialType = DifferentialComponent.Type.LimitedSlip;
             toggleButtonDiff.GetComponent<Image>().color = Color.white;
-           
+            controller.powertrain.engine.maxPower = 240;
         }
         else
         {
-            controller.powertrain.differentials[0].DifferentialType = DifferentialComponent.Type.Locked;
-            toggleButtonDiff.GetComponent<Image>().color = Color.red;
-
+            //controller.powertrain.differentials[0].DifferentialType = DifferentialComponent.Type.Locked;
+            toggleButtonDiff.GetComponent<Image>().color = Color.green;
+            controller.powertrain.engine.maxPower = 360;
         }
     }
 
@@ -160,7 +160,22 @@ public class CustomUIHandler : MonoBehaviour
         {
 
             toggleButtonCo.isOn = true;
-         
+
+
+            inputProvider.steeringInputType = HorizontalAxisType.Button;
+            inputProvider.steeringWheel.gameObject.SetActive(false);
+            inputProvider.steerLeftButton.gameObject.SetActive(true);
+            inputProvider.steerRightButton.gameObject.SetActive(true);
+            controller.steering.degreesPerSecondLimit = 11f;
+
+
+
+        }
+        else
+        {
+           
+            toggleButtonCo.isOn = false;
+
             inputProvider.steeringInputType = HorizontalAxisType.SteeringWheel;
             inputProvider.steerLeftButton.gameObject.SetActive(false);
             inputProvider.steerRightButton.gameObject.SetActive(false);
@@ -168,18 +183,7 @@ public class CustomUIHandler : MonoBehaviour
             controller.steering.degreesPerSecondLimit = 100f;
 
 
-
-
-}
-        else
-        {
            
-            toggleButtonCo.isOn = false;
-            inputProvider.steeringInputType = HorizontalAxisType.Button;
-            inputProvider.steeringWheel.gameObject.SetActive(false);
-            inputProvider.steerLeftButton.gameObject.SetActive(true);
-            inputProvider.steerRightButton.gameObject.SetActive(true);
-            controller.steering.degreesPerSecondLimit = 11f;
         
         }
     }
@@ -208,13 +212,13 @@ public class CustomUIHandler : MonoBehaviour
     {
         if (b)
         {
-
+            
             toggleButtonR.isOn = true;
+
             GetComponent<MobileVehicleInputProvider>().steeringWheel.
-            GetComponent<SteeringWheel>().returnToCenterSpeed = 400;
+           GetComponent<SteeringWheel>().returnToCenterSpeed = 0;
 
-            controller.steering.returnToCenter = true;
-
+            controller.steering.returnToCenter = false;
 
 
         }
@@ -222,10 +226,37 @@ public class CustomUIHandler : MonoBehaviour
         {
             toggleButtonR.isOn = false;
             GetComponent<MobileVehicleInputProvider>().steeringWheel.
-           GetComponent<SteeringWheel>().returnToCenterSpeed = 0;
+           GetComponent<SteeringWheel>().returnToCenterSpeed = 400;
 
-            controller.steering.returnToCenter = false;
+            controller.steering.returnToCenter = true;
+
+
+
+            
 
         }
     }
+
+    //public void OnPostRender(bool b)
+    //{
+
+    //    if (b)
+    //    {
+
+    //        toggleButtonR.isOn = true;
+
+    //        controller.powertrain.engine.maxPower = 320;
+
+    //    }
+    //    else
+    //    {
+
+    //        toggleButtonR.isOn = false;
+
+    //        controller.powertrain.engine.maxPower = 240;
+
+    //    }
+
+       
+    //}
 }

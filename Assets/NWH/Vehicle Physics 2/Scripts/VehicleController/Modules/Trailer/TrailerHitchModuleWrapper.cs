@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NWH.VehiclePhysics2.Input;
+using System;
 using UnityEngine;
 using static UnityEngine.ParticleSystem;
 
@@ -11,7 +12,7 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
     public partial class TrailerHitchModuleWrapper : ModuleWrapper
     {
         public TrailerHitchModule module = new TrailerHitchModule();
-
+        
         private VehicleController _vehicleController;
 
 
@@ -54,6 +55,7 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
         public void OnTriggerEnter(Collider other)
         {
             module.OnTriggerEnter(other);
+            
         }
 
         float angleTolerance = 1.0f;
@@ -70,7 +72,7 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
          ////   if (angleDifferenceY <= angleTolerance)
          ////   {
                 module.OnTriggerStay(other);
-                
+                  // Gabbar
         ///    }
 
 
