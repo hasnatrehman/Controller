@@ -19,17 +19,13 @@ public class WeatherControl : MonoBehaviour
 
     private void Start()
     {
-        Roads[0].SetFloat("_Opacity", Mathf.Lerp(0, 1f, lerpTime));
-        Roads[1].SetFloat("_Opacity", Mathf.Lerp(0, 1f, lerpTime));
-        Roads[2].SetFloat("_Opacity", Mathf.Lerp(0, 1f, lerpTime));
 
-        Roads[0].SetFloat("_Wetness", Mathf.Lerp(1, 1.5f, lerpTime));
-        Roads[1].SetFloat("_Wetness", Mathf.Lerp(1, 1.5f, lerpTime));
-        Roads[2].SetFloat("_Wetness", Mathf.Lerp(1, 1.5f, lerpTime));
+        H2();
+
 
         if (DirectionalLightImp != null)
         {
-            DirectionalLightImp = DirectionalLightImp.GetComponent<Light>();
+           // DirectionalLightImp = DirectionalLightImp.GetComponent<Light>();
             if (DirectionalLightImp != null)
             {
                 initialColorImp = DirectionalLightImp.color;
@@ -38,7 +34,7 @@ public class WeatherControl : MonoBehaviour
 
         if (DirectionalLightNotImp != null)
         {
-            DirectionalLightNotImp = DirectionalLightNotImp.GetComponent<Light>();
+          //  DirectionalLightNotImp = DirectionalLightNotImp.GetComponent<Light>();
             if (DirectionalLightNotImp != null)
             {
                 initialColorNotImp = DirectionalLightNotImp.color;
@@ -53,13 +49,12 @@ public class WeatherControl : MonoBehaviour
             lerpTime += Time.deltaTime / lerpDuration;
             DirectionalLightImp.color = Color.Lerp(initialColorImp, DirectionalLightTargetColor, lerpTime);
             DirectionalLightNotImp.color = Color.Lerp(initialColorNotImp, DirectionalLightTargetColor, lerpTime);
-            Roads[0].SetFloat("_Opacity", Mathf.Lerp(0,1f, lerpTime));
-            Roads[1].SetFloat("_Opacity", Mathf.Lerp(0, 1f, lerpTime));
-            Roads[2].SetFloat("_Opacity", Mathf.Lerp(0, 1f, lerpTime));
-
-            Roads[0].SetFloat("_Wetness", Mathf.Lerp(1, 1.5f, lerpTime));
-            Roads[1].SetFloat("_Wetness", Mathf.Lerp(1, 1.5f, lerpTime));
-            Roads[2].SetFloat("_Wetness", Mathf.Lerp(1, 1.5f, lerpTime));
+            foreach (Material M in Roads)
+            {
+                M.SetFloat("_Opacity", Mathf.Lerp(0, 1f, lerpTime));
+                M.SetFloat("_Wetness", Mathf.Lerp(1, 1.5f, lerpTime));
+            }
+           
 
             if (lerpTime >= 1f)
             {
@@ -76,18 +71,21 @@ public class WeatherControl : MonoBehaviour
             isLerping = true;
             lerpTime = 0f;
         }
-        
+        DirectionalLightImp.shadows = LightShadows.None;
+        DirectionalLightNotImp.shadows = LightShadows.None;
+
+
     }
 
     public void H2()
     {
-        Roads[0].SetFloat("_Opacity", 0);
-        Roads[1].SetFloat("_Opacity", 0);
-        Roads[2].SetFloat("_Opacity", 0);
-
-        Roads[0].SetFloat("_Wetness",1);
-        Roads[1].SetFloat("_Wetness", 1);
-        Roads[2].SetFloat("_Wetness", 1);
+        foreach (Material M in Roads)
+        {
+            M.SetFloat("_Opacity", 0);
+            M.SetFloat("_Wetness", 1);
+        }
+        DirectionalLightImp.shadows = LightShadows.Hard;
+        DirectionalLightNotImp.shadows = LightShadows.Hard;
     }
 
 }
