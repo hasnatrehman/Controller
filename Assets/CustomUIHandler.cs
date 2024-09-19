@@ -13,6 +13,8 @@ using static NWH.VehiclePhysics2.Input.MobileVehicleInputProvider;
 
 public class CustomUIHandler : MonoBehaviour
 {
+    public static CustomUIHandler instance;
+    
     public Toggle toggleButtonC;
     public Toggle toggleButtonCo;
     public Toggle toggleButtonR;
@@ -23,8 +25,7 @@ public class CustomUIHandler : MonoBehaviour
     public List<Camera> PlayerCameras;
     public List<WheelController> Wheels;
     public List <Button> InteractibleButtons;
-    public static CustomUIHandler instance;
-
+    public GameObject RainParticles;
     private void Awake()
     {
         instance = this;
@@ -43,6 +44,23 @@ public class CustomUIHandler : MonoBehaviour
         Camera(true);
         Rotation(true);
         diff(true);
+    }
+
+
+    private void OnEnable()
+    {
+        WeatherControl.getPlayerObject += RainParticleSender;
+    }
+
+    private void OnDisable()
+    {
+        WeatherControl.getPlayerObject -= RainParticleSender;
+    }
+
+    public GameObject RainParticleSender()
+    {
+        print("Called");
+        return RainParticles;
     }
 
     public void RevertColor()

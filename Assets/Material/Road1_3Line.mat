@@ -8,14 +8,9 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Road1_3Line
-  m_Shader: {fileID: 4800000, guid: 99134b1f0c27d54469a840832a28fadf, type: 3}
-  m_ValidKeywords:
-  - _WINDQUALITY_NONE
-  m_InvalidKeywords:
-  - _METALLICSPECGLOSSMAP
-  - _RainMaps
-  - _ReflectionMap
-  - _SPECULAR_SETUP
+  m_Shader: {fileID: -6465566751694194690, guid: 0710978f732fb284b9a2ead08ffb8235, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -30,7 +25,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Diffuse:
-        m_Texture: {fileID: 2800000, guid: 6f557840a9f64ef41af8e4a1362282a0, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7281dc6ea55759e42ad72c77f7f1205a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ExtraTex:
@@ -38,15 +33,27 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 7281dc6ea55759e42ad72c77f7f1205a, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6f557840a9f64ef41af8e4a1362282a0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Maps:
         m_Texture: {fileID: 2800000, guid: a51ea1bd4070c8047a9de93607d36ecd, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 2800000, guid: db98d95ce316b284c97702bad267c85d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Puddles:
+        m_Texture: {fileID: 2800000, guid: 8c38d2e72ca280f4783343ec9c4418f7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _RainMaps:
         m_Texture: {fileID: 2800000, guid: de88bfff18dfd8a4fadd1dfa1d321f68, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Ripple:
+        m_Texture: {fileID: 2800000, guid: 31e62903551303a48932aac14676efd5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SubsurfaceTex:
@@ -81,6 +88,8 @@ Material:
     - _DryOccsluson: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
+    - _Flow: 0.01
+    - _FlowTiling: 213
     - _GlossMapScale: 1
     - _Glossiness: 0.09
     - _GlossyReflections: 1
@@ -90,10 +99,12 @@ Material:
     - _NormalMapKwToggle: 0
     - _Occlusion: 1
     - _OcclusionStrength: 1
+    - _Opacity: 0
     - _Parallax: 0.02
     - _PlanarReflection: 0
     - _PuddleDifference: 1.8
     - _Puddles: 1
+    - _QueueControl: 0
     - _QueueOffset: 0
     - _RainIntensity: 0
     - _ReceiveShadows: 1
@@ -108,15 +119,20 @@ Material:
     - _TwoSided: 2
     - _UVSec: 0
     - _WetRoadSmoothness: 1
-    - _Wetness: 0
+    - _Wetness: 1
     - _WindQuality: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.8392157, g: 0.8392157, b: 0.8392157, a: 1}
+    - _Color: {r: 0.69803923, g: 0.69803923, b: 0.69803923, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HueVariationColor: {r: 1, g: 0.5, b: 0, a: 0.1}
+    - _MainColor: {r: 1, g: 1, b: 1, a: 0}
+    - _MainTiling: {r: 1, g: 1, b: 0, a: 0}
+    - _RippleSpeed: {r: 0.4, g: 0.1, b: 0, a: 0}
+    - _RippleTiling: {r: 204, g: 200, b: 0, a: 0}
+    - _SmoothTiling: {r: 1, g: 1, b: 0, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _SubsurfaceColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

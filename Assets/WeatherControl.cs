@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,20 +7,23 @@ public class WeatherControl : MonoBehaviour
 {
    public Light DirectionalLightImp;
    public Light DirectionalLightNotImp;
-    public ParticleSystem RainParticle;
+   public GameObject RainParticle;
    public Color DirectionalLightTargetColor;
    public Material[] Roads;
 
-    public float lerpDuration = 2f;
-    
+   public float lerpDuration = 2f;
+
+   public static Action RainParticles;
+    public static Func<GameObject> getPlayerObject;
     private Color initialColorImp;
-    private Color initialColorNotImp;
-    private bool isLerping = false;
-    private float lerpTime = 0f;
+   private Color initialColorNotImp;
+   private bool isLerping = false;
+   private float lerpTime = 0f;
 
     private void Start()
     {
 
+        RainParticle = getPlayerObject.Invoke();
         H2();
 
 
@@ -40,6 +44,8 @@ public class WeatherControl : MonoBehaviour
                 initialColorNotImp = DirectionalLightNotImp.color;
             }
         }
+
+       
     }
 
     private void Update()
@@ -74,6 +80,7 @@ public class WeatherControl : MonoBehaviour
         DirectionalLightImp.shadows = LightShadows.None;
         DirectionalLightNotImp.shadows = LightShadows.None;
 
+        RainParticle.SetActive(true);
 
     }
 
@@ -85,7 +92,14 @@ public class WeatherControl : MonoBehaviour
             M.SetFloat("_Wetness", 1);
         }
         DirectionalLightImp.shadows = LightShadows.Hard;
-        DirectionalLightNotImp.shadows = LightShadows.Hard;
+        
+
+        DirectionalLightImp.color = Color.white;
+
+        DirectionalLightNotImp.color = Color.white;
+
+        RainParticle.SetActive(false);
+
     }
 
 }
