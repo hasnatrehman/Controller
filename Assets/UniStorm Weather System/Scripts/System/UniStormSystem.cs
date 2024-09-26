@@ -2629,7 +2629,7 @@ namespace UniStorm
 
             SunObjectMaterial.SetVector("_uWorldSpaceCameraPos", PlayerCamera.transform.position);
             SunObjectMaterial.SetColor("_SunColor", SunSpotColor.Evaluate(m_TimeFloat));
-            SunObject.transform.localScale = Vector3.one * SunSize.Evaluate(m_TimeFloat * 24) * 3;
+            SunObject.transform.localScale = Vector3.one * SunSize.Evaluate(m_TimeFloat * 24) * .5f;  // Gabbar sun size TOD
             m_SunLight.intensity = SunIntensityCurve.Evaluate(m_TimeFloat * 24) * SunIntensity;
             m_MoonLight.intensity = MoonIntensityCurve.Evaluate(m_TimeFloat * 24) * MoonIntensity * MoonPhaseIntensity;
             m_MoonTransform.localScale = MoonSize.Evaluate(m_TimeFloat * 24) * m_MoonStartingSize;
