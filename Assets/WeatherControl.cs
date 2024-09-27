@@ -83,7 +83,7 @@ public class WeatherControl : MonoBehaviour
         RainParticle.SetActive(true);
 
     }
-
+    [ContextMenu("Reverse_Weather")]
     public void H2()
     {
         foreach (Material M in Roads)
