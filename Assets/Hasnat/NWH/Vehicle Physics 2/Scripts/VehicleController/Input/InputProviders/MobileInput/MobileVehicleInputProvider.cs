@@ -53,7 +53,6 @@ namespace NWH.VehiclePhysics2.Input
         public MobileInputButton lowBeamLightsButton;
         public MobileInputButton rightBlinkerButton;
         public MobileInputButton shiftDownButton;
-        public MobileInputButton shiftNutralButton;
         public MobileInputButton shiftUpButton;
         public MobileInputButton steerLeftButton;
         public MobileInputButton steerRightButton;
@@ -189,11 +188,6 @@ namespace NWH.VehiclePhysics2.Input
         public override bool ShiftDown()
         {
             return shiftDownButton != null && shiftDownButton.hasBeenClicked;
-        }
-        
-        public override bool ShiftNutral()
-        {
-            return shiftNutralButton != null && shiftNutralButton.hasBeenClicked;
         }
 
 
@@ -350,7 +344,6 @@ namespace NWH.VehiclePhysics2.Input
             drawer.Field("handbrakeButton");
             drawer.Field("shiftUpButton");
             drawer.Field("shiftDownButton");
-            drawer.Field("shiftNutralButton");
             drawer.Field("extraLightsButton");
             drawer.Field("highBeamLightsButton");
             drawer.Field("lowBeamLightsButton");

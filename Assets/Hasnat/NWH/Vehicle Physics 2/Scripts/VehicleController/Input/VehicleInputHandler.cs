@@ -230,12 +230,6 @@ namespace NWH.VehiclePhysics2.Input
             get { return states.shiftDown; }
             set { states.shiftDown = value; }
         }
-        
-        public bool ShiftNutral
-        {
-            get { return states.shiftNutral; }
-            set { states.shiftNutral = value; }
-        }
 
         public int ShiftInto
         {
@@ -321,9 +315,6 @@ namespace NWH.VehiclePhysics2.Input
             ShiftInto = CombinedInputGear<VehicleInputProviderBase>(i => i.ShiftInto());
             ShiftUp |= InputProvider.CombinedInput<VehicleInputProviderBase>(i => i.ShiftUp());
             ShiftDown |= InputProvider.CombinedInput<VehicleInputProviderBase>(i => i.ShiftDown());
-
-            ShiftNutral |= InputProvider.CombinedInput<VehicleInputProviderBase>(i => i.ShiftNutral());
-
             LeftBlinker |= InputProvider.CombinedInput<VehicleInputProviderBase>(i => i.LeftBlinker());
             RightBlinker |= InputProvider.CombinedInput<VehicleInputProviderBase>(i => i.RightBlinker());
             LowBeamLights |= InputProvider.CombinedInput<VehicleInputProviderBase>(i => i.LowBeamLights());
@@ -389,7 +380,6 @@ namespace NWH.VehiclePhysics2.Input
         {
             states.shiftUp = false;
             states.shiftDown = false;
-            states.shiftNutral = false;
             states.shiftInto = -999;
         }
 
@@ -443,7 +433,6 @@ namespace NWH.VehiclePhysics2.Input
                 drawer.Label($"Handbrake: {vis.handbrake}");
                 drawer.Label($"ShiftUp: {vis.shiftUp}");
                 drawer.Label($"ShiftDown: {vis.shiftDown}");
-                drawer.Label($"ShiftNutral: {vis.shiftNutral}");
                 drawer.Label($"ShiftInto: {vis.shiftInto}");
                 drawer.Label($"LeftBlinker: {vis.leftBlinker}");
                 drawer.Label($"RightBlinker: {vis.rightBlinker}");

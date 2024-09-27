@@ -1,7 +1,5 @@
-﻿using NWH.VehiclePhysics2.Input;
-using System;
+﻿using System;
 using UnityEngine;
-using static UnityEngine.ParticleSystem;
 
 namespace NWH.VehiclePhysics2.Modules.Trailer
 {
@@ -12,7 +10,7 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
     public partial class TrailerHitchModuleWrapper : ModuleWrapper
     {
         public TrailerHitchModule module = new TrailerHitchModule();
-        
+
         private VehicleController _vehicleController;
 
 
@@ -45,14 +43,6 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
             module.vehicleController = _vehicleController;
         }
 
-        MobileVehicleInputProvider ButtonCanvas;
-
-        private void Start()
-        {
-            ButtonCanvas = FindObjectOfType<MobileVehicleInputProvider>();
-
-        }
-
 
         public override VehicleComponent GetModule()
         {
@@ -63,40 +53,12 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
         public void OnTriggerEnter(Collider other)
         {
             module.OnTriggerEnter(other);
-
-            if (other.gameObject.tag == "Trailer")
-                ButtonCanvas.trailerAttachDetachButton.gameObject.SetActive(true);
-               //ButtonCanvas.trailerAttachDetachButton.interactable = true;
         }
 
-        private void OnTriggerExit(Collider other)
-        {
-            //  if (other.gameObject.layer == 3)
-            if (other.gameObject.tag == "Trailer")
-                ButtonCanvas.trailerAttachDetachButton.gameObject.SetActive(false);
-                //ButtonCanvas.trailerAttachDetachButton.interactable = false;
 
-        }
-
-        float angleTolerance = 1.0f;
-        Vector3 truckAngles;
-        Vector3 trailerAngles;
         public void OnTriggerStay(Collider other)
         {
-            
-         ////  truckAngles = gameObject.transform.eulerAngles; // Gabbar Trailer Attach Angle
-         ////  trailerAngles = other.gameObject.transform.parent.transform.eulerAngles;
-
-         ////   float angleDifferenceY = Mathf.Abs(Mathf.DeltaAngle(truckAngles.y, trailerAngles.y));
-
-         ////   if (angleDifferenceY <= angleTolerance)
-         ////   {
-                module.OnTriggerStay(other);
-                  // Gabbar
-        ///    }
-
-
-
+            module.OnTriggerStay(other);
         }
 
 

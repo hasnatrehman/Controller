@@ -1,2441 +1,819 @@
 fileFormatVersion: 2
 guid: dc11465625753b0489a7aeba4cb786d0
 ModelImporter:
-  serializedVersion: 21300
-  internalIDToNameTable:
-  - first:
-      1: 100000
-    second: //RootNode
-  - first:
-      1: 100002
-    second: body
-  - first:
-      1: 100004
-    second: Caliper FL
-  - first:
-      1: 100006
-    second: Caliper FR
-  - first:
-      1: 100008
-    second: Caliper RL
-  - first:
-      1: 100010
-    second: 'Caliper RR '
-  - first:
-      1: 100012
-    second: driver
-  - first:
-      1: 100014
-    second: interior
-  - first:
-      1: 100016
-    second: lights brakes
-  - first:
-      1: 100018
-    second: lights front lft 1
-  - first:
-      1: 100020
-    second: lights front lft 2
-  - first:
-      1: 100022
-    second: lights front lft 3
-  - first:
-      1: 100024
-    second: lights front rt 1
-  - first:
-      1: 100026
-    second: lights front rt 2
-  - first:
-      1: 100028
-    second: lights front rt 3
-  - first:
-      1: 100030
-    second: lights rear lft1
-  - first:
-      1: 100032
-    second: lights rear lft2
-  - first:
-      1: 100034
-    second: lights rear rt1
-  - first:
-      1: 100036
-    second: lights rear rt2
-  - first:
-      1: 100038
-    second: mirror interior
-  - first:
-      1: 100040
-    second: mirror lft
-  - first:
-      1: 100042
-    second: mirror rt
-  - first:
-      1: 100044
-    second: steering wheel
-  - first:
-      1: 100046
-    second: Whl HD FL
-  - first:
-      1: 100048
-    second: Whl HD FR
-  - first:
-      1: 100050
-    second: Whl HD RL
-  - first:
-      1: 100052
-    second: Whl HD RR
-  - first:
-      4: 400000
-    second: //RootNode
-  - first:
-      4: 400002
-    second: body
-  - first:
-      4: 400004
-    second: Caliper FL
-  - first:
-      4: 400006
-    second: Caliper FR
-  - first:
-      4: 400008
-    second: Caliper RL
-  - first:
-      4: 400010
-    second: 'Caliper RR '
-  - first:
-      4: 400012
-    second: driver
-  - first:
-      4: 400014
-    second: interior
-  - first:
-      4: 400016
-    second: lights brakes
-  - first:
-      4: 400018
-    second: lights front lft 1
-  - first:
-      4: 400020
-    second: lights front lft 2
-  - first:
-      4: 400022
-    second: lights front lft 3
-  - first:
-      4: 400024
-    second: lights front rt 1
-  - first:
-      4: 400026
-    second: lights front rt 2
-  - first:
-      4: 400028
-    second: lights front rt 3
-  - first:
-      4: 400030
-    second: lights rear lft1
-  - first:
-      4: 400032
-    second: lights rear lft2
-  - first:
-      4: 400034
-    second: lights rear rt1
-  - first:
-      4: 400036
-    second: lights rear rt2
-  - first:
-      4: 400038
-    second: mirror interior
-  - first:
-      4: 400040
-    second: mirror lft
-  - first:
-      4: 400042
-    second: mirror rt
-  - first:
-      4: 400044
-    second: steering wheel
-  - first:
-      4: 400046
-    second: Whl HD FL
-  - first:
-      4: 400048
-    second: Whl HD FR
-  - first:
-      4: 400050
-    second: Whl HD RL
-  - first:
-      4: 400052
-    second: Whl HD RR
-  - first:
-      23: 2300000
-    second: body
-  - first:
-      23: 2300002
-    second: Caliper FL
-  - first:
-      23: 2300004
-    second: Caliper FR
-  - first:
-      23: 2300006
-    second: Caliper RL
-  - first:
-      23: 2300008
-    second: 'Caliper RR '
-  - first:
-      23: 2300010
-    second: driver
-  - first:
-      23: 2300012
-    second: interior
-  - first:
-      23: 2300014
-    second: lights brakes
-  - first:
-      23: 2300016
-    second: lights front lft 1
-  - first:
-      23: 2300018
-    second: lights front lft 2
-  - first:
-      23: 2300020
-    second: lights front lft 3
-  - first:
-      23: 2300022
-    second: lights front rt 1
-  - first:
-      23: 2300024
-    second: lights front rt 2
-  - first:
-      23: 2300026
-    second: lights front rt 3
-  - first:
-      23: 2300028
-    second: lights rear lft1
-  - first:
-      23: 2300030
-    second: lights rear lft2
-  - first:
-      23: 2300032
-    second: lights rear rt1
-  - first:
-      23: 2300034
-    second: lights rear rt2
-  - first:
-      23: 2300036
-    second: mirror interior
-  - first:
-      23: 2300038
-    second: mirror lft
-  - first:
-      23: 2300040
-    second: mirror rt
-  - first:
-      23: 2300042
-    second: steering wheel
-  - first:
-      23: 2300044
-    second: Whl HD FL
-  - first:
-      23: 2300046
-    second: Whl HD FR
-  - first:
-      23: 2300048
-    second: Whl HD RL
-  - first:
-      23: 2300050
-    second: Whl HD RR
-  - first:
-      33: 3300000
-    second: body
-  - first:
-      33: 3300002
-    second: Caliper FL
-  - first:
-      33: 3300004
-    second: Caliper FR
-  - first:
-      33: 3300006
-    second: Caliper RL
-  - first:
-      33: 3300008
-    second: 'Caliper RR '
-  - first:
-      33: 3300010
-    second: driver
-  - first:
-      33: 3300012
-    second: interior
-  - first:
-      33: 3300014
-    second: lights brakes
-  - first:
-      33: 3300016
-    second: lights front lft 1
-  - first:
-      33: 3300018
-    second: lights front lft 2
-  - first:
-      33: 3300020
-    second: lights front lft 3
-  - first:
-      33: 3300022
-    second: lights front rt 1
-  - first:
-      33: 3300024
-    second: lights front rt 2
-  - first:
-      33: 3300026
-    second: lights front rt 3
-  - first:
-      33: 3300028
-    second: lights rear lft1
-  - first:
-      33: 3300030
-    second: lights rear lft2
-  - first:
-      33: 3300032
-    second: lights rear rt1
-  - first:
-      33: 3300034
-    second: lights rear rt2
-  - first:
-      33: 3300036
-    second: mirror interior
-  - first:
-      33: 3300038
-    second: mirror lft
-  - first:
-      33: 3300040
-    second: mirror rt
-  - first:
-      33: 3300042
-    second: steering wheel
-  - first:
-      33: 3300044
-    second: Whl HD FL
-  - first:
-      33: 3300046
-    second: Whl HD FR
-  - first:
-      33: 3300048
-    second: Whl HD RL
-  - first:
-      33: 3300050
-    second: Whl HD RR
-  - first:
-      43: 4300000
-    second: body
-  - first:
-      43: 4300002
-    second: interior
-  - first:
-      43: 4300004
-    second: driver
-  - first:
-      43: 4300006
-    second: steering wheel
-  - first:
-      43: 4300008
-    second: 'Caliper RR '
-  - first:
-      43: 4300010
-    second: Whl HD RR
-  - first:
-      43: 4300012
-    second: Caliper FR
-  - first:
-      43: 4300014
-    second: Whl HD FR
-  - first:
-      43: 4300016
-    second: Caliper FL
-  - first:
-      43: 4300018
-    second: Whl HD FL
-  - first:
-      43: 4300020
-    second: Caliper RL
-  - first:
-      43: 4300022
-    second: Whl HD RL
-  - first:
-      43: 4300024
-    second: lights front rt 1
-  - first:
-      43: 4300026
-    second: lights front rt 2
-  - first:
-      43: 4300028
-    second: lights front rt 3
-  - first:
-      43: 4300030
-    second: lights front lft 1
-  - first:
-      43: 4300032
-    second: lights front lft 2
-  - first:
-      43: 4300034
-    second: lights front lft 3
-  - first:
-      43: 4300036
-    second: lights rear rt1
-  - first:
-      43: 4300038
-    second: lights rear rt2
-  - first:
-      43: 4300040
-    second: lights rear lft1
-  - first:
-      43: 4300042
-    second: lights rear lft2
-  - first:
-      43: 4300044
-    second: lights brakes
-  - first:
-      43: 4300046
-    second: mirror rt
-  - first:
-      43: 4300048
-    second: mirror lft
-  - first:
-      43: 4300050
-    second: mirror interior
-  - first:
-      74: 7400000
-    second: modo_Anim
-  - first:
-      74: 7400002
-    second: body|body|modo_Anim|Layer0
-  - first:
-      74: 7400004
-    second: body|Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7400006
-    second: body|Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7400008
-    second: body|Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7400010
-    second: body|Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7400012
-    second: body|driver|modo_Anim|Layer0
-  - first:
-      74: 7400014
-    second: body|interior|modo_Anim|Layer0
-  - first:
-      74: 7400016
-    second: body|lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7400018
-    second: body|lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7400020
-    second: body|lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7400022
-    second: body|lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7400024
-    second: body|lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7400026
-    second: body|lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7400028
-    second: body|lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7400030
-    second: body|lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7400032
-    second: body|lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7400034
-    second: body|lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7400036
-    second: body|lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7400038
-    second: body|mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7400040
-    second: body|mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7400042
-    second: body|mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7400044
-    second: body|steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7400046
-    second: body|Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7400048
-    second: body|Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7400050
-    second: body|Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7400052
-    second: body|Whl HD RR|modo_Anim|Layer0
-  - first:
-      74: 7400054
-    second: interior|body|modo_Anim|Layer0
-  - first:
-      74: 7400056
-    second: interior|Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7400058
-    second: interior|Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7400060
-    second: interior|Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7400062
-    second: interior|Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7400064
-    second: interior|driver|modo_Anim|Layer0
-  - first:
-      74: 7400066
-    second: interior|interior|modo_Anim|Layer0
-  - first:
-      74: 7400068
-    second: interior|lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7400070
-    second: interior|lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7400072
-    second: interior|lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7400074
-    second: interior|lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7400076
-    second: interior|lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7400078
-    second: interior|lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7400080
-    second: interior|lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7400082
-    second: interior|lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7400084
-    second: interior|lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7400086
-    second: interior|lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7400088
-    second: interior|lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7400090
-    second: interior|mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7400092
-    second: interior|mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7400094
-    second: interior|mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7400096
-    second: interior|steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7400098
-    second: interior|Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7400100
-    second: interior|Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7400102
-    second: interior|Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7400104
-    second: interior|Whl HD RR|modo_Anim|Layer0
-  - first:
-      74: 7400106
-    second: driver|body|modo_Anim|Layer0
-  - first:
-      74: 7400108
-    second: driver|Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7400110
-    second: driver|Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7400112
-    second: driver|Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7400114
-    second: driver|Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7400116
-    second: driver|driver|modo_Anim|Layer0
-  - first:
-      74: 7400118
-    second: driver|interior|modo_Anim|Layer0
-  - first:
-      74: 7400120
-    second: driver|lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7400122
-    second: driver|lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7400124
-    second: driver|lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7400126
-    second: driver|lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7400128
-    second: driver|lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7400130
-    second: driver|lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7400132
-    second: driver|lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7400134
-    second: driver|lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7400136
-    second: driver|lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7400138
-    second: driver|lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7400140
-    second: driver|lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7400142
-    second: driver|mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7400144
-    second: driver|mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7400146
-    second: driver|mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7400148
-    second: driver|steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7400150
-    second: driver|Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7400152
-    second: driver|Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7400154
-    second: driver|Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7400156
-    second: driver|Whl HD RR|modo_Anim|Layer0
-  - first:
-      74: 7400158
-    second: steering wheel|body|modo_Anim|Layer0
-  - first:
-      74: 7400160
-    second: steering wheel|Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7400162
-    second: steering wheel|Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7400164
-    second: steering wheel|Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7400166
-    second: steering wheel|Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7400168
-    second: steering wheel|driver|modo_Anim|Layer0
-  - first:
-      74: 7400170
-    second: steering wheel|interior|modo_Anim|Layer0
-  - first:
-      74: 7400172
-    second: steering wheel|lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7400174
-    second: steering wheel|lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7400176
-    second: steering wheel|lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7400178
-    second: steering wheel|lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7400180
-    second: steering wheel|lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7400182
-    second: steering wheel|lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7400184
-    second: steering wheel|lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7400186
-    second: steering wheel|lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7400188
-    second: steering wheel|lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7400190
-    second: steering wheel|lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7400192
-    second: steering wheel|lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7400194
-    second: steering wheel|mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7400196
-    second: steering wheel|mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7400198
-    second: steering wheel|mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7400200
-    second: steering wheel|steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7400202
-    second: steering wheel|Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7400204
-    second: steering wheel|Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7400206
-    second: steering wheel|Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7400208
-    second: steering wheel|Whl HD RR|modo_Anim|Layer0
-  - first:
-      74: 7400210
-    second: Whl HD RR|body|modo_Anim|Layer0
-  - first:
-      74: 7400212
-    second: Whl HD RR|Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7400214
-    second: Whl HD RR|Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7400216
-    second: Whl HD RR|Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7400218
-    second: Whl HD RR|Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7400220
-    second: Whl HD RR|driver|modo_Anim|Layer0
-  - first:
-      74: 7400222
-    second: Whl HD RR|interior|modo_Anim|Layer0
-  - first:
-      74: 7400224
-    second: Whl HD RR|lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7400226
-    second: Whl HD RR|lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7400228
-    second: Whl HD RR|lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7400230
-    second: Whl HD RR|lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7400232
-    second: Whl HD RR|lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7400234
-    second: Whl HD RR|lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7400236
-    second: Whl HD RR|lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7400238
-    second: Whl HD RR|lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7400240
-    second: Whl HD RR|lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7400242
-    second: Whl HD RR|lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7400244
-    second: Whl HD RR|lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7400246
-    second: Whl HD RR|mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7400248
-    second: Whl HD RR|mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7400250
-    second: Whl HD RR|mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7400252
-    second: Whl HD RR|steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7400254
-    second: Whl HD RR|Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7400256
-    second: Whl HD RR|Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7400258
-    second: Whl HD RR|Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7400260
-    second: Whl HD RR|Whl HD RR|modo_Anim|Layer0
-  - first:
-      74: 7400262
-    second: Caliper RR |body|modo_Anim|Layer0
-  - first:
-      74: 7400264
-    second: Caliper RR |Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7400266
-    second: Caliper RR |Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7400268
-    second: Caliper RR |Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7400270
-    second: Caliper RR |Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7400272
-    second: Caliper RR |driver|modo_Anim|Layer0
-  - first:
-      74: 7400274
-    second: Caliper RR |interior|modo_Anim|Layer0
-  - first:
-      74: 7400276
-    second: Caliper RR |lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7400278
-    second: Caliper RR |lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7400280
-    second: Caliper RR |lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7400282
-    second: Caliper RR |lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7400284
-    second: Caliper RR |lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7400286
-    second: Caliper RR |lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7400288
-    second: Caliper RR |lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7400290
-    second: Caliper RR |lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7400292
-    second: Caliper RR |lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7400294
-    second: Caliper RR |lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7400296
-    second: Caliper RR |lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7400298
-    second: Caliper RR |mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7400300
-    second: Caliper RR |mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7400302
-    second: Caliper RR |mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7400304
-    second: Caliper RR |steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7400306
-    second: Caliper RR |Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7400308
-    second: Caliper RR |Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7400310
-    second: Caliper RR |Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7400312
-    second: Caliper RR |Whl HD RR|modo_Anim|Layer0
-  - first:
-      74: 7400314
-    second: Whl HD FR|body|modo_Anim|Layer0
-  - first:
-      74: 7400316
-    second: Whl HD FR|Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7400318
-    second: Whl HD FR|Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7400320
-    second: Whl HD FR|Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7400322
-    second: Whl HD FR|Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7400324
-    second: Whl HD FR|driver|modo_Anim|Layer0
-  - first:
-      74: 7400326
-    second: Whl HD FR|interior|modo_Anim|Layer0
-  - first:
-      74: 7400328
-    second: Whl HD FR|lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7400330
-    second: Whl HD FR|lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7400332
-    second: Whl HD FR|lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7400334
-    second: Whl HD FR|lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7400336
-    second: Whl HD FR|lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7400338
-    second: Whl HD FR|lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7400340
-    second: Whl HD FR|lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7400342
-    second: Whl HD FR|lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7400344
-    second: Whl HD FR|lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7400346
-    second: Whl HD FR|lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7400348
-    second: Whl HD FR|lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7400350
-    second: Whl HD FR|mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7400352
-    second: Whl HD FR|mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7400354
-    second: Whl HD FR|mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7400356
-    second: Whl HD FR|steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7400358
-    second: Whl HD FR|Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7400360
-    second: Whl HD FR|Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7400362
-    second: Whl HD FR|Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7400364
-    second: Whl HD FR|Whl HD RR|modo_Anim|Layer0
-  - first:
-      74: 7400366
-    second: Caliper FR|body|modo_Anim|Layer0
-  - first:
-      74: 7400368
-    second: Caliper FR|Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7400370
-    second: Caliper FR|Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7400372
-    second: Caliper FR|Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7400374
-    second: Caliper FR|Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7400376
-    second: Caliper FR|driver|modo_Anim|Layer0
-  - first:
-      74: 7400378
-    second: Caliper FR|interior|modo_Anim|Layer0
-  - first:
-      74: 7400380
-    second: Caliper FR|lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7400382
-    second: Caliper FR|lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7400384
-    second: Caliper FR|lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7400386
-    second: Caliper FR|lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7400388
-    second: Caliper FR|lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7400390
-    second: Caliper FR|lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7400392
-    second: Caliper FR|lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7400394
-    second: Caliper FR|lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7400396
-    second: Caliper FR|lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7400398
-    second: Caliper FR|lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7400400
-    second: Caliper FR|lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7400402
-    second: Caliper FR|mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7400404
-    second: Caliper FR|mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7400406
-    second: Caliper FR|mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7400408
-    second: Caliper FR|steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7400410
-    second: Caliper FR|Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7400412
-    second: Caliper FR|Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7400414
-    second: Caliper FR|Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7400416
-    second: Caliper FR|Whl HD RR|modo_Anim|Layer0
-  - first:
-      74: 7400418
-    second: Whl HD FL|body|modo_Anim|Layer0
-  - first:
-      74: 7400420
-    second: Whl HD FL|Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7400422
-    second: Whl HD FL|Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7400424
-    second: Whl HD FL|Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7400426
-    second: Whl HD FL|Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7400428
-    second: Whl HD FL|driver|modo_Anim|Layer0
-  - first:
-      74: 7400430
-    second: Whl HD FL|interior|modo_Anim|Layer0
-  - first:
-      74: 7400432
-    second: Whl HD FL|lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7400434
-    second: Whl HD FL|lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7400436
-    second: Whl HD FL|lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7400438
-    second: Whl HD FL|lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7400440
-    second: Whl HD FL|lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7400442
-    second: Whl HD FL|lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7400444
-    second: Whl HD FL|lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7400446
-    second: Whl HD FL|lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7400448
-    second: Whl HD FL|lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7400450
-    second: Whl HD FL|lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7400452
-    second: Whl HD FL|lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7400454
-    second: Whl HD FL|mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7400456
-    second: Whl HD FL|mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7400458
-    second: Whl HD FL|mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7400460
-    second: Whl HD FL|steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7400462
-    second: Whl HD FL|Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7400464
-    second: Whl HD FL|Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7400466
-    second: Whl HD FL|Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7400468
-    second: Whl HD FL|Whl HD RR|modo_Anim|Layer0
-  - first:
-      74: 7400470
-    second: Caliper FL|body|modo_Anim|Layer0
-  - first:
-      74: 7400472
-    second: Caliper FL|Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7400474
-    second: Caliper FL|Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7400476
-    second: Caliper FL|Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7400478
-    second: Caliper FL|Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7400480
-    second: Caliper FL|driver|modo_Anim|Layer0
-  - first:
-      74: 7400482
-    second: Caliper FL|interior|modo_Anim|Layer0
-  - first:
-      74: 7400484
-    second: Caliper FL|lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7400486
-    second: Caliper FL|lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7400488
-    second: Caliper FL|lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7400490
-    second: Caliper FL|lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7400492
-    second: Caliper FL|lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7400494
-    second: Caliper FL|lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7400496
-    second: Caliper FL|lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7400498
-    second: Caliper FL|lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7400500
-    second: Caliper FL|lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7400502
-    second: Caliper FL|lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7400504
-    second: Caliper FL|lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7400506
-    second: Caliper FL|mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7400508
-    second: Caliper FL|mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7400510
-    second: Caliper FL|mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7400512
-    second: Caliper FL|steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7400514
-    second: Caliper FL|Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7400516
-    second: Caliper FL|Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7400518
-    second: Caliper FL|Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7400520
-    second: Caliper FL|Whl HD RR|modo_Anim|Layer0
-  - first:
-      74: 7400522
-    second: Whl HD RL|body|modo_Anim|Layer0
-  - first:
-      74: 7400524
-    second: Whl HD RL|Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7400526
-    second: Whl HD RL|Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7400528
-    second: Whl HD RL|Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7400530
-    second: Whl HD RL|Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7400532
-    second: Whl HD RL|driver|modo_Anim|Layer0
-  - first:
-      74: 7400534
-    second: Whl HD RL|interior|modo_Anim|Layer0
-  - first:
-      74: 7400536
-    second: Whl HD RL|lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7400538
-    second: Whl HD RL|lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7400540
-    second: Whl HD RL|lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7400542
-    second: Whl HD RL|lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7400544
-    second: Whl HD RL|lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7400546
-    second: Whl HD RL|lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7400548
-    second: Whl HD RL|lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7400550
-    second: Whl HD RL|lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7400552
-    second: Whl HD RL|lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7400554
-    second: Whl HD RL|lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7400556
-    second: Whl HD RL|lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7400558
-    second: Whl HD RL|mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7400560
-    second: Whl HD RL|mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7400562
-    second: Whl HD RL|mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7400564
-    second: Whl HD RL|steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7400566
-    second: Whl HD RL|Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7400568
-    second: Whl HD RL|Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7400570
-    second: Whl HD RL|Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7400572
-    second: Whl HD RL|Whl HD RR|modo_Anim|Layer0
-  - first:
-      74: 7400574
-    second: Caliper RL|body|modo_Anim|Layer0
-  - first:
-      74: 7400576
-    second: Caliper RL|Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7400578
-    second: Caliper RL|Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7400580
-    second: Caliper RL|Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7400582
-    second: Caliper RL|Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7400584
-    second: Caliper RL|driver|modo_Anim|Layer0
-  - first:
-      74: 7400586
-    second: Caliper RL|interior|modo_Anim|Layer0
-  - first:
-      74: 7400588
-    second: Caliper RL|lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7400590
-    second: Caliper RL|lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7400592
-    second: Caliper RL|lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7400594
-    second: Caliper RL|lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7400596
-    second: Caliper RL|lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7400598
-    second: Caliper RL|lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7400600
-    second: Caliper RL|lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7400602
-    second: Caliper RL|lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7400604
-    second: Caliper RL|lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7400606
-    second: Caliper RL|lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7400608
-    second: Caliper RL|lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7400610
-    second: Caliper RL|mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7400612
-    second: Caliper RL|mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7400614
-    second: Caliper RL|mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7400616
-    second: Caliper RL|steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7400618
-    second: Caliper RL|Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7400620
-    second: Caliper RL|Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7400622
-    second: Caliper RL|Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7400624
-    second: Caliper RL|Whl HD RR|modo_Anim|Layer0
-  - first:
-      74: 7400626
-    second: lights front rt 1|body|modo_Anim|Layer0
-  - first:
-      74: 7400628
-    second: lights front rt 1|Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7400630
-    second: lights front rt 1|Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7400632
-    second: lights front rt 1|Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7400634
-    second: lights front rt 1|Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7400636
-    second: lights front rt 1|driver|modo_Anim|Layer0
-  - first:
-      74: 7400638
-    second: lights front rt 1|interior|modo_Anim|Layer0
-  - first:
-      74: 7400640
-    second: lights front rt 1|lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7400642
-    second: lights front rt 1|lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7400644
-    second: lights front rt 1|lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7400646
-    second: lights front rt 1|lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7400648
-    second: lights front rt 1|lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7400650
-    second: lights front rt 1|lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7400652
-    second: lights front rt 1|lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7400654
-    second: lights front rt 1|lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7400656
-    second: lights front rt 1|lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7400658
-    second: lights front rt 1|lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7400660
-    second: lights front rt 1|lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7400662
-    second: lights front rt 1|mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7400664
-    second: lights front rt 1|mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7400666
-    second: lights front rt 1|mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7400668
-    second: lights front rt 1|steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7400670
-    second: lights front rt 1|Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7400672
-    second: lights front rt 1|Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7400674
-    second: lights front rt 1|Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7400676
-    second: lights front rt 1|Whl HD RR|modo_Anim|Layer0
-  - first:
-      74: 7400678
-    second: lights front rt 2|body|modo_Anim|Layer0
-  - first:
-      74: 7400680
-    second: lights front rt 2|Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7400682
-    second: lights front rt 2|Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7400684
-    second: lights front rt 2|Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7400686
-    second: lights front rt 2|Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7400688
-    second: lights front rt 2|driver|modo_Anim|Layer0
-  - first:
-      74: 7400690
-    second: lights front rt 2|interior|modo_Anim|Layer0
-  - first:
-      74: 7400692
-    second: lights front rt 2|lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7400694
-    second: lights front rt 2|lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7400696
-    second: lights front rt 2|lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7400698
-    second: lights front rt 2|lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7400700
-    second: lights front rt 2|lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7400702
-    second: lights front rt 2|lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7400704
-    second: lights front rt 2|lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7400706
-    second: lights front rt 2|lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7400708
-    second: lights front rt 2|lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7400710
-    second: lights front rt 2|lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7400712
-    second: lights front rt 2|lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7400714
-    second: lights front rt 2|mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7400716
-    second: lights front rt 2|mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7400718
-    second: lights front rt 2|mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7400720
-    second: lights front rt 2|steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7400722
-    second: lights front rt 2|Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7400724
-    second: lights front rt 2|Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7400726
-    second: lights front rt 2|Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7400728
-    second: lights front rt 2|Whl HD RR|modo_Anim|Layer0
-  - first:
-      74: 7400730
-    second: lights front rt 3|body|modo_Anim|Layer0
-  - first:
-      74: 7400732
-    second: lights front rt 3|Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7400734
-    second: lights front rt 3|Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7400736
-    second: lights front rt 3|Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7400738
-    second: lights front rt 3|Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7400740
-    second: lights front rt 3|driver|modo_Anim|Layer0
-  - first:
-      74: 7400742
-    second: lights front rt 3|interior|modo_Anim|Layer0
-  - first:
-      74: 7400744
-    second: lights front rt 3|lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7400746
-    second: lights front rt 3|lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7400748
-    second: lights front rt 3|lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7400750
-    second: lights front rt 3|lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7400752
-    second: lights front rt 3|lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7400754
-    second: lights front rt 3|lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7400756
-    second: lights front rt 3|lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7400758
-    second: lights front rt 3|lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7400760
-    second: lights front rt 3|lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7400762
-    second: lights front rt 3|lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7400764
-    second: lights front rt 3|lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7400766
-    second: lights front rt 3|mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7400768
-    second: lights front rt 3|mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7400770
-    second: lights front rt 3|mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7400772
-    second: lights front rt 3|steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7400774
-    second: lights front rt 3|Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7400776
-    second: lights front rt 3|Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7400778
-    second: lights front rt 3|Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7400780
-    second: lights front rt 3|Whl HD RR|modo_Anim|Layer0
-  - first:
-      74: 7400782
-    second: lights front lft 1|body|modo_Anim|Layer0
-  - first:
-      74: 7400784
-    second: lights front lft 1|Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7400786
-    second: lights front lft 1|Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7400788
-    second: lights front lft 1|Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7400790
-    second: lights front lft 1|Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7400792
-    second: lights front lft 1|driver|modo_Anim|Layer0
-  - first:
-      74: 7400794
-    second: lights front lft 1|interior|modo_Anim|Layer0
-  - first:
-      74: 7400796
-    second: lights front lft 1|lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7400798
-    second: lights front lft 1|lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7400800
-    second: lights front lft 1|lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7400802
-    second: lights front lft 1|lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7400804
-    second: lights front lft 1|lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7400806
-    second: lights front lft 1|lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7400808
-    second: lights front lft 1|lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7400810
-    second: lights front lft 1|lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7400812
-    second: lights front lft 1|lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7400814
-    second: lights front lft 1|lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7400816
-    second: lights front lft 1|lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7400818
-    second: lights front lft 1|mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7400820
-    second: lights front lft 1|mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7400822
-    second: lights front lft 1|mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7400824
-    second: lights front lft 1|steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7400826
-    second: lights front lft 1|Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7400828
-    second: lights front lft 1|Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7400830
-    second: lights front lft 1|Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7400832
-    second: lights front lft 1|Whl HD RR|modo_Anim|Layer0
-  - first:
-      74: 7400834
-    second: lights front lft 2|body|modo_Anim|Layer0
-  - first:
-      74: 7400836
-    second: lights front lft 2|Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7400838
-    second: lights front lft 2|Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7400840
-    second: lights front lft 2|Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7400842
-    second: lights front lft 2|Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7400844
-    second: lights front lft 2|driver|modo_Anim|Layer0
-  - first:
-      74: 7400846
-    second: lights front lft 2|interior|modo_Anim|Layer0
-  - first:
-      74: 7400848
-    second: lights front lft 2|lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7400850
-    second: lights front lft 2|lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7400852
-    second: lights front lft 2|lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7400854
-    second: lights front lft 2|lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7400856
-    second: lights front lft 2|lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7400858
-    second: lights front lft 2|lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7400860
-    second: lights front lft 2|lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7400862
-    second: lights front lft 2|lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7400864
-    second: lights front lft 2|lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7400866
-    second: lights front lft 2|lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7400868
-    second: lights front lft 2|lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7400870
-    second: lights front lft 2|mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7400872
-    second: lights front lft 2|mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7400874
-    second: lights front lft 2|mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7400876
-    second: lights front lft 2|steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7400878
-    second: lights front lft 2|Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7400880
-    second: lights front lft 2|Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7400882
-    second: lights front lft 2|Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7400884
-    second: lights front lft 2|Whl HD RR|modo_Anim|Layer0
-  - first:
-      74: 7400886
-    second: lights front lft 3|body|modo_Anim|Layer0
-  - first:
-      74: 7400888
-    second: lights front lft 3|Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7400890
-    second: lights front lft 3|Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7400892
-    second: lights front lft 3|Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7400894
-    second: lights front lft 3|Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7400896
-    second: lights front lft 3|driver|modo_Anim|Layer0
-  - first:
-      74: 7400898
-    second: lights front lft 3|interior|modo_Anim|Layer0
-  - first:
-      74: 7400900
-    second: lights front lft 3|lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7400902
-    second: lights front lft 3|lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7400904
-    second: lights front lft 3|lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7400906
-    second: lights front lft 3|lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7400908
-    second: lights front lft 3|lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7400910
-    second: lights front lft 3|lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7400912
-    second: lights front lft 3|lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7400914
-    second: lights front lft 3|lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7400916
-    second: lights front lft 3|lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7400918
-    second: lights front lft 3|lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7400920
-    second: lights front lft 3|lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7400922
-    second: lights front lft 3|mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7400924
-    second: lights front lft 3|mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7400926
-    second: lights front lft 3|mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7400928
-    second: lights front lft 3|steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7400930
-    second: lights front lft 3|Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7400932
-    second: lights front lft 3|Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7400934
-    second: lights front lft 3|Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7400936
-    second: lights front lft 3|Whl HD RR|modo_Anim|Layer0
-  - first:
-      74: 7400938
-    second: lights rear rt1|body|modo_Anim|Layer0
-  - first:
-      74: 7400940
-    second: lights rear rt1|Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7400942
-    second: lights rear rt1|Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7400944
-    second: lights rear rt1|Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7400946
-    second: lights rear rt1|Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7400948
-    second: lights rear rt1|driver|modo_Anim|Layer0
-  - first:
-      74: 7400950
-    second: lights rear rt1|interior|modo_Anim|Layer0
-  - first:
-      74: 7400952
-    second: lights rear rt1|lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7400954
-    second: lights rear rt1|lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7400956
-    second: lights rear rt1|lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7400958
-    second: lights rear rt1|lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7400960
-    second: lights rear rt1|lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7400962
-    second: lights rear rt1|lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7400964
-    second: lights rear rt1|lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7400966
-    second: lights rear rt1|lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7400968
-    second: lights rear rt1|lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7400970
-    second: lights rear rt1|lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7400972
-    second: lights rear rt1|lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7400974
-    second: lights rear rt1|mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7400976
-    second: lights rear rt1|mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7400978
-    second: lights rear rt1|mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7400980
-    second: lights rear rt1|steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7400982
-    second: lights rear rt1|Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7400984
-    second: lights rear rt1|Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7400986
-    second: lights rear rt1|Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7400988
-    second: lights rear rt1|Whl HD RR|modo_Anim|Layer0
-  - first:
-      74: 7400990
-    second: lights rear rt2|body|modo_Anim|Layer0
-  - first:
-      74: 7400992
-    second: lights rear rt2|Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7400994
-    second: lights rear rt2|Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7400996
-    second: lights rear rt2|Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7400998
-    second: lights rear rt2|Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7401000
-    second: lights rear rt2|driver|modo_Anim|Layer0
-  - first:
-      74: 7401002
-    second: lights rear rt2|interior|modo_Anim|Layer0
-  - first:
-      74: 7401004
-    second: lights rear rt2|lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7401006
-    second: lights rear rt2|lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7401008
-    second: lights rear rt2|lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7401010
-    second: lights rear rt2|lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7401012
-    second: lights rear rt2|lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7401014
-    second: lights rear rt2|lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7401016
-    second: lights rear rt2|lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7401018
-    second: lights rear rt2|lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7401020
-    second: lights rear rt2|lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7401022
-    second: lights rear rt2|lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7401024
-    second: lights rear rt2|lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7401026
-    second: lights rear rt2|mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7401028
-    second: lights rear rt2|mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7401030
-    second: lights rear rt2|mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7401032
-    second: lights rear rt2|steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7401034
-    second: lights rear rt2|Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7401036
-    second: lights rear rt2|Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7401038
-    second: lights rear rt2|Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7401040
-    second: lights rear rt2|Whl HD RR|modo_Anim|Layer0
-  - first:
-      74: 7401042
-    second: lights rear lft1|body|modo_Anim|Layer0
-  - first:
-      74: 7401044
-    second: lights rear lft1|Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7401046
-    second: lights rear lft1|Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7401048
-    second: lights rear lft1|Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7401050
-    second: lights rear lft1|Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7401052
-    second: lights rear lft1|driver|modo_Anim|Layer0
-  - first:
-      74: 7401054
-    second: lights rear lft1|interior|modo_Anim|Layer0
-  - first:
-      74: 7401056
-    second: lights rear lft1|lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7401058
-    second: lights rear lft1|lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7401060
-    second: lights rear lft1|lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7401062
-    second: lights rear lft1|lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7401064
-    second: lights rear lft1|lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7401066
-    second: lights rear lft1|lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7401068
-    second: lights rear lft1|lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7401070
-    second: lights rear lft1|lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7401072
-    second: lights rear lft1|lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7401074
-    second: lights rear lft1|lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7401076
-    second: lights rear lft1|lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7401078
-    second: lights rear lft1|mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7401080
-    second: lights rear lft1|mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7401082
-    second: lights rear lft1|mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7401084
-    second: lights rear lft1|steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7401086
-    second: lights rear lft1|Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7401088
-    second: lights rear lft1|Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7401090
-    second: lights rear lft1|Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7401092
-    second: lights rear lft1|Whl HD RR|modo_Anim|Layer0
-  - first:
-      74: 7401094
-    second: lights rear lft2|body|modo_Anim|Layer0
-  - first:
-      74: 7401096
-    second: lights rear lft2|Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7401098
-    second: lights rear lft2|Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7401100
-    second: lights rear lft2|Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7401102
-    second: lights rear lft2|Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7401104
-    second: lights rear lft2|driver|modo_Anim|Layer0
-  - first:
-      74: 7401106
-    second: lights rear lft2|interior|modo_Anim|Layer0
-  - first:
-      74: 7401108
-    second: lights rear lft2|lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7401110
-    second: lights rear lft2|lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7401112
-    second: lights rear lft2|lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7401114
-    second: lights rear lft2|lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7401116
-    second: lights rear lft2|lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7401118
-    second: lights rear lft2|lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7401120
-    second: lights rear lft2|lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7401122
-    second: lights rear lft2|lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7401124
-    second: lights rear lft2|lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7401126
-    second: lights rear lft2|lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7401128
-    second: lights rear lft2|lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7401130
-    second: lights rear lft2|mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7401132
-    second: lights rear lft2|mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7401134
-    second: lights rear lft2|mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7401136
-    second: lights rear lft2|steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7401138
-    second: lights rear lft2|Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7401140
-    second: lights rear lft2|Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7401142
-    second: lights rear lft2|Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7401144
-    second: lights rear lft2|Whl HD RR|modo_Anim|Layer0
-  - first:
-      74: 7401146
-    second: lights brakes|body|modo_Anim|Layer0
-  - first:
-      74: 7401148
-    second: lights brakes|Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7401150
-    second: lights brakes|Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7401152
-    second: lights brakes|Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7401154
-    second: lights brakes|Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7401156
-    second: lights brakes|driver|modo_Anim|Layer0
-  - first:
-      74: 7401158
-    second: lights brakes|interior|modo_Anim|Layer0
-  - first:
-      74: 7401160
-    second: lights brakes|lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7401162
-    second: lights brakes|lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7401164
-    second: lights brakes|lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7401166
-    second: lights brakes|lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7401168
-    second: lights brakes|lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7401170
-    second: lights brakes|lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7401172
-    second: lights brakes|lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7401174
-    second: lights brakes|lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7401176
-    second: lights brakes|lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7401178
-    second: lights brakes|lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7401180
-    second: lights brakes|lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7401182
-    second: lights brakes|mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7401184
-    second: lights brakes|mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7401186
-    second: lights brakes|mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7401188
-    second: lights brakes|steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7401190
-    second: lights brakes|Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7401192
-    second: lights brakes|Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7401194
-    second: lights brakes|Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7401196
-    second: lights brakes|Whl HD RR|modo_Anim|Layer0
-  - first:
-      74: 7401198
-    second: mirror rt|body|modo_Anim|Layer0
-  - first:
-      74: 7401200
-    second: mirror rt|Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7401202
-    second: mirror rt|Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7401204
-    second: mirror rt|Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7401206
-    second: mirror rt|Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7401208
-    second: mirror rt|driver|modo_Anim|Layer0
-  - first:
-      74: 7401210
-    second: mirror rt|interior|modo_Anim|Layer0
-  - first:
-      74: 7401212
-    second: mirror rt|lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7401214
-    second: mirror rt|lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7401216
-    second: mirror rt|lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7401218
-    second: mirror rt|lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7401220
-    second: mirror rt|lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7401222
-    second: mirror rt|lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7401224
-    second: mirror rt|lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7401226
-    second: mirror rt|lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7401228
-    second: mirror rt|lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7401230
-    second: mirror rt|lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7401232
-    second: mirror rt|lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7401234
-    second: mirror rt|mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7401236
-    second: mirror rt|mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7401238
-    second: mirror rt|mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7401240
-    second: mirror rt|steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7401242
-    second: mirror rt|Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7401244
-    second: mirror rt|Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7401246
-    second: mirror rt|Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7401248
-    second: mirror rt|Whl HD RR|modo_Anim|Layer0
-  - first:
-      74: 7401250
-    second: mirror lft|body|modo_Anim|Layer0
-  - first:
-      74: 7401252
-    second: mirror lft|Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7401254
-    second: mirror lft|Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7401256
-    second: mirror lft|Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7401258
-    second: mirror lft|Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7401260
-    second: mirror lft|driver|modo_Anim|Layer0
-  - first:
-      74: 7401262
-    second: mirror lft|interior|modo_Anim|Layer0
-  - first:
-      74: 7401264
-    second: mirror lft|lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7401266
-    second: mirror lft|lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7401268
-    second: mirror lft|lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7401270
-    second: mirror lft|lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7401272
-    second: mirror lft|lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7401274
-    second: mirror lft|lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7401276
-    second: mirror lft|lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7401278
-    second: mirror lft|lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7401280
-    second: mirror lft|lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7401282
-    second: mirror lft|lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7401284
-    second: mirror lft|lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7401286
-    second: mirror lft|mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7401288
-    second: mirror lft|mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7401290
-    second: mirror lft|mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7401292
-    second: mirror lft|steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7401294
-    second: mirror lft|Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7401296
-    second: mirror lft|Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7401298
-    second: mirror lft|Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7401300
-    second: mirror lft|Whl HD RR|modo_Anim|Layer0
-  - first:
-      74: 7401302
-    second: mirror interior|body|modo_Anim|Layer0
-  - first:
-      74: 7401304
-    second: mirror interior|Caliper FL|modo_Anim|Layer0
-  - first:
-      74: 7401306
-    second: mirror interior|Caliper FR|modo_Anim|Layer0
-  - first:
-      74: 7401308
-    second: mirror interior|Caliper RL|modo_Anim|Layer0
-  - first:
-      74: 7401310
-    second: mirror interior|Caliper RR |modo_Anim|Layer0
-  - first:
-      74: 7401312
-    second: mirror interior|driver|modo_Anim|Layer0
-  - first:
-      74: 7401314
-    second: mirror interior|interior|modo_Anim|Layer0
-  - first:
-      74: 7401316
-    second: mirror interior|lights brakes|modo_Anim|Layer0
-  - first:
-      74: 7401318
-    second: mirror interior|lights front lft 1|modo_Anim|Layer0
-  - first:
-      74: 7401320
-    second: mirror interior|lights front lft 2|modo_Anim|Layer0
-  - first:
-      74: 7401322
-    second: mirror interior|lights front lft 3|modo_Anim|Layer0
-  - first:
-      74: 7401324
-    second: mirror interior|lights front rt 1|modo_Anim|Layer0
-  - first:
-      74: 7401326
-    second: mirror interior|lights front rt 2|modo_Anim|Layer0
-  - first:
-      74: 7401328
-    second: mirror interior|lights front rt 3|modo_Anim|Layer0
-  - first:
-      74: 7401330
-    second: mirror interior|lights rear lft1|modo_Anim|Layer0
-  - first:
-      74: 7401332
-    second: mirror interior|lights rear lft2|modo_Anim|Layer0
-  - first:
-      74: 7401334
-    second: mirror interior|lights rear rt1|modo_Anim|Layer0
-  - first:
-      74: 7401336
-    second: mirror interior|lights rear rt2|modo_Anim|Layer0
-  - first:
-      74: 7401338
-    second: mirror interior|mirror interior|modo_Anim|Layer0
-  - first:
-      74: 7401340
-    second: mirror interior|mirror lft|modo_Anim|Layer0
-  - first:
-      74: 7401342
-    second: mirror interior|mirror rt|modo_Anim|Layer0
-  - first:
-      74: 7401344
-    second: mirror interior|steering wheel|modo_Anim|Layer0
-  - first:
-      74: 7401346
-    second: mirror interior|Whl HD FL|modo_Anim|Layer0
-  - first:
-      74: 7401348
-    second: mirror interior|Whl HD FR|modo_Anim|Layer0
-  - first:
-      74: 7401350
-    second: mirror interior|Whl HD RL|modo_Anim|Layer0
-  - first:
-      74: 7401352
-    second: mirror interior|Whl HD RR|modo_Anim|Layer0
-  - first:
-      95: 9500000
-    second: //RootNode
-  - first:
-      41386430: 2186277476908879412
-    second: ImportLogs
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: body
+    100004: Caliper FL
+    100006: Caliper FR
+    100008: Caliper RL
+    100010: 'Caliper RR '
+    100012: driver
+    100014: interior
+    100016: lights brakes
+    100018: lights front lft 1
+    100020: lights front lft 2
+    100022: lights front lft 3
+    100024: lights front rt 1
+    100026: lights front rt 2
+    100028: lights front rt 3
+    100030: lights rear lft1
+    100032: lights rear lft2
+    100034: lights rear rt1
+    100036: lights rear rt2
+    100038: mirror interior
+    100040: mirror lft
+    100042: mirror rt
+    100044: steering wheel
+    100046: Whl HD FL
+    100048: Whl HD FR
+    100050: Whl HD RL
+    100052: Whl HD RR
+    400000: //RootNode
+    400002: body
+    400004: Caliper FL
+    400006: Caliper FR
+    400008: Caliper RL
+    400010: 'Caliper RR '
+    400012: driver
+    400014: interior
+    400016: lights brakes
+    400018: lights front lft 1
+    400020: lights front lft 2
+    400022: lights front lft 3
+    400024: lights front rt 1
+    400026: lights front rt 2
+    400028: lights front rt 3
+    400030: lights rear lft1
+    400032: lights rear lft2
+    400034: lights rear rt1
+    400036: lights rear rt2
+    400038: mirror interior
+    400040: mirror lft
+    400042: mirror rt
+    400044: steering wheel
+    400046: Whl HD FL
+    400048: Whl HD FR
+    400050: Whl HD RL
+    400052: Whl HD RR
+    2300000: body
+    2300002: Caliper FL
+    2300004: Caliper FR
+    2300006: Caliper RL
+    2300008: 'Caliper RR '
+    2300010: driver
+    2300012: interior
+    2300014: lights brakes
+    2300016: lights front lft 1
+    2300018: lights front lft 2
+    2300020: lights front lft 3
+    2300022: lights front rt 1
+    2300024: lights front rt 2
+    2300026: lights front rt 3
+    2300028: lights rear lft1
+    2300030: lights rear lft2
+    2300032: lights rear rt1
+    2300034: lights rear rt2
+    2300036: mirror interior
+    2300038: mirror lft
+    2300040: mirror rt
+    2300042: steering wheel
+    2300044: Whl HD FL
+    2300046: Whl HD FR
+    2300048: Whl HD RL
+    2300050: Whl HD RR
+    3300000: body
+    3300002: Caliper FL
+    3300004: Caliper FR
+    3300006: Caliper RL
+    3300008: 'Caliper RR '
+    3300010: driver
+    3300012: interior
+    3300014: lights brakes
+    3300016: lights front lft 1
+    3300018: lights front lft 2
+    3300020: lights front lft 3
+    3300022: lights front rt 1
+    3300024: lights front rt 2
+    3300026: lights front rt 3
+    3300028: lights rear lft1
+    3300030: lights rear lft2
+    3300032: lights rear rt1
+    3300034: lights rear rt2
+    3300036: mirror interior
+    3300038: mirror lft
+    3300040: mirror rt
+    3300042: steering wheel
+    3300044: Whl HD FL
+    3300046: Whl HD FR
+    3300048: Whl HD RL
+    3300050: Whl HD RR
+    4300000: body
+    4300002: interior
+    4300004: driver
+    4300006: steering wheel
+    4300008: 'Caliper RR '
+    4300010: Whl HD RR
+    4300012: Caliper FR
+    4300014: Whl HD FR
+    4300016: Caliper FL
+    4300018: Whl HD FL
+    4300020: Caliper RL
+    4300022: Whl HD RL
+    4300024: lights front rt 1
+    4300026: lights front rt 2
+    4300028: lights front rt 3
+    4300030: lights front lft 1
+    4300032: lights front lft 2
+    4300034: lights front lft 3
+    4300036: lights rear rt1
+    4300038: lights rear rt2
+    4300040: lights rear lft1
+    4300042: lights rear lft2
+    4300044: lights brakes
+    4300046: mirror rt
+    4300048: mirror lft
+    4300050: mirror interior
+    7400000: modo_Anim
+    7400002: body|body|modo_Anim|Layer0
+    7400004: body|Caliper FL|modo_Anim|Layer0
+    7400006: body|Caliper FR|modo_Anim|Layer0
+    7400008: body|Caliper RL|modo_Anim|Layer0
+    7400010: body|Caliper RR |modo_Anim|Layer0
+    7400012: body|driver|modo_Anim|Layer0
+    7400014: body|interior|modo_Anim|Layer0
+    7400016: body|lights brakes|modo_Anim|Layer0
+    7400018: body|lights front lft 1|modo_Anim|Layer0
+    7400020: body|lights front lft 2|modo_Anim|Layer0
+    7400022: body|lights front lft 3|modo_Anim|Layer0
+    7400024: body|lights front rt 1|modo_Anim|Layer0
+    7400026: body|lights front rt 2|modo_Anim|Layer0
+    7400028: body|lights front rt 3|modo_Anim|Layer0
+    7400030: body|lights rear lft1|modo_Anim|Layer0
+    7400032: body|lights rear lft2|modo_Anim|Layer0
+    7400034: body|lights rear rt1|modo_Anim|Layer0
+    7400036: body|lights rear rt2|modo_Anim|Layer0
+    7400038: body|mirror interior|modo_Anim|Layer0
+    7400040: body|mirror lft|modo_Anim|Layer0
+    7400042: body|mirror rt|modo_Anim|Layer0
+    7400044: body|steering wheel|modo_Anim|Layer0
+    7400046: body|Whl HD FL|modo_Anim|Layer0
+    7400048: body|Whl HD FR|modo_Anim|Layer0
+    7400050: body|Whl HD RL|modo_Anim|Layer0
+    7400052: body|Whl HD RR|modo_Anim|Layer0
+    7400054: interior|body|modo_Anim|Layer0
+    7400056: interior|Caliper FL|modo_Anim|Layer0
+    7400058: interior|Caliper FR|modo_Anim|Layer0
+    7400060: interior|Caliper RL|modo_Anim|Layer0
+    7400062: interior|Caliper RR |modo_Anim|Layer0
+    7400064: interior|driver|modo_Anim|Layer0
+    7400066: interior|interior|modo_Anim|Layer0
+    7400068: interior|lights brakes|modo_Anim|Layer0
+    7400070: interior|lights front lft 1|modo_Anim|Layer0
+    7400072: interior|lights front lft 2|modo_Anim|Layer0
+    7400074: interior|lights front lft 3|modo_Anim|Layer0
+    7400076: interior|lights front rt 1|modo_Anim|Layer0
+    7400078: interior|lights front rt 2|modo_Anim|Layer0
+    7400080: interior|lights front rt 3|modo_Anim|Layer0
+    7400082: interior|lights rear lft1|modo_Anim|Layer0
+    7400084: interior|lights rear lft2|modo_Anim|Layer0
+    7400086: interior|lights rear rt1|modo_Anim|Layer0
+    7400088: interior|lights rear rt2|modo_Anim|Layer0
+    7400090: interior|mirror interior|modo_Anim|Layer0
+    7400092: interior|mirror lft|modo_Anim|Layer0
+    7400094: interior|mirror rt|modo_Anim|Layer0
+    7400096: interior|steering wheel|modo_Anim|Layer0
+    7400098: interior|Whl HD FL|modo_Anim|Layer0
+    7400100: interior|Whl HD FR|modo_Anim|Layer0
+    7400102: interior|Whl HD RL|modo_Anim|Layer0
+    7400104: interior|Whl HD RR|modo_Anim|Layer0
+    7400106: driver|body|modo_Anim|Layer0
+    7400108: driver|Caliper FL|modo_Anim|Layer0
+    7400110: driver|Caliper FR|modo_Anim|Layer0
+    7400112: driver|Caliper RL|modo_Anim|Layer0
+    7400114: driver|Caliper RR |modo_Anim|Layer0
+    7400116: driver|driver|modo_Anim|Layer0
+    7400118: driver|interior|modo_Anim|Layer0
+    7400120: driver|lights brakes|modo_Anim|Layer0
+    7400122: driver|lights front lft 1|modo_Anim|Layer0
+    7400124: driver|lights front lft 2|modo_Anim|Layer0
+    7400126: driver|lights front lft 3|modo_Anim|Layer0
+    7400128: driver|lights front rt 1|modo_Anim|Layer0
+    7400130: driver|lights front rt 2|modo_Anim|Layer0
+    7400132: driver|lights front rt 3|modo_Anim|Layer0
+    7400134: driver|lights rear lft1|modo_Anim|Layer0
+    7400136: driver|lights rear lft2|modo_Anim|Layer0
+    7400138: driver|lights rear rt1|modo_Anim|Layer0
+    7400140: driver|lights rear rt2|modo_Anim|Layer0
+    7400142: driver|mirror interior|modo_Anim|Layer0
+    7400144: driver|mirror lft|modo_Anim|Layer0
+    7400146: driver|mirror rt|modo_Anim|Layer0
+    7400148: driver|steering wheel|modo_Anim|Layer0
+    7400150: driver|Whl HD FL|modo_Anim|Layer0
+    7400152: driver|Whl HD FR|modo_Anim|Layer0
+    7400154: driver|Whl HD RL|modo_Anim|Layer0
+    7400156: driver|Whl HD RR|modo_Anim|Layer0
+    7400158: steering wheel|body|modo_Anim|Layer0
+    7400160: steering wheel|Caliper FL|modo_Anim|Layer0
+    7400162: steering wheel|Caliper FR|modo_Anim|Layer0
+    7400164: steering wheel|Caliper RL|modo_Anim|Layer0
+    7400166: steering wheel|Caliper RR |modo_Anim|Layer0
+    7400168: steering wheel|driver|modo_Anim|Layer0
+    7400170: steering wheel|interior|modo_Anim|Layer0
+    7400172: steering wheel|lights brakes|modo_Anim|Layer0
+    7400174: steering wheel|lights front lft 1|modo_Anim|Layer0
+    7400176: steering wheel|lights front lft 2|modo_Anim|Layer0
+    7400178: steering wheel|lights front lft 3|modo_Anim|Layer0
+    7400180: steering wheel|lights front rt 1|modo_Anim|Layer0
+    7400182: steering wheel|lights front rt 2|modo_Anim|Layer0
+    7400184: steering wheel|lights front rt 3|modo_Anim|Layer0
+    7400186: steering wheel|lights rear lft1|modo_Anim|Layer0
+    7400188: steering wheel|lights rear lft2|modo_Anim|Layer0
+    7400190: steering wheel|lights rear rt1|modo_Anim|Layer0
+    7400192: steering wheel|lights rear rt2|modo_Anim|Layer0
+    7400194: steering wheel|mirror interior|modo_Anim|Layer0
+    7400196: steering wheel|mirror lft|modo_Anim|Layer0
+    7400198: steering wheel|mirror rt|modo_Anim|Layer0
+    7400200: steering wheel|steering wheel|modo_Anim|Layer0
+    7400202: steering wheel|Whl HD FL|modo_Anim|Layer0
+    7400204: steering wheel|Whl HD FR|modo_Anim|Layer0
+    7400206: steering wheel|Whl HD RL|modo_Anim|Layer0
+    7400208: steering wheel|Whl HD RR|modo_Anim|Layer0
+    7400210: Whl HD RR|body|modo_Anim|Layer0
+    7400212: Whl HD RR|Caliper FL|modo_Anim|Layer0
+    7400214: Whl HD RR|Caliper FR|modo_Anim|Layer0
+    7400216: Whl HD RR|Caliper RL|modo_Anim|Layer0
+    7400218: Whl HD RR|Caliper RR |modo_Anim|Layer0
+    7400220: Whl HD RR|driver|modo_Anim|Layer0
+    7400222: Whl HD RR|interior|modo_Anim|Layer0
+    7400224: Whl HD RR|lights brakes|modo_Anim|Layer0
+    7400226: Whl HD RR|lights front lft 1|modo_Anim|Layer0
+    7400228: Whl HD RR|lights front lft 2|modo_Anim|Layer0
+    7400230: Whl HD RR|lights front lft 3|modo_Anim|Layer0
+    7400232: Whl HD RR|lights front rt 1|modo_Anim|Layer0
+    7400234: Whl HD RR|lights front rt 2|modo_Anim|Layer0
+    7400236: Whl HD RR|lights front rt 3|modo_Anim|Layer0
+    7400238: Whl HD RR|lights rear lft1|modo_Anim|Layer0
+    7400240: Whl HD RR|lights rear lft2|modo_Anim|Layer0
+    7400242: Whl HD RR|lights rear rt1|modo_Anim|Layer0
+    7400244: Whl HD RR|lights rear rt2|modo_Anim|Layer0
+    7400246: Whl HD RR|mirror interior|modo_Anim|Layer0
+    7400248: Whl HD RR|mirror lft|modo_Anim|Layer0
+    7400250: Whl HD RR|mirror rt|modo_Anim|Layer0
+    7400252: Whl HD RR|steering wheel|modo_Anim|Layer0
+    7400254: Whl HD RR|Whl HD FL|modo_Anim|Layer0
+    7400256: Whl HD RR|Whl HD FR|modo_Anim|Layer0
+    7400258: Whl HD RR|Whl HD RL|modo_Anim|Layer0
+    7400260: Whl HD RR|Whl HD RR|modo_Anim|Layer0
+    7400262: Caliper RR |body|modo_Anim|Layer0
+    7400264: Caliper RR |Caliper FL|modo_Anim|Layer0
+    7400266: Caliper RR |Caliper FR|modo_Anim|Layer0
+    7400268: Caliper RR |Caliper RL|modo_Anim|Layer0
+    7400270: Caliper RR |Caliper RR |modo_Anim|Layer0
+    7400272: Caliper RR |driver|modo_Anim|Layer0
+    7400274: Caliper RR |interior|modo_Anim|Layer0
+    7400276: Caliper RR |lights brakes|modo_Anim|Layer0
+    7400278: Caliper RR |lights front lft 1|modo_Anim|Layer0
+    7400280: Caliper RR |lights front lft 2|modo_Anim|Layer0
+    7400282: Caliper RR |lights front lft 3|modo_Anim|Layer0
+    7400284: Caliper RR |lights front rt 1|modo_Anim|Layer0
+    7400286: Caliper RR |lights front rt 2|modo_Anim|Layer0
+    7400288: Caliper RR |lights front rt 3|modo_Anim|Layer0
+    7400290: Caliper RR |lights rear lft1|modo_Anim|Layer0
+    7400292: Caliper RR |lights rear lft2|modo_Anim|Layer0
+    7400294: Caliper RR |lights rear rt1|modo_Anim|Layer0
+    7400296: Caliper RR |lights rear rt2|modo_Anim|Layer0
+    7400298: Caliper RR |mirror interior|modo_Anim|Layer0
+    7400300: Caliper RR |mirror lft|modo_Anim|Layer0
+    7400302: Caliper RR |mirror rt|modo_Anim|Layer0
+    7400304: Caliper RR |steering wheel|modo_Anim|Layer0
+    7400306: Caliper RR |Whl HD FL|modo_Anim|Layer0
+    7400308: Caliper RR |Whl HD FR|modo_Anim|Layer0
+    7400310: Caliper RR |Whl HD RL|modo_Anim|Layer0
+    7400312: Caliper RR |Whl HD RR|modo_Anim|Layer0
+    7400314: Whl HD FR|body|modo_Anim|Layer0
+    7400316: Whl HD FR|Caliper FL|modo_Anim|Layer0
+    7400318: Whl HD FR|Caliper FR|modo_Anim|Layer0
+    7400320: Whl HD FR|Caliper RL|modo_Anim|Layer0
+    7400322: Whl HD FR|Caliper RR |modo_Anim|Layer0
+    7400324: Whl HD FR|driver|modo_Anim|Layer0
+    7400326: Whl HD FR|interior|modo_Anim|Layer0
+    7400328: Whl HD FR|lights brakes|modo_Anim|Layer0
+    7400330: Whl HD FR|lights front lft 1|modo_Anim|Layer0
+    7400332: Whl HD FR|lights front lft 2|modo_Anim|Layer0
+    7400334: Whl HD FR|lights front lft 3|modo_Anim|Layer0
+    7400336: Whl HD FR|lights front rt 1|modo_Anim|Layer0
+    7400338: Whl HD FR|lights front rt 2|modo_Anim|Layer0
+    7400340: Whl HD FR|lights front rt 3|modo_Anim|Layer0
+    7400342: Whl HD FR|lights rear lft1|modo_Anim|Layer0
+    7400344: Whl HD FR|lights rear lft2|modo_Anim|Layer0
+    7400346: Whl HD FR|lights rear rt1|modo_Anim|Layer0
+    7400348: Whl HD FR|lights rear rt2|modo_Anim|Layer0
+    7400350: Whl HD FR|mirror interior|modo_Anim|Layer0
+    7400352: Whl HD FR|mirror lft|modo_Anim|Layer0
+    7400354: Whl HD FR|mirror rt|modo_Anim|Layer0
+    7400356: Whl HD FR|steering wheel|modo_Anim|Layer0
+    7400358: Whl HD FR|Whl HD FL|modo_Anim|Layer0
+    7400360: Whl HD FR|Whl HD FR|modo_Anim|Layer0
+    7400362: Whl HD FR|Whl HD RL|modo_Anim|Layer0
+    7400364: Whl HD FR|Whl HD RR|modo_Anim|Layer0
+    7400366: Caliper FR|body|modo_Anim|Layer0
+    7400368: Caliper FR|Caliper FL|modo_Anim|Layer0
+    7400370: Caliper FR|Caliper FR|modo_Anim|Layer0
+    7400372: Caliper FR|Caliper RL|modo_Anim|Layer0
+    7400374: Caliper FR|Caliper RR |modo_Anim|Layer0
+    7400376: Caliper FR|driver|modo_Anim|Layer0
+    7400378: Caliper FR|interior|modo_Anim|Layer0
+    7400380: Caliper FR|lights brakes|modo_Anim|Layer0
+    7400382: Caliper FR|lights front lft 1|modo_Anim|Layer0
+    7400384: Caliper FR|lights front lft 2|modo_Anim|Layer0
+    7400386: Caliper FR|lights front lft 3|modo_Anim|Layer0
+    7400388: Caliper FR|lights front rt 1|modo_Anim|Layer0
+    7400390: Caliper FR|lights front rt 2|modo_Anim|Layer0
+    7400392: Caliper FR|lights front rt 3|modo_Anim|Layer0
+    7400394: Caliper FR|lights rear lft1|modo_Anim|Layer0
+    7400396: Caliper FR|lights rear lft2|modo_Anim|Layer0
+    7400398: Caliper FR|lights rear rt1|modo_Anim|Layer0
+    7400400: Caliper FR|lights rear rt2|modo_Anim|Layer0
+    7400402: Caliper FR|mirror interior|modo_Anim|Layer0
+    7400404: Caliper FR|mirror lft|modo_Anim|Layer0
+    7400406: Caliper FR|mirror rt|modo_Anim|Layer0
+    7400408: Caliper FR|steering wheel|modo_Anim|Layer0
+    7400410: Caliper FR|Whl HD FL|modo_Anim|Layer0
+    7400412: Caliper FR|Whl HD FR|modo_Anim|Layer0
+    7400414: Caliper FR|Whl HD RL|modo_Anim|Layer0
+    7400416: Caliper FR|Whl HD RR|modo_Anim|Layer0
+    7400418: Whl HD FL|body|modo_Anim|Layer0
+    7400420: Whl HD FL|Caliper FL|modo_Anim|Layer0
+    7400422: Whl HD FL|Caliper FR|modo_Anim|Layer0
+    7400424: Whl HD FL|Caliper RL|modo_Anim|Layer0
+    7400426: Whl HD FL|Caliper RR |modo_Anim|Layer0
+    7400428: Whl HD FL|driver|modo_Anim|Layer0
+    7400430: Whl HD FL|interior|modo_Anim|Layer0
+    7400432: Whl HD FL|lights brakes|modo_Anim|Layer0
+    7400434: Whl HD FL|lights front lft 1|modo_Anim|Layer0
+    7400436: Whl HD FL|lights front lft 2|modo_Anim|Layer0
+    7400438: Whl HD FL|lights front lft 3|modo_Anim|Layer0
+    7400440: Whl HD FL|lights front rt 1|modo_Anim|Layer0
+    7400442: Whl HD FL|lights front rt 2|modo_Anim|Layer0
+    7400444: Whl HD FL|lights front rt 3|modo_Anim|Layer0
+    7400446: Whl HD FL|lights rear lft1|modo_Anim|Layer0
+    7400448: Whl HD FL|lights rear lft2|modo_Anim|Layer0
+    7400450: Whl HD FL|lights rear rt1|modo_Anim|Layer0
+    7400452: Whl HD FL|lights rear rt2|modo_Anim|Layer0
+    7400454: Whl HD FL|mirror interior|modo_Anim|Layer0
+    7400456: Whl HD FL|mirror lft|modo_Anim|Layer0
+    7400458: Whl HD FL|mirror rt|modo_Anim|Layer0
+    7400460: Whl HD FL|steering wheel|modo_Anim|Layer0
+    7400462: Whl HD FL|Whl HD FL|modo_Anim|Layer0
+    7400464: Whl HD FL|Whl HD FR|modo_Anim|Layer0
+    7400466: Whl HD FL|Whl HD RL|modo_Anim|Layer0
+    7400468: Whl HD FL|Whl HD RR|modo_Anim|Layer0
+    7400470: Caliper FL|body|modo_Anim|Layer0
+    7400472: Caliper FL|Caliper FL|modo_Anim|Layer0
+    7400474: Caliper FL|Caliper FR|modo_Anim|Layer0
+    7400476: Caliper FL|Caliper RL|modo_Anim|Layer0
+    7400478: Caliper FL|Caliper RR |modo_Anim|Layer0
+    7400480: Caliper FL|driver|modo_Anim|Layer0
+    7400482: Caliper FL|interior|modo_Anim|Layer0
+    7400484: Caliper FL|lights brakes|modo_Anim|Layer0
+    7400486: Caliper FL|lights front lft 1|modo_Anim|Layer0
+    7400488: Caliper FL|lights front lft 2|modo_Anim|Layer0
+    7400490: Caliper FL|lights front lft 3|modo_Anim|Layer0
+    7400492: Caliper FL|lights front rt 1|modo_Anim|Layer0
+    7400494: Caliper FL|lights front rt 2|modo_Anim|Layer0
+    7400496: Caliper FL|lights front rt 3|modo_Anim|Layer0
+    7400498: Caliper FL|lights rear lft1|modo_Anim|Layer0
+    7400500: Caliper FL|lights rear lft2|modo_Anim|Layer0
+    7400502: Caliper FL|lights rear rt1|modo_Anim|Layer0
+    7400504: Caliper FL|lights rear rt2|modo_Anim|Layer0
+    7400506: Caliper FL|mirror interior|modo_Anim|Layer0
+    7400508: Caliper FL|mirror lft|modo_Anim|Layer0
+    7400510: Caliper FL|mirror rt|modo_Anim|Layer0
+    7400512: Caliper FL|steering wheel|modo_Anim|Layer0
+    7400514: Caliper FL|Whl HD FL|modo_Anim|Layer0
+    7400516: Caliper FL|Whl HD FR|modo_Anim|Layer0
+    7400518: Caliper FL|Whl HD RL|modo_Anim|Layer0
+    7400520: Caliper FL|Whl HD RR|modo_Anim|Layer0
+    7400522: Whl HD RL|body|modo_Anim|Layer0
+    7400524: Whl HD RL|Caliper FL|modo_Anim|Layer0
+    7400526: Whl HD RL|Caliper FR|modo_Anim|Layer0
+    7400528: Whl HD RL|Caliper RL|modo_Anim|Layer0
+    7400530: Whl HD RL|Caliper RR |modo_Anim|Layer0
+    7400532: Whl HD RL|driver|modo_Anim|Layer0
+    7400534: Whl HD RL|interior|modo_Anim|Layer0
+    7400536: Whl HD RL|lights brakes|modo_Anim|Layer0
+    7400538: Whl HD RL|lights front lft 1|modo_Anim|Layer0
+    7400540: Whl HD RL|lights front lft 2|modo_Anim|Layer0
+    7400542: Whl HD RL|lights front lft 3|modo_Anim|Layer0
+    7400544: Whl HD RL|lights front rt 1|modo_Anim|Layer0
+    7400546: Whl HD RL|lights front rt 2|modo_Anim|Layer0
+    7400548: Whl HD RL|lights front rt 3|modo_Anim|Layer0
+    7400550: Whl HD RL|lights rear lft1|modo_Anim|Layer0
+    7400552: Whl HD RL|lights rear lft2|modo_Anim|Layer0
+    7400554: Whl HD RL|lights rear rt1|modo_Anim|Layer0
+    7400556: Whl HD RL|lights rear rt2|modo_Anim|Layer0
+    7400558: Whl HD RL|mirror interior|modo_Anim|Layer0
+    7400560: Whl HD RL|mirror lft|modo_Anim|Layer0
+    7400562: Whl HD RL|mirror rt|modo_Anim|Layer0
+    7400564: Whl HD RL|steering wheel|modo_Anim|Layer0
+    7400566: Whl HD RL|Whl HD FL|modo_Anim|Layer0
+    7400568: Whl HD RL|Whl HD FR|modo_Anim|Layer0
+    7400570: Whl HD RL|Whl HD RL|modo_Anim|Layer0
+    7400572: Whl HD RL|Whl HD RR|modo_Anim|Layer0
+    7400574: Caliper RL|body|modo_Anim|Layer0
+    7400576: Caliper RL|Caliper FL|modo_Anim|Layer0
+    7400578: Caliper RL|Caliper FR|modo_Anim|Layer0
+    7400580: Caliper RL|Caliper RL|modo_Anim|Layer0
+    7400582: Caliper RL|Caliper RR |modo_Anim|Layer0
+    7400584: Caliper RL|driver|modo_Anim|Layer0
+    7400586: Caliper RL|interior|modo_Anim|Layer0
+    7400588: Caliper RL|lights brakes|modo_Anim|Layer0
+    7400590: Caliper RL|lights front lft 1|modo_Anim|Layer0
+    7400592: Caliper RL|lights front lft 2|modo_Anim|Layer0
+    7400594: Caliper RL|lights front lft 3|modo_Anim|Layer0
+    7400596: Caliper RL|lights front rt 1|modo_Anim|Layer0
+    7400598: Caliper RL|lights front rt 2|modo_Anim|Layer0
+    7400600: Caliper RL|lights front rt 3|modo_Anim|Layer0
+    7400602: Caliper RL|lights rear lft1|modo_Anim|Layer0
+    7400604: Caliper RL|lights rear lft2|modo_Anim|Layer0
+    7400606: Caliper RL|lights rear rt1|modo_Anim|Layer0
+    7400608: Caliper RL|lights rear rt2|modo_Anim|Layer0
+    7400610: Caliper RL|mirror interior|modo_Anim|Layer0
+    7400612: Caliper RL|mirror lft|modo_Anim|Layer0
+    7400614: Caliper RL|mirror rt|modo_Anim|Layer0
+    7400616: Caliper RL|steering wheel|modo_Anim|Layer0
+    7400618: Caliper RL|Whl HD FL|modo_Anim|Layer0
+    7400620: Caliper RL|Whl HD FR|modo_Anim|Layer0
+    7400622: Caliper RL|Whl HD RL|modo_Anim|Layer0
+    7400624: Caliper RL|Whl HD RR|modo_Anim|Layer0
+    7400626: lights front rt 1|body|modo_Anim|Layer0
+    7400628: lights front rt 1|Caliper FL|modo_Anim|Layer0
+    7400630: lights front rt 1|Caliper FR|modo_Anim|Layer0
+    7400632: lights front rt 1|Caliper RL|modo_Anim|Layer0
+    7400634: lights front rt 1|Caliper RR |modo_Anim|Layer0
+    7400636: lights front rt 1|driver|modo_Anim|Layer0
+    7400638: lights front rt 1|interior|modo_Anim|Layer0
+    7400640: lights front rt 1|lights brakes|modo_Anim|Layer0
+    7400642: lights front rt 1|lights front lft 1|modo_Anim|Layer0
+    7400644: lights front rt 1|lights front lft 2|modo_Anim|Layer0
+    7400646: lights front rt 1|lights front lft 3|modo_Anim|Layer0
+    7400648: lights front rt 1|lights front rt 1|modo_Anim|Layer0
+    7400650: lights front rt 1|lights front rt 2|modo_Anim|Layer0
+    7400652: lights front rt 1|lights front rt 3|modo_Anim|Layer0
+    7400654: lights front rt 1|lights rear lft1|modo_Anim|Layer0
+    7400656: lights front rt 1|lights rear lft2|modo_Anim|Layer0
+    7400658: lights front rt 1|lights rear rt1|modo_Anim|Layer0
+    7400660: lights front rt 1|lights rear rt2|modo_Anim|Layer0
+    7400662: lights front rt 1|mirror interior|modo_Anim|Layer0
+    7400664: lights front rt 1|mirror lft|modo_Anim|Layer0
+    7400666: lights front rt 1|mirror rt|modo_Anim|Layer0
+    7400668: lights front rt 1|steering wheel|modo_Anim|Layer0
+    7400670: lights front rt 1|Whl HD FL|modo_Anim|Layer0
+    7400672: lights front rt 1|Whl HD FR|modo_Anim|Layer0
+    7400674: lights front rt 1|Whl HD RL|modo_Anim|Layer0
+    7400676: lights front rt 1|Whl HD RR|modo_Anim|Layer0
+    7400678: lights front rt 2|body|modo_Anim|Layer0
+    7400680: lights front rt 2|Caliper FL|modo_Anim|Layer0
+    7400682: lights front rt 2|Caliper FR|modo_Anim|Layer0
+    7400684: lights front rt 2|Caliper RL|modo_Anim|Layer0
+    7400686: lights front rt 2|Caliper RR |modo_Anim|Layer0
+    7400688: lights front rt 2|driver|modo_Anim|Layer0
+    7400690: lights front rt 2|interior|modo_Anim|Layer0
+    7400692: lights front rt 2|lights brakes|modo_Anim|Layer0
+    7400694: lights front rt 2|lights front lft 1|modo_Anim|Layer0
+    7400696: lights front rt 2|lights front lft 2|modo_Anim|Layer0
+    7400698: lights front rt 2|lights front lft 3|modo_Anim|Layer0
+    7400700: lights front rt 2|lights front rt 1|modo_Anim|Layer0
+    7400702: lights front rt 2|lights front rt 2|modo_Anim|Layer0
+    7400704: lights front rt 2|lights front rt 3|modo_Anim|Layer0
+    7400706: lights front rt 2|lights rear lft1|modo_Anim|Layer0
+    7400708: lights front rt 2|lights rear lft2|modo_Anim|Layer0
+    7400710: lights front rt 2|lights rear rt1|modo_Anim|Layer0
+    7400712: lights front rt 2|lights rear rt2|modo_Anim|Layer0
+    7400714: lights front rt 2|mirror interior|modo_Anim|Layer0
+    7400716: lights front rt 2|mirror lft|modo_Anim|Layer0
+    7400718: lights front rt 2|mirror rt|modo_Anim|Layer0
+    7400720: lights front rt 2|steering wheel|modo_Anim|Layer0
+    7400722: lights front rt 2|Whl HD FL|modo_Anim|Layer0
+    7400724: lights front rt 2|Whl HD FR|modo_Anim|Layer0
+    7400726: lights front rt 2|Whl HD RL|modo_Anim|Layer0
+    7400728: lights front rt 2|Whl HD RR|modo_Anim|Layer0
+    7400730: lights front rt 3|body|modo_Anim|Layer0
+    7400732: lights front rt 3|Caliper FL|modo_Anim|Layer0
+    7400734: lights front rt 3|Caliper FR|modo_Anim|Layer0
+    7400736: lights front rt 3|Caliper RL|modo_Anim|Layer0
+    7400738: lights front rt 3|Caliper RR |modo_Anim|Layer0
+    7400740: lights front rt 3|driver|modo_Anim|Layer0
+    7400742: lights front rt 3|interior|modo_Anim|Layer0
+    7400744: lights front rt 3|lights brakes|modo_Anim|Layer0
+    7400746: lights front rt 3|lights front lft 1|modo_Anim|Layer0
+    7400748: lights front rt 3|lights front lft 2|modo_Anim|Layer0
+    7400750: lights front rt 3|lights front lft 3|modo_Anim|Layer0
+    7400752: lights front rt 3|lights front rt 1|modo_Anim|Layer0
+    7400754: lights front rt 3|lights front rt 2|modo_Anim|Layer0
+    7400756: lights front rt 3|lights front rt 3|modo_Anim|Layer0
+    7400758: lights front rt 3|lights rear lft1|modo_Anim|Layer0
+    7400760: lights front rt 3|lights rear lft2|modo_Anim|Layer0
+    7400762: lights front rt 3|lights rear rt1|modo_Anim|Layer0
+    7400764: lights front rt 3|lights rear rt2|modo_Anim|Layer0
+    7400766: lights front rt 3|mirror interior|modo_Anim|Layer0
+    7400768: lights front rt 3|mirror lft|modo_Anim|Layer0
+    7400770: lights front rt 3|mirror rt|modo_Anim|Layer0
+    7400772: lights front rt 3|steering wheel|modo_Anim|Layer0
+    7400774: lights front rt 3|Whl HD FL|modo_Anim|Layer0
+    7400776: lights front rt 3|Whl HD FR|modo_Anim|Layer0
+    7400778: lights front rt 3|Whl HD RL|modo_Anim|Layer0
+    7400780: lights front rt 3|Whl HD RR|modo_Anim|Layer0
+    7400782: lights front lft 1|body|modo_Anim|Layer0
+    7400784: lights front lft 1|Caliper FL|modo_Anim|Layer0
+    7400786: lights front lft 1|Caliper FR|modo_Anim|Layer0
+    7400788: lights front lft 1|Caliper RL|modo_Anim|Layer0
+    7400790: lights front lft 1|Caliper RR |modo_Anim|Layer0
+    7400792: lights front lft 1|driver|modo_Anim|Layer0
+    7400794: lights front lft 1|interior|modo_Anim|Layer0
+    7400796: lights front lft 1|lights brakes|modo_Anim|Layer0
+    7400798: lights front lft 1|lights front lft 1|modo_Anim|Layer0
+    7400800: lights front lft 1|lights front lft 2|modo_Anim|Layer0
+    7400802: lights front lft 1|lights front lft 3|modo_Anim|Layer0
+    7400804: lights front lft 1|lights front rt 1|modo_Anim|Layer0
+    7400806: lights front lft 1|lights front rt 2|modo_Anim|Layer0
+    7400808: lights front lft 1|lights front rt 3|modo_Anim|Layer0
+    7400810: lights front lft 1|lights rear lft1|modo_Anim|Layer0
+    7400812: lights front lft 1|lights rear lft2|modo_Anim|Layer0
+    7400814: lights front lft 1|lights rear rt1|modo_Anim|Layer0
+    7400816: lights front lft 1|lights rear rt2|modo_Anim|Layer0
+    7400818: lights front lft 1|mirror interior|modo_Anim|Layer0
+    7400820: lights front lft 1|mirror lft|modo_Anim|Layer0
+    7400822: lights front lft 1|mirror rt|modo_Anim|Layer0
+    7400824: lights front lft 1|steering wheel|modo_Anim|Layer0
+    7400826: lights front lft 1|Whl HD FL|modo_Anim|Layer0
+    7400828: lights front lft 1|Whl HD FR|modo_Anim|Layer0
+    7400830: lights front lft 1|Whl HD RL|modo_Anim|Layer0
+    7400832: lights front lft 1|Whl HD RR|modo_Anim|Layer0
+    7400834: lights front lft 2|body|modo_Anim|Layer0
+    7400836: lights front lft 2|Caliper FL|modo_Anim|Layer0
+    7400838: lights front lft 2|Caliper FR|modo_Anim|Layer0
+    7400840: lights front lft 2|Caliper RL|modo_Anim|Layer0
+    7400842: lights front lft 2|Caliper RR |modo_Anim|Layer0
+    7400844: lights front lft 2|driver|modo_Anim|Layer0
+    7400846: lights front lft 2|interior|modo_Anim|Layer0
+    7400848: lights front lft 2|lights brakes|modo_Anim|Layer0
+    7400850: lights front lft 2|lights front lft 1|modo_Anim|Layer0
+    7400852: lights front lft 2|lights front lft 2|modo_Anim|Layer0
+    7400854: lights front lft 2|lights front lft 3|modo_Anim|Layer0
+    7400856: lights front lft 2|lights front rt 1|modo_Anim|Layer0
+    7400858: lights front lft 2|lights front rt 2|modo_Anim|Layer0
+    7400860: lights front lft 2|lights front rt 3|modo_Anim|Layer0
+    7400862: lights front lft 2|lights rear lft1|modo_Anim|Layer0
+    7400864: lights front lft 2|lights rear lft2|modo_Anim|Layer0
+    7400866: lights front lft 2|lights rear rt1|modo_Anim|Layer0
+    7400868: lights front lft 2|lights rear rt2|modo_Anim|Layer0
+    7400870: lights front lft 2|mirror interior|modo_Anim|Layer0
+    7400872: lights front lft 2|mirror lft|modo_Anim|Layer0
+    7400874: lights front lft 2|mirror rt|modo_Anim|Layer0
+    7400876: lights front lft 2|steering wheel|modo_Anim|Layer0
+    7400878: lights front lft 2|Whl HD FL|modo_Anim|Layer0
+    7400880: lights front lft 2|Whl HD FR|modo_Anim|Layer0
+    7400882: lights front lft 2|Whl HD RL|modo_Anim|Layer0
+    7400884: lights front lft 2|Whl HD RR|modo_Anim|Layer0
+    7400886: lights front lft 3|body|modo_Anim|Layer0
+    7400888: lights front lft 3|Caliper FL|modo_Anim|Layer0
+    7400890: lights front lft 3|Caliper FR|modo_Anim|Layer0
+    7400892: lights front lft 3|Caliper RL|modo_Anim|Layer0
+    7400894: lights front lft 3|Caliper RR |modo_Anim|Layer0
+    7400896: lights front lft 3|driver|modo_Anim|Layer0
+    7400898: lights front lft 3|interior|modo_Anim|Layer0
+    7400900: lights front lft 3|lights brakes|modo_Anim|Layer0
+    7400902: lights front lft 3|lights front lft 1|modo_Anim|Layer0
+    7400904: lights front lft 3|lights front lft 2|modo_Anim|Layer0
+    7400906: lights front lft 3|lights front lft 3|modo_Anim|Layer0
+    7400908: lights front lft 3|lights front rt 1|modo_Anim|Layer0
+    7400910: lights front lft 3|lights front rt 2|modo_Anim|Layer0
+    7400912: lights front lft 3|lights front rt 3|modo_Anim|Layer0
+    7400914: lights front lft 3|lights rear lft1|modo_Anim|Layer0
+    7400916: lights front lft 3|lights rear lft2|modo_Anim|Layer0
+    7400918: lights front lft 3|lights rear rt1|modo_Anim|Layer0
+    7400920: lights front lft 3|lights rear rt2|modo_Anim|Layer0
+    7400922: lights front lft 3|mirror interior|modo_Anim|Layer0
+    7400924: lights front lft 3|mirror lft|modo_Anim|Layer0
+    7400926: lights front lft 3|mirror rt|modo_Anim|Layer0
+    7400928: lights front lft 3|steering wheel|modo_Anim|Layer0
+    7400930: lights front lft 3|Whl HD FL|modo_Anim|Layer0
+    7400932: lights front lft 3|Whl HD FR|modo_Anim|Layer0
+    7400934: lights front lft 3|Whl HD RL|modo_Anim|Layer0
+    7400936: lights front lft 3|Whl HD RR|modo_Anim|Layer0
+    7400938: lights rear rt1|body|modo_Anim|Layer0
+    7400940: lights rear rt1|Caliper FL|modo_Anim|Layer0
+    7400942: lights rear rt1|Caliper FR|modo_Anim|Layer0
+    7400944: lights rear rt1|Caliper RL|modo_Anim|Layer0
+    7400946: lights rear rt1|Caliper RR |modo_Anim|Layer0
+    7400948: lights rear rt1|driver|modo_Anim|Layer0
+    7400950: lights rear rt1|interior|modo_Anim|Layer0
+    7400952: lights rear rt1|lights brakes|modo_Anim|Layer0
+    7400954: lights rear rt1|lights front lft 1|modo_Anim|Layer0
+    7400956: lights rear rt1|lights front lft 2|modo_Anim|Layer0
+    7400958: lights rear rt1|lights front lft 3|modo_Anim|Layer0
+    7400960: lights rear rt1|lights front rt 1|modo_Anim|Layer0
+    7400962: lights rear rt1|lights front rt 2|modo_Anim|Layer0
+    7400964: lights rear rt1|lights front rt 3|modo_Anim|Layer0
+    7400966: lights rear rt1|lights rear lft1|modo_Anim|Layer0
+    7400968: lights rear rt1|lights rear lft2|modo_Anim|Layer0
+    7400970: lights rear rt1|lights rear rt1|modo_Anim|Layer0
+    7400972: lights rear rt1|lights rear rt2|modo_Anim|Layer0
+    7400974: lights rear rt1|mirror interior|modo_Anim|Layer0
+    7400976: lights rear rt1|mirror lft|modo_Anim|Layer0
+    7400978: lights rear rt1|mirror rt|modo_Anim|Layer0
+    7400980: lights rear rt1|steering wheel|modo_Anim|Layer0
+    7400982: lights rear rt1|Whl HD FL|modo_Anim|Layer0
+    7400984: lights rear rt1|Whl HD FR|modo_Anim|Layer0
+    7400986: lights rear rt1|Whl HD RL|modo_Anim|Layer0
+    7400988: lights rear rt1|Whl HD RR|modo_Anim|Layer0
+    7400990: lights rear rt2|body|modo_Anim|Layer0
+    7400992: lights rear rt2|Caliper FL|modo_Anim|Layer0
+    7400994: lights rear rt2|Caliper FR|modo_Anim|Layer0
+    7400996: lights rear rt2|Caliper RL|modo_Anim|Layer0
+    7400998: lights rear rt2|Caliper RR |modo_Anim|Layer0
+    7401000: lights rear rt2|driver|modo_Anim|Layer0
+    7401002: lights rear rt2|interior|modo_Anim|Layer0
+    7401004: lights rear rt2|lights brakes|modo_Anim|Layer0
+    7401006: lights rear rt2|lights front lft 1|modo_Anim|Layer0
+    7401008: lights rear rt2|lights front lft 2|modo_Anim|Layer0
+    7401010: lights rear rt2|lights front lft 3|modo_Anim|Layer0
+    7401012: lights rear rt2|lights front rt 1|modo_Anim|Layer0
+    7401014: lights rear rt2|lights front rt 2|modo_Anim|Layer0
+    7401016: lights rear rt2|lights front rt 3|modo_Anim|Layer0
+    7401018: lights rear rt2|lights rear lft1|modo_Anim|Layer0
+    7401020: lights rear rt2|lights rear lft2|modo_Anim|Layer0
+    7401022: lights rear rt2|lights rear rt1|modo_Anim|Layer0
+    7401024: lights rear rt2|lights rear rt2|modo_Anim|Layer0
+    7401026: lights rear rt2|mirror interior|modo_Anim|Layer0
+    7401028: lights rear rt2|mirror lft|modo_Anim|Layer0
+    7401030: lights rear rt2|mirror rt|modo_Anim|Layer0
+    7401032: lights rear rt2|steering wheel|modo_Anim|Layer0
+    7401034: lights rear rt2|Whl HD FL|modo_Anim|Layer0
+    7401036: lights rear rt2|Whl HD FR|modo_Anim|Layer0
+    7401038: lights rear rt2|Whl HD RL|modo_Anim|Layer0
+    7401040: lights rear rt2|Whl HD RR|modo_Anim|Layer0
+    7401042: lights rear lft1|body|modo_Anim|Layer0
+    7401044: lights rear lft1|Caliper FL|modo_Anim|Layer0
+    7401046: lights rear lft1|Caliper FR|modo_Anim|Layer0
+    7401048: lights rear lft1|Caliper RL|modo_Anim|Layer0
+    7401050: lights rear lft1|Caliper RR |modo_Anim|Layer0
+    7401052: lights rear lft1|driver|modo_Anim|Layer0
+    7401054: lights rear lft1|interior|modo_Anim|Layer0
+    7401056: lights rear lft1|lights brakes|modo_Anim|Layer0
+    7401058: lights rear lft1|lights front lft 1|modo_Anim|Layer0
+    7401060: lights rear lft1|lights front lft 2|modo_Anim|Layer0
+    7401062: lights rear lft1|lights front lft 3|modo_Anim|Layer0
+    7401064: lights rear lft1|lights front rt 1|modo_Anim|Layer0
+    7401066: lights rear lft1|lights front rt 2|modo_Anim|Layer0
+    7401068: lights rear lft1|lights front rt 3|modo_Anim|Layer0
+    7401070: lights rear lft1|lights rear lft1|modo_Anim|Layer0
+    7401072: lights rear lft1|lights rear lft2|modo_Anim|Layer0
+    7401074: lights rear lft1|lights rear rt1|modo_Anim|Layer0
+    7401076: lights rear lft1|lights rear rt2|modo_Anim|Layer0
+    7401078: lights rear lft1|mirror interior|modo_Anim|Layer0
+    7401080: lights rear lft1|mirror lft|modo_Anim|Layer0
+    7401082: lights rear lft1|mirror rt|modo_Anim|Layer0
+    7401084: lights rear lft1|steering wheel|modo_Anim|Layer0
+    7401086: lights rear lft1|Whl HD FL|modo_Anim|Layer0
+    7401088: lights rear lft1|Whl HD FR|modo_Anim|Layer0
+    7401090: lights rear lft1|Whl HD RL|modo_Anim|Layer0
+    7401092: lights rear lft1|Whl HD RR|modo_Anim|Layer0
+    7401094: lights rear lft2|body|modo_Anim|Layer0
+    7401096: lights rear lft2|Caliper FL|modo_Anim|Layer0
+    7401098: lights rear lft2|Caliper FR|modo_Anim|Layer0
+    7401100: lights rear lft2|Caliper RL|modo_Anim|Layer0
+    7401102: lights rear lft2|Caliper RR |modo_Anim|Layer0
+    7401104: lights rear lft2|driver|modo_Anim|Layer0
+    7401106: lights rear lft2|interior|modo_Anim|Layer0
+    7401108: lights rear lft2|lights brakes|modo_Anim|Layer0
+    7401110: lights rear lft2|lights front lft 1|modo_Anim|Layer0
+    7401112: lights rear lft2|lights front lft 2|modo_Anim|Layer0
+    7401114: lights rear lft2|lights front lft 3|modo_Anim|Layer0
+    7401116: lights rear lft2|lights front rt 1|modo_Anim|Layer0
+    7401118: lights rear lft2|lights front rt 2|modo_Anim|Layer0
+    7401120: lights rear lft2|lights front rt 3|modo_Anim|Layer0
+    7401122: lights rear lft2|lights rear lft1|modo_Anim|Layer0
+    7401124: lights rear lft2|lights rear lft2|modo_Anim|Layer0
+    7401126: lights rear lft2|lights rear rt1|modo_Anim|Layer0
+    7401128: lights rear lft2|lights rear rt2|modo_Anim|Layer0
+    7401130: lights rear lft2|mirror interior|modo_Anim|Layer0
+    7401132: lights rear lft2|mirror lft|modo_Anim|Layer0
+    7401134: lights rear lft2|mirror rt|modo_Anim|Layer0
+    7401136: lights rear lft2|steering wheel|modo_Anim|Layer0
+    7401138: lights rear lft2|Whl HD FL|modo_Anim|Layer0
+    7401140: lights rear lft2|Whl HD FR|modo_Anim|Layer0
+    7401142: lights rear lft2|Whl HD RL|modo_Anim|Layer0
+    7401144: lights rear lft2|Whl HD RR|modo_Anim|Layer0
+    7401146: lights brakes|body|modo_Anim|Layer0
+    7401148: lights brakes|Caliper FL|modo_Anim|Layer0
+    7401150: lights brakes|Caliper FR|modo_Anim|Layer0
+    7401152: lights brakes|Caliper RL|modo_Anim|Layer0
+    7401154: lights brakes|Caliper RR |modo_Anim|Layer0
+    7401156: lights brakes|driver|modo_Anim|Layer0
+    7401158: lights brakes|interior|modo_Anim|Layer0
+    7401160: lights brakes|lights brakes|modo_Anim|Layer0
+    7401162: lights brakes|lights front lft 1|modo_Anim|Layer0
+    7401164: lights brakes|lights front lft 2|modo_Anim|Layer0
+    7401166: lights brakes|lights front lft 3|modo_Anim|Layer0
+    7401168: lights brakes|lights front rt 1|modo_Anim|Layer0
+    7401170: lights brakes|lights front rt 2|modo_Anim|Layer0
+    7401172: lights brakes|lights front rt 3|modo_Anim|Layer0
+    7401174: lights brakes|lights rear lft1|modo_Anim|Layer0
+    7401176: lights brakes|lights rear lft2|modo_Anim|Layer0
+    7401178: lights brakes|lights rear rt1|modo_Anim|Layer0
+    7401180: lights brakes|lights rear rt2|modo_Anim|Layer0
+    7401182: lights brakes|mirror interior|modo_Anim|Layer0
+    7401184: lights brakes|mirror lft|modo_Anim|Layer0
+    7401186: lights brakes|mirror rt|modo_Anim|Layer0
+    7401188: lights brakes|steering wheel|modo_Anim|Layer0
+    7401190: lights brakes|Whl HD FL|modo_Anim|Layer0
+    7401192: lights brakes|Whl HD FR|modo_Anim|Layer0
+    7401194: lights brakes|Whl HD RL|modo_Anim|Layer0
+    7401196: lights brakes|Whl HD RR|modo_Anim|Layer0
+    7401198: mirror rt|body|modo_Anim|Layer0
+    7401200: mirror rt|Caliper FL|modo_Anim|Layer0
+    7401202: mirror rt|Caliper FR|modo_Anim|Layer0
+    7401204: mirror rt|Caliper RL|modo_Anim|Layer0
+    7401206: mirror rt|Caliper RR |modo_Anim|Layer0
+    7401208: mirror rt|driver|modo_Anim|Layer0
+    7401210: mirror rt|interior|modo_Anim|Layer0
+    7401212: mirror rt|lights brakes|modo_Anim|Layer0
+    7401214: mirror rt|lights front lft 1|modo_Anim|Layer0
+    7401216: mirror rt|lights front lft 2|modo_Anim|Layer0
+    7401218: mirror rt|lights front lft 3|modo_Anim|Layer0
+    7401220: mirror rt|lights front rt 1|modo_Anim|Layer0
+    7401222: mirror rt|lights front rt 2|modo_Anim|Layer0
+    7401224: mirror rt|lights front rt 3|modo_Anim|Layer0
+    7401226: mirror rt|lights rear lft1|modo_Anim|Layer0
+    7401228: mirror rt|lights rear lft2|modo_Anim|Layer0
+    7401230: mirror rt|lights rear rt1|modo_Anim|Layer0
+    7401232: mirror rt|lights rear rt2|modo_Anim|Layer0
+    7401234: mirror rt|mirror interior|modo_Anim|Layer0
+    7401236: mirror rt|mirror lft|modo_Anim|Layer0
+    7401238: mirror rt|mirror rt|modo_Anim|Layer0
+    7401240: mirror rt|steering wheel|modo_Anim|Layer0
+    7401242: mirror rt|Whl HD FL|modo_Anim|Layer0
+    7401244: mirror rt|Whl HD FR|modo_Anim|Layer0
+    7401246: mirror rt|Whl HD RL|modo_Anim|Layer0
+    7401248: mirror rt|Whl HD RR|modo_Anim|Layer0
+    7401250: mirror lft|body|modo_Anim|Layer0
+    7401252: mirror lft|Caliper FL|modo_Anim|Layer0
+    7401254: mirror lft|Caliper FR|modo_Anim|Layer0
+    7401256: mirror lft|Caliper RL|modo_Anim|Layer0
+    7401258: mirror lft|Caliper RR |modo_Anim|Layer0
+    7401260: mirror lft|driver|modo_Anim|Layer0
+    7401262: mirror lft|interior|modo_Anim|Layer0
+    7401264: mirror lft|lights brakes|modo_Anim|Layer0
+    7401266: mirror lft|lights front lft 1|modo_Anim|Layer0
+    7401268: mirror lft|lights front lft 2|modo_Anim|Layer0
+    7401270: mirror lft|lights front lft 3|modo_Anim|Layer0
+    7401272: mirror lft|lights front rt 1|modo_Anim|Layer0
+    7401274: mirror lft|lights front rt 2|modo_Anim|Layer0
+    7401276: mirror lft|lights front rt 3|modo_Anim|Layer0
+    7401278: mirror lft|lights rear lft1|modo_Anim|Layer0
+    7401280: mirror lft|lights rear lft2|modo_Anim|Layer0
+    7401282: mirror lft|lights rear rt1|modo_Anim|Layer0
+    7401284: mirror lft|lights rear rt2|modo_Anim|Layer0
+    7401286: mirror lft|mirror interior|modo_Anim|Layer0
+    7401288: mirror lft|mirror lft|modo_Anim|Layer0
+    7401290: mirror lft|mirror rt|modo_Anim|Layer0
+    7401292: mirror lft|steering wheel|modo_Anim|Layer0
+    7401294: mirror lft|Whl HD FL|modo_Anim|Layer0
+    7401296: mirror lft|Whl HD FR|modo_Anim|Layer0
+    7401298: mirror lft|Whl HD RL|modo_Anim|Layer0
+    7401300: mirror lft|Whl HD RR|modo_Anim|Layer0
+    7401302: mirror interior|body|modo_Anim|Layer0
+    7401304: mirror interior|Caliper FL|modo_Anim|Layer0
+    7401306: mirror interior|Caliper FR|modo_Anim|Layer0
+    7401308: mirror interior|Caliper RL|modo_Anim|Layer0
+    7401310: mirror interior|Caliper RR |modo_Anim|Layer0
+    7401312: mirror interior|driver|modo_Anim|Layer0
+    7401314: mirror interior|interior|modo_Anim|Layer0
+    7401316: mirror interior|lights brakes|modo_Anim|Layer0
+    7401318: mirror interior|lights front lft 1|modo_Anim|Layer0
+    7401320: mirror interior|lights front lft 2|modo_Anim|Layer0
+    7401322: mirror interior|lights front lft 3|modo_Anim|Layer0
+    7401324: mirror interior|lights front rt 1|modo_Anim|Layer0
+    7401326: mirror interior|lights front rt 2|modo_Anim|Layer0
+    7401328: mirror interior|lights front rt 3|modo_Anim|Layer0
+    7401330: mirror interior|lights rear lft1|modo_Anim|Layer0
+    7401332: mirror interior|lights rear lft2|modo_Anim|Layer0
+    7401334: mirror interior|lights rear rt1|modo_Anim|Layer0
+    7401336: mirror interior|lights rear rt2|modo_Anim|Layer0
+    7401338: mirror interior|mirror interior|modo_Anim|Layer0
+    7401340: mirror interior|mirror lft|modo_Anim|Layer0
+    7401342: mirror interior|mirror rt|modo_Anim|Layer0
+    7401344: mirror interior|steering wheel|modo_Anim|Layer0
+    7401346: mirror interior|Whl HD FL|modo_Anim|Layer0
+    7401348: mirror interior|Whl HD FR|modo_Anim|Layer0
+    7401350: mirror interior|Whl HD RL|modo_Anim|Layer0
+    7401352: mirror interior|Whl HD RR|modo_Anim|Layer0
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -2613,7 +991,7 @@ ModelImporter:
       name: GR3D-driver
     second: {fileID: 2100000, guid: d4da20030a2374e438de302237d37d42, type: 2}
   materials:
-    materialImportMode: 1
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 0
@@ -2622,7 +1000,6 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
-    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -2644,38 +1021,28 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 2
+    meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
-    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
-    nodeNameCollisionStrategy: 0
-    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    bakeAxisConversion: 0
     preserveHierarchy: 0
-    skinWeightsMode: 0
-    maxBonesPerVertex: 4
-    minBoneWeight: 0.001
-    optimizeBones: 1
-    meshOptimizationFlags: -1
     indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
-    secondaryUVMarginMethod: 0
-    secondaryUVMinLightmapResolution: 40
-    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    strictVertexDataChecks: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -2684,10 +1051,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
   importAnimation: 1
+  copyAvatar: 0
   humanDescription:
-    serializedVersion: 3
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -2697,18 +1064,13 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
-  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
-  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

@@ -896,15 +896,11 @@ namespace NWH.VehiclePhysics2.Powertrain
                         ShiftInto(-1);
                     }
                 }
-                else if (automaticTransmissionDNRShiftType == AutomaticTransmissionDNRShiftType.RequireShiftInput) //Gabbar D N R
+                else if (automaticTransmissionDNRShiftType == AutomaticTransmissionDNRShiftType.RequireShiftInput)
                 {
                     if (vc.input.ShiftUp || vc.input.ShiftInto == 1)
                     {
                         ShiftInto(1);
-                    }
-                    else if (vc.input.ShiftNutral && (vc.input.ShiftInto == 1 || vc.input.ShiftInto == -1))
-                    {
-                        ShiftInto(0);
                     }
                     else if (vc.input.ShiftDown || vc.input.ShiftInto == -1)
                     {
@@ -939,17 +935,7 @@ namespace NWH.VehiclePhysics2.Powertrain
                 {
                     if (vc.input.ShiftUp || vc.input.ShiftInto == 0)
                     {
-                        ShiftInto(1); // ShiftInto(0)
-                       
-                        //Direct gear 1 from -1
-                    }
-                    else if (vc.input.ShiftNutral)
-                    {
-                        vc.input.ShiftInto = 0;
                         ShiftInto(0);
-                        
-                        //Direct gear 0 from -1
-                     
                     }
                     else if (vc.input.ShiftInto == 1)
                     {
@@ -962,7 +948,6 @@ namespace NWH.VehiclePhysics2.Powertrain
                         (brakeInput > INPUT_DEADZONE || throttleInput < INPUT_DEADZONE))
                     {
                         ShiftInto(0);
-                        
                     }
                 }
 
@@ -980,14 +965,12 @@ namespace NWH.VehiclePhysics2.Powertrain
                 }
             }
             // In forward
-
             else
             {
-                if (vehicleSpeed > 0.4f && !vc.input.ShiftNutral && !vc.input.ShiftDown) // Gabbar Added "&& !vc.input.ShiftNutral" for shifting the truck to nutral at any speed   and  && !vc.input.ShiftDown
+                if (vehicleSpeed > 0.4f)
                 {
-                    
                     // Upshift
-                    if (currentGear < forwardGearCount && _referenceShiftRPM > TargetUpshiftRPM)    // Gabbar
+                    if (currentGear < forwardGearCount && _referenceShiftRPM > TargetUpshiftRPM)
                     {
                         if (!isSequential && allowUpshiftGearSkipping)
                         {
@@ -1010,20 +993,17 @@ namespace NWH.VehiclePhysics2.Powertrain
                             if (g != currentGear)
                             {
                                 ShiftInto(g);
-                                
                             }
                         }
                         else
                         {
                             ShiftInto(currentGear + 1);
-                           
                         }
                     }
                     // Downshift
                     else if (_referenceShiftRPM < TargetDownshiftRPM)
                     {
                         // Non-sequential
-
                         if (!isSequential && allowDownshiftGearSkipping)
                         {
                             if (currentGear != 1)
@@ -1044,7 +1024,6 @@ namespace NWH.VehiclePhysics2.Powertrain
                                 if (g != currentGear)
                                 {
                                     ShiftInto(g);
-                                //Debug.LogError("C");
                                 }
                             }
                             else if (vehicleSpeed < dnrSpeedThreshold && throttleInput < INPUT_DEADZONE
@@ -1053,9 +1032,7 @@ namespace NWH.VehiclePhysics2.Powertrain
                                                                          .RequireShiftInput)
                             {
                                 ShiftInto(0);
-                           
                             }
-
                         }
                         // Sequential
                         else
@@ -1063,7 +1040,6 @@ namespace NWH.VehiclePhysics2.Powertrain
                             if (currentGear != 1)
                             {
                                 ShiftInto(currentGear - 1);
-                             
                             }
                             else if (vehicleSpeed < dnrSpeedThreshold && throttleInput < INPUT_DEADZONE &&
                                      brakeInput < INPUT_DEADZONE
@@ -1071,32 +1047,23 @@ namespace NWH.VehiclePhysics2.Powertrain
                                      AutomaticTransmissionDNRShiftType.RequireShiftInput)
                             {
                                 ShiftInto(0);
-                               
                             }
                         }
                     }
                 }
-
-
                 // Shift into neutral
                 else
                 {
-                   
                     if (automaticTransmissionDNRShiftType != AutomaticTransmissionDNRShiftType.RequireShiftInput)
                     {
                         if (throttleInput < INPUT_DEADZONE)
                         {
                             ShiftInto(0);
-
                         }
                     }
-                        else
+                    else
                     {
-                        if (vc.input.ShiftDown  || vc.input.ShiftInto == 0)
-                        {
-                            ShiftInto(-1);
-                        }
-                        else if (vc.input.ShiftNutral)
+                        if (vc.input.ShiftDown || vc.input.ShiftInto == 0)
                         {
                             ShiftInto(0);
                         }

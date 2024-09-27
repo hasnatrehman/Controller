@@ -56,9 +56,6 @@ namespace NWH.VehiclePhysics2.Input
 
         [NonSerialized]
         public bool shiftDown;
-        
-        [NonSerialized]
-        public bool shiftNutral;
 
         [NonSerialized]
         public int shiftInto;
@@ -88,7 +85,6 @@ namespace NWH.VehiclePhysics2.Input
             shiftInto = -999;
             shiftUp = false;
             shiftDown = false;
-            shiftNutral = false;
             leftBlinker = false;
             rightBlinker = false;
             lowBeamLights = false;

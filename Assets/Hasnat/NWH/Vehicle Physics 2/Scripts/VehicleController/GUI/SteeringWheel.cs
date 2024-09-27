@@ -1,4 +1,3 @@
-using NWH.VehiclePhysics2.Input;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -13,7 +12,6 @@ namespace NWH.VehiclePhysics2.VehicleGUI
     /// </summary>
     public partial class SteeringWheel : MonoBehaviour
     {
-        public static SteeringWheel instance;
         /// <summary>
         ///     Maximum angle that the steering wheel can be turned to towards either side in degrees.
         /// </summary>
@@ -27,30 +25,14 @@ namespace NWH.VehiclePhysics2.VehicleGUI
         public float returnToCenterSpeed = 400f;
 
         public Graphic steeringWheelGraphic;
-        public VehicleController VehicleController;
+
         private Vector2 _centerPoint;
         private RectTransform _rectT;
         private float _wheelAngle;
-        [HideInInspector]
-        public bool _wheelBeingHeld;
+        private bool _wheelBeingHeld;
         private float _wheelPrevAngle;
-        public MobileVehicleInputProvider MobileVehicleInputProvider;
 
-        private void Awake()
-        {
-            instance = this;
-        }
-        private void OnEnable()
-        {
-            // Get the actual vehicle steering angle
-            float actualSteeringAngle = VehicleController.steering.angle;
 
-            // Map the actual steering angle to the [-1, 1] range
-            float normalizedSteeringAngle = Mathf.Clamp(actualSteeringAngle / VehicleController.steering.maximumSteerAngle, -1f, 1f);
-
-            // Apply this normalized value to the steering wheel angle, scaled by maximumSteeringAngle
-            _wheelAngle = normalizedSteeringAngle * maximumSteeringAngle;
-        }
         private void Start()
         {
             _rectT = steeringWheelGraphic.rectTransform;
@@ -64,33 +46,25 @@ namespace NWH.VehiclePhysics2.VehicleGUI
         {
             // If the wheel is released, reset the rotation
             // to initial (zero) rotation by wheelReleasedSpeed degrees per second
-            if (!_wheelBeingHeld && !Mathf.Approximately(0f, _wheelAngle))   // for UI 
+            if (!_wheelBeingHeld && !Mathf.Approximately(0f, _wheelAngle))
             {
                 float deltaAngle = returnToCenterSpeed * Time.deltaTime;
-
-
-
                 if (Mathf.Abs(deltaAngle) > Mathf.Abs(_wheelAngle))
                 {
                     _wheelAngle = 0f;
-
                 }
                 else if (_wheelAngle > 0f)
                 {
                     _wheelAngle -= deltaAngle;
-
                 }
                 else
                 {
                     _wheelAngle += deltaAngle;
-
                 }
             }
 
             // Rotate the wheel image
             _rectT.localEulerAngles = Vector3.back * _wheelAngle;
-
-            //_wheelAngle = 0;
         }
 
 
@@ -137,7 +111,6 @@ namespace NWH.VehiclePhysics2.VehicleGUI
             // Make sure wheel angle never exceeds maximumSteeringAngle
             _wheelAngle = Mathf.Clamp(_wheelAngle, -maximumSteeringAngle, maximumSteeringAngle);
             _wheelPrevAngle = wheelNewAngle;
-
         }
 
 
@@ -157,7 +130,6 @@ namespace NWH.VehiclePhysics2.VehicleGUI
 
             _wheelBeingHeld = true;
             _wheelPrevAngle = Vector2.Angle(Vector2.up, pointerPos - _centerPoint);
-
         }
 
 
@@ -214,4 +186,3 @@ namespace NWH.VehiclePhysics2.VehicleGUI
         }
     }
 }
-

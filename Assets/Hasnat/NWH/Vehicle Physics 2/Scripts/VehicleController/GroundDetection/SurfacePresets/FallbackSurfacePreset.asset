@@ -25,7 +25,6 @@ MonoBehaviour:
   maxParticleLifetime: 0
   particleLifeDistance: 10
   frictionPreset: {fileID: 11400000, guid: 21211030b85d8a44190f2a36324ef00e, type: 2}
-  rollingResistanceMaxMultiplier: 1
   name: Fallback/Default
   skidSoundClip: {fileID: 8300000, guid: 54bbc60051d16904d9fa34c6fff4b874, type: 3}
   playSkidSounds: 1
@@ -38,5 +37,5 @@ MonoBehaviour:
   surfaceSoundPitch: 1
   surfaceSoundVolume: 0
   drawSkidmarks: 1
-  skidmarkMaterial: {fileID: 0}
+  skidmarkMaterial: {fileID: 2100000, guid: 0a47dd039b84a104aae3d86a9befdf3f, type: 2}
   skidmarkBaseIntensity: 0

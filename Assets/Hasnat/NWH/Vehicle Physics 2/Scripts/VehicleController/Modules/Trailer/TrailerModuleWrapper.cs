@@ -31,11 +31,10 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
             }
 
             SphereCollider triggerCollider = module.attachmentPoint.GetComponent<SphereCollider>();
-
             if (triggerCollider == null)
             {
                 triggerCollider = module.attachmentPoint.gameObject.AddComponent<SphereCollider>();
-                triggerCollider.radius = module.attachmentTriggerRadius *3;
+                triggerCollider.radius = module.attachmentTriggerRadius;
                 triggerCollider.isTrigger = true;
                 triggerCollider.gameObject.layer = module.attachmentLayer;
             }

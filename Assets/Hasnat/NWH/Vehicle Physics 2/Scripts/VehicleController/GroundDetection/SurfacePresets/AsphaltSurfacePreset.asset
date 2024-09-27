@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc561ac79d22fd74dba6cf84dd95cded, type: 3}
   m_Name: AsphaltSurfacePreset
   m_EditorClassIdentifier: 
-  particleType: 1
-  particleColor: {r: 0.41420433, g: 0.44248644, b: 0.49056602, a: 1}
-  maxParticleEmissionRateOverDistance: 0.298
-  particleSize: 0.5
-  emitParticles: 0
+  particleType: 0
+  particleColor: {r: 0.9528302, g: 0.9528302, b: 0.9528302, a: 1}
+  maxParticleEmissionRateOverDistance: 0.978
+  particleSize: 2.4
+  emitParticles: 1
   emitChunks: 0
   maxChunkEmissionRateOverDistance: 1
   chunkLifeDistance: 3
   maxChunkLifetime: 0.5
-  particleMaxAlpha: 0.349
-  maxParticleLifetime: 3
-  particleLifeDistance: 4
+  particleMaxAlpha: 0.875
+  maxParticleLifetime: 5
+  particleLifeDistance: 25
   frictionPreset: {fileID: 11400000, guid: 935347efafd41d4408543d5ce8339437, type: 2}
   rollingResistanceMaxMultiplier: 1
   name: Asphalt
@@ -31,12 +31,12 @@ MonoBehaviour:
   playSkidSounds: 1
   skidSoundPitch: 1.29
   skidSoundVolume: 0.22
-  slipFactor: 0
+  slipFactor: 1
   slipSensitiveSurfaceSound: 1
   playSurfaceSounds: 1
   surfaceSoundClip: {fileID: 8300000, guid: 77d6eaeb41d727a4681a2cc8654c60b2, type: 3}
   surfaceSoundPitch: 1
   surfaceSoundVolume: 0.14
   drawSkidmarks: 1
-  skidmarkMaterial: {fileID: 2100000, guid: d217580501187bd47950b2debb7588dd, type: 2}
+  skidmarkMaterial: {fileID: 2100000, guid: ca984932f6957a744bdc716a2ac03220, type: 2}
   skidmarkBaseIntensity: 0

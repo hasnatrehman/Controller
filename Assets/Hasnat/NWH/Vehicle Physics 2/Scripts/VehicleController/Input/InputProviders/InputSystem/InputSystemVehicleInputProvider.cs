@@ -182,10 +182,6 @@ namespace NWH.VehiclePhysics2.Input
             return vehicleInputActions.VehicleControls.ShiftDown.triggered;
         }
 
-        public override bool ShiftNutral()
-        {
-            return vehicleInputActions.VehicleControls.ShiftNutral.triggered;
-        }
 
         public override bool ShiftUp()
         {

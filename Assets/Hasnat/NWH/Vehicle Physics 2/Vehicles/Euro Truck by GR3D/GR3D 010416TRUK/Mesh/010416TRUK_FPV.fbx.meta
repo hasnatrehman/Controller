@@ -1,182 +1,73 @@
 fileFormatVersion: 2
 guid: 4d699642f4285ca468353430cd147567
+timeCreated: 1459713049
+licenseType: Store
 ModelImporter:
-  serializedVersion: 21300
-  internalIDToNameTable:
-  - first:
-      1: 100000
-    second: //RootNode
-  - first:
-      1: 100002
-    second: door rt
-  - first:
-      1: 100004
-    second: doors lft
-  - first:
-      1: 100006
-    second: exterior
-  - first:
-      1: 100008
-    second: interior
-  - first:
-      1: 100010
-    second: mirror lft
-  - first:
-      1: 100012
-    second: mirror rt
-  - first:
-      1: 100014
-    second: shifter
-  - first:
-      1: 100016
-    second: steering wheel
-  - first:
-      1: 100018
-    second: wiper lft
-  - first:
-      1: 100020
-    second: wiper rt
-  - first:
-      4: 400000
-    second: //RootNode
-  - first:
-      4: 400002
-    second: door rt
-  - first:
-      4: 400004
-    second: doors lft
-  - first:
-      4: 400006
-    second: exterior
-  - first:
-      4: 400008
-    second: interior
-  - first:
-      4: 400010
-    second: mirror lft
-  - first:
-      4: 400012
-    second: mirror rt
-  - first:
-      4: 400014
-    second: shifter
-  - first:
-      4: 400016
-    second: steering wheel
-  - first:
-      4: 400018
-    second: wiper lft
-  - first:
-      4: 400020
-    second: wiper rt
-  - first:
-      23: 2300000
-    second: door rt
-  - first:
-      23: 2300002
-    second: doors lft
-  - first:
-      23: 2300004
-    second: exterior
-  - first:
-      23: 2300006
-    second: interior
-  - first:
-      23: 2300008
-    second: mirror lft
-  - first:
-      23: 2300010
-    second: mirror rt
-  - first:
-      23: 2300012
-    second: shifter
-  - first:
-      23: 2300014
-    second: steering wheel
-  - first:
-      23: 2300016
-    second: wiper lft
-  - first:
-      23: 2300018
-    second: wiper rt
-  - first:
-      33: 3300000
-    second: door rt
-  - first:
-      33: 3300002
-    second: doors lft
-  - first:
-      33: 3300004
-    second: exterior
-  - first:
-      33: 3300006
-    second: interior
-  - first:
-      33: 3300008
-    second: mirror lft
-  - first:
-      33: 3300010
-    second: mirror rt
-  - first:
-      33: 3300012
-    second: shifter
-  - first:
-      33: 3300014
-    second: steering wheel
-  - first:
-      33: 3300016
-    second: wiper lft
-  - first:
-      33: 3300018
-    second: wiper rt
-  - first:
-      43: 4300000
-    second: interior
-  - first:
-      43: 4300002
-    second: steering wheel
-  - first:
-      43: 4300004
-    second: doors lft
-  - first:
-      43: 4300006
-    second: door rt
-  - first:
-      43: 4300008
-    second: wiper lft
-  - first:
-      43: 4300010
-    second: wiper rt
-  - first:
-      43: 4300012
-    second: mirror lft
-  - first:
-      43: 4300014
-    second: mirror rt
-  - first:
-      43: 4300016
-    second: shifter
-  - first:
-      43: 4300018
-    second: exterior
-  - first:
-      74: 7400000
-    second: modo_Anim
-  - first:
-      95: 9500000
-    second: //RootNode
-  externalObjects: {}
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: door rt
+    100004: doors lft
+    100006: exterior
+    100008: interior
+    100010: mirror lft
+    100012: mirror rt
+    100014: shifter
+    100016: steering wheel
+    100018: wiper lft
+    100020: wiper rt
+    400000: //RootNode
+    400002: door rt
+    400004: doors lft
+    400006: exterior
+    400008: interior
+    400010: mirror lft
+    400012: mirror rt
+    400014: shifter
+    400016: steering wheel
+    400018: wiper lft
+    400020: wiper rt
+    2300000: door rt
+    2300002: doors lft
+    2300004: exterior
+    2300006: interior
+    2300008: mirror lft
+    2300010: mirror rt
+    2300012: shifter
+    2300014: steering wheel
+    2300016: wiper lft
+    2300018: wiper rt
+    3300000: door rt
+    3300002: doors lft
+    3300004: exterior
+    3300006: interior
+    3300008: mirror lft
+    3300010: mirror rt
+    3300012: shifter
+    3300014: steering wheel
+    3300016: wiper lft
+    3300018: wiper rt
+    4300000: interior
+    4300002: steering wheel
+    4300004: doors lft
+    4300006: door rt
+    4300008: wiper lft
+    4300010: wiper rt
+    4300012: mirror lft
+    4300014: mirror rt
+    4300016: shifter
+    4300018: exterior
+    7400000: modo_Anim
+    9500000: //RootNode
   materials:
-    materialImportMode: 1
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
-    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -184,8 +75,6 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
-    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -197,51 +86,33 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.0001
-    meshCompression: 2
+    globalScale: 0
+    meshCompression: 0
     addColliders: 0
-    useSRGBMaterialColor: 1
-    sortHierarchyByName: 1
     importVisibility: 0
     importBlendShapes: 1
     importCameras: 0
     importLights: 0
-    nodeNameCollisionStrategy: 0
-    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    bakeAxisConversion: 0
-    preserveHierarchy: 0
-    skinWeightsMode: 0
-    maxBonesPerVertex: 4
-    minBoneWeight: 0.001
-    optimizeBones: 1
-    meshOptimizationFlags: -1
-    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
-    secondaryUVMarginMethod: 0
-    secondaryUVMinLightmapResolution: 40
-    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 4
     normalCalculationMode: 0
-    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
-    blendShapeNormalImportMode: 1
-    normalSmoothingSource: 0
-  referencedClips: []
   importAnimation: 1
+  copyAvatar: 0
   humanDescription:
-    serializedVersion: 3
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -251,18 +122,14 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.0001
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
-  avatarSetup: 0
-  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
-  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
