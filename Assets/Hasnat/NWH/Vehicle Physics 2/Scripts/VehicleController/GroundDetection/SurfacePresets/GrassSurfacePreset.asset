@@ -12,31 +12,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc561ac79d22fd74dba6cf84dd95cded, type: 3}
   m_Name: GrassSurfacePreset
   m_EditorClassIdentifier: 
-  particleType: 0
-  particleColor: {r: 1, g: 0.8870876, b: 0.28773582, a: 1}
+  particleType: 1
+  particleColor: {r: 0.19215688, g: 0.24313727, b: 0.023529414, a: 1}
   maxParticleEmissionRateOverDistance: 0.5
-  particleSize: 2
-  emitParticles: 0
+  particleSize: 0.5
+  emitParticles: 1
   emitChunks: 0
   maxChunkEmissionRateOverDistance: 1
   chunkLifeDistance: 3
   maxChunkLifetime: 0.5
-  particleMaxAlpha: 0.7
-  maxParticleLifetime: 0
-  particleLifeDistance: 10
+  particleMaxAlpha: 0.65
+  maxParticleLifetime: 0.5
+  particleLifeDistance: 1
   frictionPreset: {fileID: 11400000, guid: f550961d8fc79d84abd7ca194acc766d, type: 2}
-  rollingResistanceMaxMultiplier: 1.4
+  rollingResistanceMaxMultiplier: 1
   name: Grass
-  skidSoundClip: {fileID: 0}
+  skidSoundClip: {fileID: 8300000, guid: 77d6eaeb41d727a4681a2cc8654c60b2, type: 3}
   playSkidSounds: 0
   skidSoundPitch: 0.65
-  skidSoundVolume: 0
-  slipFactor: 0
-  slipSensitiveSurfaceSound: 0
+  skidSoundVolume: 1
+  slipFactor: 1
+  slipSensitiveSurfaceSound: 1
   playSurfaceSounds: 0
-  surfaceSoundClip: {fileID: 0}
+  surfaceSoundClip: {fileID: 8300000, guid: a2a31d70250395f42ae658a9f1a2a453, type: 3}
   surfaceSoundPitch: 1
-  surfaceSoundVolume: 0
+  surfaceSoundVolume: 1
   drawSkidmarks: 1
-  skidmarkMaterial: {fileID: 2100000, guid: 7060dd8d1f6d6264e942d722c5352c2f, type: 2}
+  skidmarkMaterial: {fileID: 2100000, guid: d217580501187bd47950b2debb7588dd, type: 2}
   skidmarkBaseIntensity: 0.278

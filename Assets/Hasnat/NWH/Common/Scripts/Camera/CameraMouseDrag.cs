@@ -3,6 +3,7 @@ using NWH.Common.Input;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
+using UnityEngine.InputSystem;
 
 #if UNITY_EDITOR
 using NWH.NUI;
@@ -196,6 +197,7 @@ namespace NWH.Common.Cameras
             {
                 return EventSystem.current != null &&
                        EventSystem.current.IsPointerOverGameObject();
+                    
             }
         }
 
@@ -226,16 +228,19 @@ namespace NWH.Common.Cameras
         }
 
 
+        
+
+        // Other variables and settings...
+
         private void LateUpdate()
         {
-            if (target == null)
-            {
-                return;
-            }
 
-            // Handle input
+
+            //Rest of your LateUpdate code remains similar
+
             if (!PointerOverUI)
             {
+
                 _rotationInput = InputProvider.CombinedInput<SceneInputProviderBase>(i => i.CameraRotation());
                 _panningInput = InputProvider.CombinedInput<SceneInputProviderBase>(i => i.CameraPanning());
                 _zoomInput = InputProvider.CombinedInput<SceneInputProviderBase>(i => i.CameraZoom());
@@ -271,7 +276,7 @@ namespace NWH.Common.Cameras
 
             _lookAtPosition = target.position +
                               target.TransformDirection(targetPositionOffset + _pan);
-            _newLookDir = Quaternion.AngleAxis(_rot.x, rightVector) * forwardVector;
+           // _newLookDir = Quaternion.AngleAxis(_rot.x, rightVector) * forwardVector;
             _newLookDir = Quaternion.AngleAxis(_rot.y, upVector) * _newLookDir;
 
             _lookDir = _isFirstFrame ?

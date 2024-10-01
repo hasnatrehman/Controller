@@ -12,6 +12,7 @@ namespace NWH.Common.Input
     {
         public bool hasBeenClicked;
         public bool isPressed;
+        
 
         private void Update()
         {

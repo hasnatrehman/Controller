@@ -6,6 +6,7 @@ using Object = UnityEngine.Object;
 using System.Collections;
 using System.Linq;
 using UnityEngine.Serialization;
+using NWH.VehiclePhysics2.Input;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -39,6 +40,7 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
             "If the vehicle is a trailer, this is the object placed at the point at which it will connect to the towing vehicle." +
             " If the vehicle is towing, this is the object placed at point at which trailer will be coneected.")]
         public Transform attachmentPoint;
+        
 
         /// <summary>
         /// The layer of the SphereCollider used to detect if the trailer module is in range.
@@ -113,15 +115,19 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
             if (!_hasHadFirstFixedUpdate && attachOnEnable)
             {
                 vehicleController.input.states.trailerAttachDetach = true;
+               // ButtonCanvas.trailerAttachDetachButton.interactable = true; // gabbar
             }
         }
 
-
+        
         public virtual void OnTriggerStay(Collider other)
         {
             if (other == null || other.gameObject.layer != attachmentLayer) return;
 
             trailerInRange = true;
+
+            
+
             _triggerCollider = other;
         }
 
@@ -228,9 +234,10 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
             return noTrailerPowerCoefficient;
         }
 
-
+       // public MobileVehicleInputProvider ButtonCanvas = new MobileVehicleInputProvider();
         public void AttachTrailer(TrailerModuleWrapper trailerWrapper)
         {
+            
             attachedTrailerModule = trailerWrapper.module;
             if (attachedTrailerModule == null)
             {
@@ -242,6 +249,8 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
             Debug.Assert(trailerVC != null, "Trailer wrapper is null");
             trailerVC.enabled = true;
 
+            vehicleController.gameObject.transform.eulerAngles = trailerVC.gameObject.transform.eulerAngles; // Gabbar Trailer Attach
+            vehicleController.powertrain.engine.maxPower = 280;  // Gabbar Truck power after trailer attached
             // Position trailer
             trailerVC.vehicleTransform.position = trailerVC.transform.position -
                                                   (attachedTrailerModule.attachmentPoint.transform.position -
@@ -260,16 +269,30 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
             _configurableJoint.xMotion = ConfigurableJointMotion.Locked;
             _configurableJoint.yMotion = ConfigurableJointMotion.Locked;
             _configurableJoint.zMotion = ConfigurableJointMotion.Locked;
+            _configurableJoint.angularYMotion = ConfigurableJointMotion.Limited;  // Gabbar Turning of trailer
+            
             _configurableJoint.angularZMotion =
-                useHingeJoint ? ConfigurableJointMotion.Locked : ConfigurableJointMotion.Free;
+                useHingeJoint ? ConfigurableJointMotion.Locked : ConfigurableJointMotion.Locked; // Free
+
+           
+
             _configurableJoint.enableCollision = true;
-            _configurableJoint.breakForce = breakForce;
+            _configurableJoint.breakForce = 22000000; /* breakForce;*/ // Gabbar
 
             // Reset input flag
             vehicleController.input.TrailerAttachDetach = false;
             attached = true;
             attachedTrailerModule.OnAttach(this);
+
+            SoftJointLimit angularGabbar = _configurableJoint.angularYLimit;
+
+            //_configurableJoint.angularYLimit.limit = 0;           // Gabbar Trailer Angle
+            angularGabbar.limit = 80; 
+            _configurableJoint.angularYLimit = angularGabbar;
+
             onTrailerAttach.Invoke();
+
+
         }
 
 
@@ -281,7 +304,8 @@ namespace NWH.VehiclePhysics2.Modules.Trailer
             }
 
             attached = false;
-
+            vehicleController.powertrain.engine.maxPower = 240; 
+           // ButtonCanvas.trailerAttachDetachButton.interactable = false; // gabbar trailer Attach detach button
             if (_configurableJoint != null)
             {
                 Object.Destroy(_configurableJoint);

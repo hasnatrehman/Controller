@@ -13,6 +13,7 @@ using NWH.VehiclePhysics2.Modules.Trailer;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Windows;
 
 namespace NWH.VehiclePhysics2.Demo
 {
@@ -157,6 +158,9 @@ namespace NWH.VehiclePhysics2.Demo
             if (_trailerHitchModule is { trailerInRange: true, attached: false })
             {
                 promptText.text += "Press T / X (Xbox) / Square (PS) to attach the trailer.\r\n";
+
+                
+                // Gabbar
             }
 
             if (_flipOverModule is { flipOverActivation: FlipOverModule.FlipOverActivation.Manual, flippedOver: true })

@@ -26,6 +26,9 @@ namespace NWH.VehiclePhysics2
             _multiplayerState.shiftInto = input.states.shiftInto;
             _multiplayerState.shiftUp = input.states.shiftUp;
             _multiplayerState.shiftDown = input.states.shiftDown;
+
+            _multiplayerState.shiftNutral = input.states.shiftNutral;
+
             _multiplayerState.trailerAttachDetach = input.states.trailerAttachDetach;
             _multiplayerState.horn = input.states.horn;
             _multiplayerState.engineStartStop = input.states.engineStartStop;
@@ -50,6 +53,9 @@ namespace NWH.VehiclePhysics2
             input.states.shiftInto = inboundState.shiftInto;
             input.states.shiftUp = inboundState.shiftUp;
             input.states.shiftDown = inboundState.shiftDown;
+
+            input.states.shiftNutral = inboundState.shiftNutral;
+
             input.states.trailerAttachDetach = inboundState.trailerAttachDetach;
             input.states.horn = inboundState.horn;
             input.states.engineStartStop = inboundState.engineStartStop;
@@ -72,6 +78,7 @@ namespace NWH.VehiclePhysics2
             public int shiftInto;
             public bool shiftUp;
             public bool shiftDown;
+            public bool shiftNutral;
             public bool trailerAttachDetach;
             public bool horn;
             public bool engineStartStop;

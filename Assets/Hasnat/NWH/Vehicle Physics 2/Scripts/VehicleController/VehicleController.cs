@@ -37,6 +37,7 @@ namespace NWH.VehiclePhysics2
         public Powertrain.Powertrain powertrain = new Powertrain.Powertrain();
         public SoundManager soundManager = new SoundManager();
         public Steering steering = new Steering();
+        
 
 
         /// <summary>
