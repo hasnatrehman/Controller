@@ -166,7 +166,7 @@ namespace UniStorm
         public AnimationCurve PrecipitationGraph = AnimationCurve.Linear(1, 0, 13, 100);
         public List<WeatherType> NonPrecipiationWeatherTypes = new List<WeatherType>();
         public List<WeatherType> PrecipiationWeatherTypes = new List<WeatherType>();
-        public List<WeatherType> AllWeatherTypes = new List<WeatherType>();
+        public List<WeatherType> AllWeatherTypes = new List<WeatherType>();  // Gabbar particles
         public WeatherType CurrentWeatherType;
         public WeatherType NextWeatherType;
         public bool ByPassCoverageTransition = false;
@@ -611,7 +611,7 @@ namespace UniStorm
                     //Add all of our weather effects to a list to be controlled when needed.
                     if (!ParticleSystemList.Contains(AllWeatherTypes[i].WeatherEffect) && AllWeatherTypes[i].WeatherEffect != null)
                     {
-                        AllWeatherTypes[i].CreateWeatherEffect();
+                        AllWeatherTypes[i].CreateWeatherEffect();  // Gabbar step 0 for Unistorm effects
                         ParticleSystemList.Add(AllWeatherTypes[i].WeatherEffect);
                     }
 
@@ -1643,9 +1643,9 @@ namespace UniStorm
         //If enabled, create our UniStorm UI and Canvas.
         void CreateUniStormMenu()
         {
-            //Resource load UI here
-            UniStormCanvas = Instantiate((GameObject)Resources.Load("UniStorm Canvas") as GameObject, transform.position, Quaternion.identity);
-            UniStormCanvas.name = "UniStorm Canvas";
+            //Resource load UI here      // Gabbar for UNISTorm canvs disable
+            //UniStormCanvas = Instantiate((GameObject)Resources.Load("UniStorm Canvas") as GameObject, transform.position, Quaternion.identity);
+            //UniStormCanvas.name = "UniStorm Canvas";
 
             TimeSlider = GameObject.Find("Time Slider").GetComponent<Slider>();
             TimeSliderGameObject = TimeSlider.gameObject;
@@ -1679,7 +1679,7 @@ namespace UniStorm
             }
 
             m_MenuToggle = false;
-            ToggleUniStormMenu();
+            //  ToggleUniStormMenu();  // / Gabbar for UNISTorm canvas disable
         }
 
         //Gets a custom DateTime using UniStorm's current date
@@ -2629,7 +2629,7 @@ namespace UniStorm
 
             SunObjectMaterial.SetVector("_uWorldSpaceCameraPos", PlayerCamera.transform.position);
             SunObjectMaterial.SetColor("_SunColor", SunSpotColor.Evaluate(m_TimeFloat));
-            SunObject.transform.localScale = Vector3.one * SunSize.Evaluate(m_TimeFloat * 24) * .5f;  // Gabbar sun size TOD
+            SunObject.transform.localScale = Vector3.one * SunSize.Evaluate(m_TimeFloat * 24) * 3;
             m_SunLight.intensity = SunIntensityCurve.Evaluate(m_TimeFloat * 24) * SunIntensity;
             m_MoonLight.intensity = MoonIntensityCurve.Evaluate(m_TimeFloat * 24) * MoonIntensity * MoonPhaseIntensity;
             m_MoonTransform.localScale = MoonSize.Evaluate(m_TimeFloat * 24) * m_MoonStartingSize;

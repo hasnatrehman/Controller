@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Mostly Cloudy with Rain
   m_EditorClassIdentifier: 
   WeatherTypeName: Mostly Cloudy with Rain
-  CloudProfileComponent: {fileID: 11400000, guid: 2abfa647742d6174bacc9b765f51f9c3,
-    type: 2}
+  CloudProfileComponent: {fileID: 11400000, guid: 2abfa647742d6174bacc9b765f51f9c3, type: 2}
   SunIntensity: 1
   CloudShadowIntensity: 0.75
   MoonIntensity: 0.75
@@ -62,8 +61,7 @@ MonoBehaviour:
   WindSpeedLevel: 0.85
   WindBendingLevel: 0.2
   WindIntensity: 0.18
-  WeatherEffect: {fileID: 198882807848139052, guid: 516fd25c12e04ba46bce3ce4bab8f8e1,
-    type: 3}
+  WeatherEffect: {fileID: 5579834344904417322, guid: 64237da4c957e72408a2b30a0832d8e3, type: 3}
   ParticleEffectAmount: 200
   ParticleEffectVector: {x: 0, y: 28, z: 0}
   AdditionalWeatherEffect: {fileID: 0}

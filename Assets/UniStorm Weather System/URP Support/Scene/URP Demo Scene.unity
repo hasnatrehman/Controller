@@ -97,7 +97,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 1023464235}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: e71820006cfad3e4c911899ae9f7dbbe, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -488,68 +488,6 @@ WindZone:
   m_WindTurbulence: 1
   m_WindPulseMagnitude: 0.5
   m_WindPulseFrequency: 0.01
---- !u!850595691 &1023464235
-LightingSettings:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Settings.lighting
-  serializedVersion: 4
-  m_GIWorkflowMode: 0
-  m_EnableBakedLightmaps: 1
-  m_EnableRealtimeLightmaps: 1
-  m_RealtimeEnvironmentLighting: 1
-  m_BounceScale: 1
-  m_AlbedoBoost: 1
-  m_IndirectOutputScale: 1
-  m_UsingShadowmask: 1
-  m_BakeBackend: 1
-  m_LightmapMaxSize: 1024
-  m_BakeResolution: 40
-  m_Padding: 2
-  m_LightmapCompression: 3
-  m_AO: 0
-  m_AOMaxDistance: 1
-  m_CompAOExponent: 1
-  m_CompAOExponentDirect: 0
-  m_ExtractAO: 0
-  m_MixedBakeMode: 2
-  m_LightmapsBakeMode: 1
-  m_FilterMode: 1
-  m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000, type: 0}
-  m_ExportTrainingData: 0
-  m_TrainingDataDestination: TrainingData
-  m_RealtimeResolution: 2
-  m_ForceWhiteAlbedo: 0
-  m_ForceUpdates: 0
-  m_FinalGather: 0
-  m_FinalGatherRayCount: 256
-  m_FinalGatherFiltering: 1
-  m_PVRCulling: 1
-  m_PVRSampling: 1
-  m_PVRDirectSampleCount: 32
-  m_PVRSampleCount: 500
-  m_PVREnvironmentSampleCount: 500
-  m_PVREnvironmentReferencePointCount: 2048
-  m_LightProbeSampleCountMultiplier: 4
-  m_PVRBounces: 2
-  m_PVRMinBounces: 2
-  m_PVREnvironmentMIS: 0
-  m_PVRFilteringMode: 2
-  m_PVRDenoiserTypeDirect: 0
-  m_PVRDenoiserTypeIndirect: 0
-  m_PVRDenoiserTypeAO: 0
-  m_PVRFilterTypeDirect: 0
-  m_PVRFilterTypeIndirect: 0
-  m_PVRFilterTypeAO: 0
-  m_PVRFilteringGaussRadiusDirect: 1
-  m_PVRFilteringGaussRadiusIndirect: 5
-  m_PVRFilteringGaussRadiusAO: 2
-  m_PVRFilteringAtrousPositionSigmaDirect: 0.5
-  m_PVRFilteringAtrousPositionSigmaIndirect: 2
-  m_PVRFilteringAtrousPositionSigmaAO: 1
-  m_PVRTiledBaking: 0
 --- !u!1 &1059800592
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,7 +576,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1156670163}
   - component: {fileID: 1156670164}
-  - component: {fileID: 1156670165}
   m_Layer: 0
   m_Name: UniStorm Moon
   m_TagString: Untagged
@@ -723,26 +660,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1156670165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156670162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Version: 1
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1 &1596786218
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,7 +817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 383ad622131337f409da350fc9cc0486, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  urpForwardRendererData: {fileID: 11400000, guid: e26d79d1512178d48a3e89885a6a634f, type: 2}
+  urpForwardRendererData: {fileID: 11400000, guid: 842421b27d5a7d64fa995e7d19e95412, type: 2}
   CustomizeQuality: 0
   ConvergenceSpeed: 75
   NearMarchSteps: 100
@@ -943,7 +860,7 @@ MonoBehaviour:
   UniStormMenuKey: 27
   UniStormCanvas: {fileID: 0}
   m_MenuToggle: 0
-  TabNumber: 2
+  TabNumber: 1
   TimeTabNumbers: 0
   WeatherTabNumbers: 1
   CelestialTabNumbers: 0
@@ -979,7 +896,7 @@ MonoBehaviour:
   StartingMinute: 0
   StartingHour: 17
   Minute: 13
-  Hour: 11
+  Hour: 18
   Day: 25
   Month: 6
   Year: 2020
@@ -1187,7 +1104,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1c574a7c95db0204d8f2627686dde9dd, type: 2}
   - {fileID: 11400000, guid: 2c22445a1c49d7f4587aad0d120738bb, type: 2}
   - {fileID: 11400000, guid: 9c9c95d0c839e12409171dc4a845551a, type: 2}
-  CurrentWeatherType: {fileID: 11400000, guid: 5e51740885cc8c14497e44041aeb303e, type: 2}
+  CurrentWeatherType: {fileID: 11400000, guid: 865815ce607d94c4cb41162c44555e7c, type: 2}
   NextWeatherType: {fileID: 0}
   ByPassCoverageTransition: 0
   m_PrecipitationOdds: 50
