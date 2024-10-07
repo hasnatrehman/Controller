@@ -26,9 +26,13 @@ namespace ProjectCore.Application
         [SerializeField] private Transition HPTransition;
         [SerializeField] private GameEvent GotoHP;
 
-        [Header("HP")]
+        [Header("LevelSelection")]
         [SerializeField] private Transition LevelSelectionTransition;
         [SerializeField] private GameEvent GotoLevelSelection;
+
+        [Header("GarageSelection")]
+        [SerializeField] private Transition GarageSelectionTransition;
+        [SerializeField] private GameEvent GotoGarageSelection;
 
         [Header("Game")]
         [SerializeField] private Transition GameStateTransition;
@@ -144,8 +148,10 @@ namespace ProjectCore.Application
         {
             GotoGame.Handler += OnGotoGame;
             GotoMainMenu.Handler += OnGotoMainMenu;
+
             GotoHP.Handler += OnGotoHP;
             GotoLevelSelection.Handler += OnGotoLevelSelection;
+            GotoGarageSelection.Handler += OnGotoGarageSelection;
 
             OpenViewClose.Handler += OnOpenViewClsoe;
             return;
@@ -167,6 +173,12 @@ namespace ProjectCore.Application
         {
 
             StateMachine.Transition(LevelSelectionTransition);
+        }
+
+        private void OnGotoGarageSelection()
+        {
+            Debug.LogError($"OnGotoGS Called");
+            StateMachine.Transition(GarageSelectionTransition);
         }
 
         public void OnGotoGame()

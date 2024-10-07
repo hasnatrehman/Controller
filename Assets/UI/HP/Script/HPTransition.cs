@@ -2,7 +2,7 @@ using ProjectCore.StateMachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-[CreateAssetMenu(fileName = "HPTransition", menuName = "ProjectCore/State Machine/Transitions/HP Transition")]
+[CreateAssetMenu(fileName = "HPTransition", menuName = "ProjectCore/State Machine/Transitionions/HP Transition")]
 public class HPTransition : Transition
 {
     // Start is called before the first frame update

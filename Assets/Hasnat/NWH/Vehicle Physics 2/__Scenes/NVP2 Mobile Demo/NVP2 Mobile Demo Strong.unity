@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -708,6 +708,37 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!1 &152682977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 152682978}
+  m_Layer: 0
+  m_Name: JobSystemController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &152682978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152682977}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 300.54456, y: -847.9391, z: 517.1832}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!222 &160087363
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4643,7 +4674,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1511279823
 Transform:
   m_ObjectHideFlags: 0
@@ -6327,6 +6358,10 @@ PrefabInstance:
     - target: {fileID: 2611406908747116506, guid: 0359bfd43dd370a4ba5a68645b44dc7a, type: 3}
       propertyPath: verticalInputType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2611406908747116507, guid: 0359bfd43dd370a4ba5a68645b44dc7a, type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 127
       objectReference: {fileID: 0}
     - target: {fileID: 2611406908747116510, guid: 0359bfd43dd370a4ba5a68645b44dc7a, type: 3}
       propertyPath: m_Pivot.x
@@ -19462,7 +19497,7 @@ GameObject:
   - component: {fileID: 1733610880}
   m_Layer: 3
   m_Name: Chassis
-  m_TagString: Untagged
+  m_TagString: Chassis
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47318,3 +47353,4 @@ SceneRoots:
   - {fileID: 3631177698376867751}
   - {fileID: 52859874}
   - {fileID: 141582763}
+  - {fileID: 152682978}

@@ -12,6 +12,8 @@ public class LevelSelectionView : UiPanelInAndOut
     [SerializeField] private Button GoBack;
 
     [SerializeField] private GameEvent GotoMainMenu;
+    [SerializeField] private GameEvent GotoGarageSelection;
+
 
 
     //[SerializeField] private HP1State LevelCompleteViewState;
@@ -19,17 +21,19 @@ public class LevelSelectionView : UiPanelInAndOut
     private void OnEnable()
     {
         GoBack.onClick.AddListener(OnBack);
+        GoNext.onClick.AddListener(OnNext);
     }
 
     private void OnDisable()
     {
         GoBack.onClick.RemoveListener(OnBack);
+        GoNext.onClick.RemoveListener(OnNext);
 
     }
 
     private void OnNext()
     {
-
+        GotoGarageSelection.Invoke();
     }
 
     private void OnBack()
