@@ -22,6 +22,14 @@ namespace ProjectCore.Application
         [SerializeField] private Transition MainMenuTransition;
         [SerializeField] private GameEvent GotoMainMenu;
 
+        [Header("HP")]
+        [SerializeField] private Transition HPTransition;
+        [SerializeField] private GameEvent GotoHP;
+
+        [Header("HP")]
+        [SerializeField] private Transition LevelSelectionTransition;
+        [SerializeField] private GameEvent GotoLevelSelection;
+
         [Header("Game")]
         [SerializeField] private Transition GameStateTransition;
         [SerializeField] private NormalGameState NormalGameState;
@@ -136,6 +144,8 @@ namespace ProjectCore.Application
         {
             GotoGame.Handler += OnGotoGame;
             GotoMainMenu.Handler += OnGotoMainMenu;
+            GotoHP.Handler += OnGotoHP;
+            GotoLevelSelection.Handler += OnGotoLevelSelection;
 
             OpenViewClose.Handler += OnOpenViewClsoe;
             return;
@@ -145,6 +155,18 @@ namespace ProjectCore.Application
         {
             Debug.LogError($"OnGotoMainMenu Called");
             StateMachine.Transition(MainMenuTransition);
+        }
+
+        private void OnGotoHP()
+        {
+            
+            StateMachine.Transition(HPTransition);
+        }
+
+        private void OnGotoLevelSelection()
+        {
+
+            StateMachine.Transition(LevelSelectionTransition);
         }
 
         public void OnGotoGame()
@@ -323,6 +345,10 @@ namespace ProjectCore.Application
             {
                 case UICloseReasons.Home:
                     OnGotoMainMenu();
+                    break;
+
+                case UICloseReasons.ResumeAny:
+                    OnResumePreviousState();
                     break;
             }
         }

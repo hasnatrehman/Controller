@@ -56,10 +56,10 @@ namespace ProjectCore.StateMachine
 
         public void Transition (Transition transition)
         {
-            //Debug.LogError($"Transitioning To: {transition.ToState.name}");
             var canTransition = CurrentTransition == null && transition != null && transition.ToState != null;
             if (canTransition)
             {
+                //Debug.LogError($"Transitioning To: {transition.ToState.name}");
                 CurrentTransition = transition;
             }
         }
